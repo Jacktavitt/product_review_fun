@@ -119,6 +119,10 @@ def goThroughDataCSV():
             writer.writerow(freqDict)
     # print(type(freqList))
     # return freqList
+    # TODO: since the freq list os so fucking huge, maybe discount those words that do not show up in
+    # a percentage of the reviews... if a words only shows 10 times in 1,000,000 reviews, it is not important.
+    # maybe go back throught the csv, and if a word has less than a threshold,
+    # kill it.
 
 def main():
     # goThroughDataCSV()

@@ -5,9 +5,10 @@ between products and between reviews,
 i.e., all 3 star reviews have these words regardless of product,
 or all reviews of this product have these words regardless of rating
 '''
-
-
+import os
+import parse_json
 import csv
+import statistics as st
 import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize, sent_tokenize
@@ -53,17 +54,23 @@ def processString(aString):
             meaning_words,useless_words,meaning_percent,useless_percent )
     return packet, freq_list
 
+def csvWriterHelper(filename, rowToWrite, header):
+    try :
+        firstWrite = os.stat(filename).st_size == 0
+    except:
+        firstWrite = True
+    with open(filename, 'a+') as outFile:
+        writer = csv.DictWriter(outFile, fieldnames = header)
+        if firstWrite:
+            writer.writeheader()
+        writer.writerow(rowToWrite)
+
 def goThroughDataCSV():
-    freqList=[]
+    freqList = parse_json.fromJSONtoCSV()
+    freqList.update({'_type_':None})
+    masterFLH = set(freqList.keys())
     with open('review_data.csv','r') as csvFile:
         csvReader=csv.DictReader(csvFile, delimiter=',')
-        # fieldnames for writing to new csv file
-        # fieldNames = ['initial_WC', 'meaning_percent' , 'meaningful_words', 'stop_words', 'processed_WC', 'stop_percent'] 
-        firstTextWrite = True
-        firstTitleWrite = True
-        # collect all of the frequency lists, so i can go thru and write them all afterwords
-        
-        counter = 0
         for row in csvReader:
             product_name = row['product_name']
             review_title= row['review_header']
@@ -74,61 +81,32 @@ def goThroughDataCSV():
             # send to helper function
             processed_title,title_freq = processString(review_title)
             processed_title.update(shared_values)
-            # title_freq = processed_title['freq_list']
+
             title_freq.update({'_type_':'title'})
             processed_review, review_freq = processString(review_text)
             processed_review.update(shared_values)
-            # review_freq = processed_review['freq_list']
+
             review_freq.update({'_type_':'review'})
-            with open('processed_review_text_data.csv', 'a+') as outFile:
-                writer = csv.DictWriter(outFile, fieldnames = list(processed_review.keys()))
-                if firstTextWrite:
-                    writer.writeheader()
-                    firstTextWrite = False
-                writer.writerow(processed_review)
-            freqList.append(review_freq)
-            with open('processed_review_title_data.csv', 'a+') as outFile:
-                writer = csv.DictWriter(outFile, fieldnames = list(processed_title.keys()))
-                if firstTitleWrite:
-                    writer.writeheader()
-                    firstTitleWrite = False
-                writer.writerow(processed_title)
-            freqList.append(title_freq)
-            # if counter %25 == 0:
-            #     print(freqList)
-            # counter += 1
-    # print(type(freqList))
-        # now must set up the freq table for all reviews
-        # first, get headers for all words in all reviews (huge!)
-    allWords = []
-    for d in freqList:
-        for k in d.keys():
-            allWords.append(k)
-    # now we shou;d have a list of all the words
-    # lets narrow it down into a set, and make a sorted list for headers
-    allWords.sort()
-    allWords = set(allWords)
-    allWords = list(allWords)
-    firstFreqWrite = True
-    for freqDict in freqList:
-        with open('processed_frequency_list.csv', 'a+') as freqFile:
-            writer = csv.DictWriter(freqFile, fieldnames = allWords)
-            if firstFreqWrite:
-                writer.writeheader()
-                firstFreqWrite = False
-            writer.writerow(freqDict)
-    # print(type(freqList))
-    # return freqList
-    # TODO: since the freq list os so fucking huge, maybe discount those words that do not show up in
-    # a percentage of the reviews... if a words only shows 10 times in 1,000,000 reviews, it is not important.
-    # maybe go back throught the csv, and if a word has less than a threshold,
-    # kill it.
+            csvWriterHelper('processed_review_text_data.csv',
+                    processed_review, list(processed_review.keys()))
+
+            # freqList.append(review_freq)
+            csvWriterHelper('processed_review_title_data.csv',
+                    processed_title, list(processed_title.keys()))
+            # need to cut out those words we know don't occur that often
+            tf = { x: title_freq[x] for x in list(set(title_freq.keys()) & masterFLH ) }
+            csvWriterHelper('processed_frequency_list.csv',
+                    tf, list(freqList.keys()))
+            rf = { x: review_freq[x] for x in list(set(review_freq.keys()) & masterFLH ) }
+            csvWriterHelper('processed_frequency_list.csv',
+                    rf, list(freqList.keys()))
+
 
 def main():
     # goThroughDataCSV()
     fl= goThroughDataCSV()
-    # print(type(fl))
-    # return(fl)
+    # print(fl)
+    return(fl)
 
 main()
         

@@ -1,102 +1,102 @@
-product_name,review_score,stop_words,processed_WC,meaningful_words,stop_percent,meaning_percent,initial_WC
-Samsung Galaxy J7 - No Contract Phone - White - (Boost Mobile)(Carrier locked phone ),5.0 ,"{'with', 'have'}",8,"{'Boostmobile', 'phone', '!', 'Best', 'owned', 'I'}",0.25,0.75,8
-Samsung Galaxy J7 - No Contract Phone - White - (Boost Mobile)(Carrier locked phone ),4.0 ,"{'for', 'the'}",6,"{'Very', 'phone', 'good', 'money'}",0.3333333333333333,0.6666666666666666,6
-Samsung Galaxy J7 - No Contract Phone - White - (Boost Mobile)(Carrier locked phone ),5.0 ,"{'with', 'in', 'it'}",11,"{'love', ""'m"", '...', 'phone', 'GORGEOUS', '.', '!', 'I'}",0.2727272727272727,0.7272727272727273,11
-Samsung Galaxy J7 - No Contract Phone - White - (Boost Mobile)(Carrier locked phone ),5.0 ,{'the'},3,"{'Love', 'phone'}",0.3333333333333333,0.6666666666666666,3
-Samsung Galaxy J7 - No Contract Phone - White - (Boost Mobile)(Carrier locked phone ),5.0 ,{'it'},3,"{'.', 'Worth'}",0.3333333333333333,0.6666666666666666,3
-Samsung Galaxy J7 - No Contract Phone - White - (Boost Mobile)(Carrier locked phone ),5.0 ,"{'a', 'for', 'is'}",8,"{'Mobile', 'Boost', 'great', 'phone', 'This'}",0.375,0.625,8
-Motorola Moto G (3rd Generation) No Contract Phone (Virgin Mobile) - Retail Packaging,5.0 ,set(),12,"{'Buyers', 'Excellent', 'Weatherproof', 'Phone', 'Users', 'Design', 'For', 'Value-Conscious', 'Rugged', '-', '&', 'Intermediate'}",0.0,1.0,12
-Motorola Moto G (3rd Generation) No Contract Phone (Virgin Mobile) - Retail Packaging,5.0 ,{'for'},6,"{'Mobile', '.', 'Virgin', 'good', 'Very'}",0.16666666666666666,0.8333333333333334,6
-Motorola Moto G (3rd Generation) No Contract Phone (Virgin Mobile) - Retail Packaging,4.0 ,"{'a', 'over', 'the', 'is'}",11,"{'Galaxy', 'The', 'upgrade', 'S2', 'significant', 'G', 'Moto'}",0.36363636363636365,0.6363636363636364,11
-"Viviscal Extra Strength Hair Nutrient Tablets, 90-Tablets",4.0 ,set(),3,"{'I', 'Like', 'Viviscal'}",0.0,1.0,3
-"Viviscal Extra Strength Hair Nutrient Tablets, 90-Tablets",1.0 ,{'of'},4,"{'Suspicious', 'Product', 'Authenticity'}",0.25,0.75,4
-"Viviscal Extra Strength Hair Nutrient Tablets, 90-Tablets",1.0 ,set(),13,"{'BY', 'OFFICIAL', 'RETAILERS', 'NOT', 'ITEM', 'VIVISCAL', 'SOLD', 'RIP', '.', 'OTHER', 'OFF', 'SAME', 'THE'}",0.0,1.0,14
-"Viviscal Extra Strength Hair Nutrient Tablets, 90-Tablets",1.0 ,"{'does', 'this', 'on'}",10,"{""n't"", 'FAKE', 'page', 'product', ';', 'work', 'REVIEWS'}",0.3,0.7,10
-"Viviscal Extra Strength Hair Nutrient Tablets, 90-Tablets",3.0 ,"{'can', 'are', 'if', 'them', 'for', 'out', 'you'}",15,"{'secure', 'better', 'breakouts', 'pills', 'Ireland-made', '.', 'Watch', '!'}",0.4666666666666667,0.5333333333333333,15
-"Viviscal Extra Strength Hair Nutrient Tablets, 90-Tablets",1.0 ,set(),3,"{'Pills', 'turned', 'Black'}",0.0,1.0,3
-Cuisinart MCP193-18N MultiClad Pro Stainless Steel 3-Quart Saucepan with Cover,5.0 ,set(),3,"{'Cookware', 'Great', '!'}",0.0,1.0,3
-Cuisinart MCP193-18N MultiClad Pro Stainless Steel 3-Quart Saucepan with Cover,5.0 ,set(),2,"{'Great', 'Value'}",0.0,1.0,2
-Cuisinart MCP193-18N MultiClad Pro Stainless Steel 3-Quart Saucepan with Cover,5.0 ,"{'a', 'to', 'down', 'and', 'it', 'this', 'few'}",15,"{'Narrowed', 'IS', 'THIS', '.', 'others', 'ONE', '?', 'THE'}",0.4666666666666667,0.5333333333333333,15
-The Crystal Bible,5.0 ,set(),3,"{'Great', '.', 'series'}",0.0,1.0,3
-The Crystal Bible,1.0 ,"{'for', 'the', 'only', 'is'}",11,"{'...', 'The', 'edition', 'This', 'review', '.', 'kindle'}",0.36363636363636365,0.6363636363636364,11
-The Crystal Bible,2.0 ,set(),3,"{'No', '!', 'pictures'}",0.0,1.0,3
-The Crystal Bible,5.0 ,"{'and', 'just', 'into', 'the', 'am', 'of'}",11,"{'energy', 'realm', '...', 'venturing', 'I'}",0.5454545454545454,0.45454545454545453,11
-The Crystal Bible,5.0 ,{'is'},6,"{'really', 'awesome', '!', 'This', 'truly'}",0.16666666666666666,0.8333333333333334,6
-The Crystal Bible,5.0 ,set(),2,"{'Pictures', 'Beautiful'}",0.0,1.0,2
-The Crystal Bible,3.0 ,{'than'},4,"{'Smaller', '.', 'expected'}",0.25,0.75,4
-The Crystal Bible,1.0 ,{'at'},6,"{'incomplete', 'grossly', ',', 'best', 'Mediocre'}",0.16666666666666666,0.8333333333333334,6
-DYMO LabelManager 280 Rechargeable Hand-Held Label Maker (1815990),4.0 ,{'with'},8,"{'handheld', 'QWERTY', 'label', '.', 'printer', 'Nice', 'keyboard'}",0.125,0.875,8
-DYMO LabelManager 280 Rechargeable Hand-Held Label Maker (1815990),5.0 ,set(),3,"{'!', 'promise', 'I'}",0.0,1.0,3
-DYMO LabelManager 280 Rechargeable Hand-Held Label Maker (1815990),5.0 ,set(),6,"{'I', 'great', '.', 'guess', 'It', ""'s""}",0.0,1.0,6
-DYMO LabelManager 280 Rechargeable Hand-Held Label Maker (1815990),5.0 ,set(),4,"{'Master', 'Labeling', '!', 'The'}",0.0,1.0,4
-DYMO LabelManager 280 Rechargeable Hand-Held Label Maker (1815990),5.0 ,"{'a', 'you', 'be', 'than', 'can'}",11,"{'labeler', 'think', ""'d"", 'More', 'fun', '.'}",0.45454545454545453,0.5454545454545454,11
-DYMO LabelManager 280 Rechargeable Hand-Held Label Maker (1815990),4.0 ,set(),4,"{'supply', 'sold', 'separately', 'Power'}",0.0,1.0,4
-"Rolodex Deep Desk Drawer Organizer, Metal Mesh, Black (22131)",5.0 ,set(),2,"{'Caddy', 'Make-up'}",0.0,1.0,2
-"Rolodex Deep Desk Drawer Organizer, Metal Mesh, Black (22131)",5.0 ,set(),5,"{'FAST', 'Great', 'product', ',', 'Shipping'}",0.0,1.0,5
-"Rolodex Deep Desk Drawer Organizer, Metal Mesh, Black (22131)",5.0 ,set(),3,"{'Good', 'multipurpose', 'item'}",0.0,1.0,3
-"Rolodex Deep Desk Drawer Organizer, Metal Mesh, Black (22131)",5.0 ,"{'for', 'this'}",7,"{'design', 'reasons', 'many', 'like', 'I'}",0.2857142857142857,0.7142857142857143,7
-"Rolodex Deep Desk Drawer Organizer, Metal Mesh, Black (22131)",5.0 ,"{'with', 'my', 'in'}",11,"{'This', 'Desk', '!', 'Everything', 'Drawer', 'Find', 'I', 'Can'}",0.2727272727272727,0.7272727272727273,11
-"Rolodex Deep Desk Drawer Organizer, Metal Mesh, Black (22131)",5.0 ,{'and'},3,"{'Sturdy', 'Useful'}",0.3333333333333333,0.6666666666666666,3
-"Rolodex Deep Desk Drawer Organizer, Metal Mesh, Black (22131)",5.0 ,"{'a', 'about', 'or', 'its', 'is', 'of', 'for'}",20,"{'...', 'post', 'odds', 'hold', 'center', 'note', '5', 'perfect', 'big', 'would', 'pretty', 'lotlke', 'packs'}",0.35,0.65,21
-Uvex Skyper Blue Light Blocking Computer Glasses with SCT-Orange Lens (S1933X),5.0 ,"{'a', 'so', 'your', 'just', 'the', 'be', 'with', 'few'}",17,"{'melatonin', 'things', 'body', 'blue', 'Blocks', '-', 'careful', 'naturally', 'produces'}",0.47058823529411764,0.5294117647058824,17
-Uvex Skyper Blue Light Blocking Computer Glasses with SCT-Orange Lens (S1933X),5.0 ,set(),4,"{'Sleep', 'Intended', 'Nature', 'Like'}",0.0,1.0,4
-Uvex Skyper Blue Light Blocking Computer Glasses with SCT-Orange Lens (S1933X),5.0 ,"{'and', 'been', 'have'}",13,"{'resolved', 'problems', 'My', 'chronic', 'happy', 'Sleeping', 'well', 'waking', 'sleep', '!'}",0.23076923076923078,0.7692307692307693,14
-Uvex Skyper Blue Light Blocking Computer Glasses with SCT-Orange Lens (S1933X),5.0 ,"{'to', 'when', 'it', 'this', 'am'}",12,"{'things', 'like', 'super', 'Well', 'skeptical', 'comes', 'I'}",0.4166666666666667,0.5833333333333334,12
-EveryDrop by Whirlpool Refrigerator Water Filter 1 (Pack of 1),5.0 ,set(),2,"{'Good', 'product'}",0.0,1.0,2
-EveryDrop by Whirlpool Refrigerator Water Filter 1 (Pack of 1),1.0 ,"{'t', 'than', 'so', 'doesn'}",20,"{'Latest', 'Update', '’', 'size', 'one', ':', 'requested', '!', 'Refund', 'slightly', '.', 'anymore', 'work', 'ordered', 'different', 'last'}",0.2,0.8,20
-EveryDrop by Whirlpool Refrigerator Water Filter 1 (Pack of 1),1.0 ,"{'a', 'for'}",8,"{'Is', 'W10295370', 'good', '!', 'replacement', 'NOT'}",0.25,0.75,8
-EveryDrop by Whirlpool Refrigerator Water Filter 1 (Pack of 1),5.0 ,"{'by', 'the', 'that', 'have', 'we'}",9,"{'brand', 'found', 'far', 'best'}",0.5555555555555556,0.4444444444444444,9
-EveryDrop by Whirlpool Refrigerator Water Filter 1 (Pack of 1),5.0 ,{'for'},7,"{'1', 'Filter', 'W10295370A', ':', 'replacement', 'Certified'}",0.14285714285714285,0.8571428571428571,7
-EveryDrop by Whirlpool Refrigerator Water Filter 1 (Pack of 1),5.0 ,{'for'},6,"{'Whirlpool', 'Great', 'replacement', 'fridge', 'filter'}",0.16666666666666666,0.8333333333333334,6
-EveryDrop by Whirlpool Refrigerator Water Filter 1 (Pack of 1),1.0 ,set(),3,"{'!', 'CLEAR', 'STAY'}",0.0,1.0,3
-EveryDrop by Whirlpool Refrigerator Water Filter 1 (Pack of 1),4.0 ,"{'very', 'on'}",8,"{'Good', ',', 'good', 'whirlpool', 'item', 'works'}",0.25,0.75,8
-Iron Gym Total Upper Body Workout Bar,5.0 ,{'with'},6,"{'great', 'Works', 'paper', '!', 'toilet'}",0.16666666666666666,0.8333333333333334,7
-Iron Gym Total Upper Body Workout Bar,3.0 ,"{'only', 'in', 'and'}",11,"{'intermittently', '...', 'The', 'Bought', 'November', 'used', '.', 'mine'}",0.2727272727272727,0.7272727272727273,11
-Iron Gym Total Upper Body Workout Bar,4.0 ,set(),6,"{'WILL', 'eventually', 'break', '--', 'BEWARE', 'Plastic'}",0.0,1.0,6
-Iron Gym Total Upper Body Workout Bar,4.0 ,{'but'},8,"{'Good', ',', 'certain', 'precautions', 'bar', 'pull-up', 'necessary'}",0.125,0.875,8
-Iron Gym Total Upper Body Workout Bar,1.0 ,{'do'},9,"{'pull-ups', ',', ""n't"", 'Grips', 'stay', 'ca', '.', 'attached'}",0.1111111111111111,0.8888888888888888,11
-Iron Gym Total Upper Body Workout Bar,4.0 ,"{'before', 'your', 'this', 'not', 'it'}",13,"{'door', 'may', 'molding', 'Check', 'fit', 'product', 'buying', '--'}",0.38461538461538464,0.6153846153846154,13
-Iron Gym Total Upper Body Workout Bar,5.0 ,set(),3,"{'pull-ups', 'Pull-ups', ','}",0.0,1.0,5
-Iron Gym Total Upper Body Workout Bar,1.0 ,"{'it', 'not'}",7,"{'using', 'safe', '!', 'feel', 'Do'}",0.2857142857142857,0.7142857142857143,7
-"Oster Cordless Electric Wine Bottle Opener with Foil Cutter, FFP",5.0 ,set(),6,"{'#', '...', 'YEARS', '3', 'later', 'amazeballs'}",0.0,1.0,7
-"Oster Cordless Electric Wine Bottle Opener with Foil Cutter, FFP",3.0 ,"{'it', 'while'}",4,"{'Great', 'lasted'}",0.5,0.5,4
-"Oster Cordless Electric Wine Bottle Opener with Foil Cutter, FFP",1.0 ,set(),9,"{'Product', 'Horrible', ""n't"", 'Customer', '.', 'bother', 'Service', 'Do', 'Poor'}",0.0,1.0,11
-"Oster Cordless Electric Wine Bottle Opener with Foil Cutter, FFP",5.0 ,"{'ve', 'the'}",14,"{'spent', '...', 'manual', '$', '’', 'ever', '.after', 'read', '!', '17', 'Best', 'I'}",0.14285714285714285,0.8571428571428571,15
-"Oster Cordless Electric Wine Bottle Opener with Foil Cutter, FFP",1.0 ,set(),20,"{'PURCHASED', 'WILL', 'HONOR', ',', 'A', 'SINCE', 'LOSING', 'FAITH', 'NOT', 'RETURN', 'DEFECTIVE', 'THEY', 'ITEM', 'ON', '.', 'IN', 'AS', 'GIFT', 'AMAZON', 'CHRISTMAS'}",0.0,1.0,21
-Shake Weight Dumbell,5.0 ,set(),2,"{'Good', 'product'}",0.0,1.0,2
-Shake Weight Dumbell,5.0 ,set(),2,"{'Amazing', '!'}",0.0,1.0,2
-Shake Weight Dumbell,2.0 ,"{'no', 'your'}",6,"{'Shake', '...', '..head', ','}",0.3333333333333333,0.6666666666666666,6
-Shake Weight Dumbell,5.0 ,{'this'},5,"{'I', 'love', 'personally', 'thing'}",0.2,0.8,5
-Shake Weight Dumbell,1.0 ,"{'are', 'to', 'for', 'me', 'these'}",12,"{'...', 'new', 'believe', 'hard', 'brand', 'It', ""'s""}",0.4166666666666667,0.5833333333333334,12
-Shake Weight Dumbell,5.0 ,"{'a', 'you'}",8,"{'Shake', 'Out', 'Give', 'Work', 'Does', 'Weight'}",0.25,0.75,8
-Shake Weight Dumbell,5.0 ,{'the'},6,"{'believe', ""n't"", '!', 'results', 'Ca'}",0.16666666666666666,0.8333333333333334,6
-Shake Weight Dumbell,5.0 ,set(),3,"{'workout', '!', 'GREAT'}",0.0,1.0,3
-Set Of Ten Finger Hands Finger Puppets,5.0 ,set(),2,"{'No', 'regrets'}",0.0,1.0,2
-Set Of Ten Finger Hands Finger Puppets,2.0 ,set(),2,"{'proportions', 'Wrong'}",0.0,1.0,2
-Set Of Ten Finger Hands Finger Puppets,3.0 ,"{'each', 'and', 'they', 'an', 'have', 'these', 'of', 'but', 'out'}",17,"{'love', 'inconsistent', 'quantity', '.', 'quickly', 'hands', 'wear', 'I'}",0.5294117647058824,0.47058823529411764,17
-Set Of Ten Finger Hands Finger Puppets,5.0 ,"{'but', 'of'}",11,"{'toy', ',', 'A', 'awesome', '!', 'hands', '10', 'gag', 'set'}",0.18181818181818182,0.8181818181818182,11
-Set Of Ten Finger Hands Finger Puppets,5.0 ,"{'to', 'it'}",7,"{'Hand', '...', 'ya', 'ta', 'Got'}",0.2857142857142857,0.7142857142857143,7
-Set Of Ten Finger Hands Finger Puppets,1.0 ,"{'a', 'do', 'not'}",10,"{'Dishonest', 'You', ""''"", '.', '``', 'set', 'receive'}",0.3,0.7,10
-Set Of Ten Finger Hands Finger Puppets,5.0 ,"{'a', 'these', 'and', 'i', 'am'}",10,"{'artist', 'LOVE', '...', ',', 'so-called'}",0.5,0.5,12
-Set Of Ten Finger Hands Finger Puppets,2.0 ,{'so'},5,"{'funny', 'creepy', ',', 'So'}",0.2,0.8,5
-"Crosley CR8005A-TU Cruiser Portable 3-Speed Turntable, Turquoise",1.0 ,set(),3,"{'Buy', 'else', 'something'}",0.0,1.0,3
-"Crosley CR8005A-TU Cruiser Portable 3-Speed Turntable, Turquoise",1.0 ,set(),10,"{'FULL', '...', 'SOUND', 'HEARD', '.', 'JUNK', 'BLAST', 'NO', 'I', 'THAT'}",0.0,1.0,11
-"Crosley CR8005A-TU Cruiser Portable 3-Speed Turntable, Turquoise",1.0 ,"{'this', 'of'}",8,"{'piece', ""n't"", '!', 'junk', 'buy', 'Do'}",0.25,0.75,8
-"Crosley CR8005A-TU Cruiser Portable 3-Speed Turntable, Turquoise",4.0 ,"{'for', 'the'}",5,"{'Great', 'deal', 'price'}",0.4,0.6,5
-"Crosley CR8005A-TU Cruiser Portable 3-Speed Turntable, Turquoise",3.0 ,{'and'},3,"{'Drop', 'Spin'}",0.3333333333333333,0.6666666666666666,3
-"Crosley CR8005A-TU Cruiser Portable 3-Speed Turntable, Turquoise",4.0 ,{'and'},3,"{'Cute', 'Simple'}",0.3333333333333333,0.6666666666666666,3
-"Crosley CR8005A-TU Cruiser Portable 3-Speed Turntable, Turquoise",2.0 ,"{'for', 'you', 'what'}",7,"{'get', 'You', '.', 'pay'}",0.42857142857142855,0.5714285714285714,7
-"Crosley CR8005A-TU Cruiser Portable 3-Speed Turntable, Turquoise",5.0 ,"{'a', 'of', 'this', 'is'}",13,"{'bad', 'reviews', 'one', 'fine', 'lot', '.', 'product', 'see', 'I'}",0.3076923076923077,0.6923076923076923,13
-JBL Clip 2 Waterproof Portable Bluetooth Speaker (Teal),5.0 ,"{'a', 'in'}",6,"{'small', 'size', 'speaker', 'Great'}",0.3333333333333333,0.6666666666666666,6
-JBL Clip 2 Waterproof Portable Bluetooth Speaker (Teal),5.0 ,"{'a', 'into'}",7,"{'Great', 'small', 'sound', 'beast', 'packed'}",0.2857142857142857,0.7142857142857143,7
-JBL Clip 2 Waterproof Portable Bluetooth Speaker (Teal),5.0 ,{'from'},5,"{'87', 'dropped', 'Surprised', 'feet'}",0.2,0.8,5
-JBL Clip 2 Waterproof Portable Bluetooth Speaker (Teal),5.0 ,"{'a', 'and', 'had'}",11,"{'sounds', 'Works', 'sound', 'mini', 'great', '.', 'link', 'I'}",0.2727272727272727,0.7272727272727273,11
-JBL Clip 2 Waterproof Portable Bluetooth Speaker (Teal),5.0 ,"{'a', 'in', 'and'}",11,"{',', 'Design', 'Quality', 'Tiny', 'Features', 'Best', 'BT', 'Speaker'}",0.2727272727272727,0.7272727272727273,12
-JBL Clip 2 Waterproof Portable Bluetooth Speaker (Teal),5.0 ,"{'for', 'and'}",12,"{'hiking', ',', 'per', 'camping', '!', '.', 'Sound', 'Pound', 'Great', 'backpacking'}",0.16666666666666666,0.8333333333333334,14
-JBL Clip 2 Waterproof Portable Bluetooth Speaker (Teal),5.0 ,{'for'},5,"{'Great', 'speaker', 'adventures', 'grab-and-go'}",0.2,0.8,5
-JBL Clip 2 Waterproof Portable Bluetooth Speaker (Teal),5.0 ,{'ve'},7,"{'speaker', '’', '!', 'Best/smallest', 'owned', 'I'}",0.14285714285714285,0.8571428571428571,7
-Ninja Professional Blender (BL610),5.0 ,set(),6,"{'customer', ',', 'service', 'Great', 'blender', 'excellent'}",0.0,1.0,6
-Ninja Professional Blender (BL610),5.0 ,set(),5,"{'-', 'HOUSING', 'ERROR', 'OPERATOR', 'BLADE'}",0.0,1.0,5
-Ninja Professional Blender (BL610),5.0 ,set(),2,"{'magic', 'Smoothie'}",0.0,1.0,2
-Ninja Professional Blender (BL610),1.0 ,set(),4,"{'exploded', 'Blender', '!', 'jar'}",0.0,1.0,4
-Ninja Professional Blender (BL610),1.0 ,{'with'},17,"{'warranty', 'usage', 'DO', ',', 'broke', 'months', '8', 'within', 'little', 'Plastic', '!', '.', 'RECOMMEND', 'Costly', 'NOT', 'Poor'}",0.058823529411764705,0.9411764705882353,18
+product_name,processed_WC,initial_WC,meaning_percent,review_score,stop_words,meaningful_words,stop_percent
+Samsung Galaxy J7 - No Contract Phone - White - (Boost Mobile)(Carrier locked phone ),8,8,0.75,5.0 ,"{'with', 'have'}","{'owned', '!', 'Best', 'I', 'Boostmobile', 'phone'}",0.25
+Samsung Galaxy J7 - No Contract Phone - White - (Boost Mobile)(Carrier locked phone ),6,6,0.6666666666666666,4.0 ,"{'for', 'the'}","{'Very', 'money', 'phone', 'good'}",0.3333333333333333
+Samsung Galaxy J7 - No Contract Phone - White - (Boost Mobile)(Carrier locked phone ),11,11,0.7272727272727273,5.0 ,"{'with', 'in', 'it'}","{'!', '.', 'GORGEOUS', 'I', '...', 'phone', 'love', ""'m""}",0.2727272727272727
+Samsung Galaxy J7 - No Contract Phone - White - (Boost Mobile)(Carrier locked phone ),3,3,0.6666666666666666,5.0 ,{'the'},"{'Love', 'phone'}",0.3333333333333333
+Samsung Galaxy J7 - No Contract Phone - White - (Boost Mobile)(Carrier locked phone ),3,3,0.6666666666666666,5.0 ,{'it'},"{'Worth', '.'}",0.3333333333333333
+Samsung Galaxy J7 - No Contract Phone - White - (Boost Mobile)(Carrier locked phone ),8,8,0.625,5.0 ,"{'a', 'for', 'is'}","{'Mobile', 'great', 'This', 'phone', 'Boost'}",0.375
+Motorola Moto G (3rd Generation) No Contract Phone (Virgin Mobile) - Retail Packaging,12,12,1.0,5.0 ,set(),"{'Rugged', 'Buyers', 'Design', '&', 'Weatherproof', 'Users', 'For', '-', 'Excellent', 'Intermediate', 'Value-Conscious', 'Phone'}",0.0
+Motorola Moto G (3rd Generation) No Contract Phone (Virgin Mobile) - Retail Packaging,6,6,0.8333333333333334,5.0 ,{'for'},"{'Very', '.', 'Virgin', 'Mobile', 'good'}",0.16666666666666666
+Motorola Moto G (3rd Generation) No Contract Phone (Virgin Mobile) - Retail Packaging,11,11,0.6363636363636364,4.0 ,"{'over', 'a', 'the', 'is'}","{'Moto', 'The', 'G', 'S2', 'significant', 'upgrade', 'Galaxy'}",0.36363636363636365
+"Viviscal Extra Strength Hair Nutrient Tablets, 90-Tablets",3,3,1.0,4.0 ,set(),"{'Like', 'Viviscal', 'I'}",0.0
+"Viviscal Extra Strength Hair Nutrient Tablets, 90-Tablets",4,4,0.75,1.0 ,{'of'},"{'Suspicious', 'Product', 'Authenticity'}",0.25
+"Viviscal Extra Strength Hair Nutrient Tablets, 90-Tablets",13,14,1.0,1.0 ,set(),"{'NOT', 'OFF', 'RIP', 'SOLD', '.', 'BY', 'OTHER', 'ITEM', 'VIVISCAL', 'RETAILERS', 'SAME', 'THE', 'OFFICIAL'}",0.0
+"Viviscal Extra Strength Hair Nutrient Tablets, 90-Tablets",10,10,0.7,1.0 ,"{'does', 'on', 'this'}","{'REVIEWS', ""n't"", 'product', ';', 'page', 'FAKE', 'work'}",0.3
+"Viviscal Extra Strength Hair Nutrient Tablets, 90-Tablets",15,15,0.5333333333333333,3.0 ,"{'you', 'out', 'for', 'if', 'are', 'can', 'them'}","{'!', 'pills', 'better', 'Ireland-made', '.', 'secure', 'Watch', 'breakouts'}",0.4666666666666667
+"Viviscal Extra Strength Hair Nutrient Tablets, 90-Tablets",3,3,1.0,1.0 ,set(),"{'Pills', 'Black', 'turned'}",0.0
+Cuisinart MCP193-18N MultiClad Pro Stainless Steel 3-Quart Saucepan with Cover,3,3,1.0,5.0 ,set(),"{'Cookware', 'Great', '!'}",0.0
+Cuisinart MCP193-18N MultiClad Pro Stainless Steel 3-Quart Saucepan with Cover,2,2,1.0,5.0 ,set(),"{'Great', 'Value'}",0.0
+Cuisinart MCP193-18N MultiClad Pro Stainless Steel 3-Quart Saucepan with Cover,15,15,0.5333333333333333,5.0 ,"{'this', 'few', 'down', 'to', 'and', 'a', 'it'}","{'ONE', 'IS', 'THIS', '.', 'others', 'Narrowed', '?', 'THE'}",0.4666666666666667
+The Crystal Bible,3,3,1.0,5.0 ,set(),"{'Great', '.', 'series'}",0.0
+The Crystal Bible,11,11,0.6363636363636364,1.0 ,"{'for', 'the', 'is', 'only'}","{'kindle', '.', 'The', '...', 'edition', 'This', 'review'}",0.36363636363636365
+The Crystal Bible,3,3,1.0,2.0 ,set(),"{'pictures', '!', 'No'}",0.0
+The Crystal Bible,11,11,0.45454545454545453,5.0 ,"{'the', 'of', 'am', 'and', 'just', 'into'}","{'venturing', 'realm', '...', 'I', 'energy'}",0.5454545454545454
+The Crystal Bible,6,6,0.8333333333333334,5.0 ,{'is'},"{'truly', '!', 'This', 'really', 'awesome'}",0.16666666666666666
+The Crystal Bible,2,2,1.0,5.0 ,set(),"{'Pictures', 'Beautiful'}",0.0
+The Crystal Bible,4,4,0.75,3.0 ,{'than'},"{'expected', '.', 'Smaller'}",0.25
+The Crystal Bible,6,6,0.8333333333333334,1.0 ,{'at'},"{',', 'Mediocre', 'grossly', 'incomplete', 'best'}",0.16666666666666666
+DYMO LabelManager 280 Rechargeable Hand-Held Label Maker (1815990),8,8,0.875,4.0 ,{'with'},"{'QWERTY', 'Nice', 'keyboard', '.', 'label', 'handheld', 'printer'}",0.125
+DYMO LabelManager 280 Rechargeable Hand-Held Label Maker (1815990),3,3,1.0,5.0 ,set(),"{'!', 'I', 'promise'}",0.0
+DYMO LabelManager 280 Rechargeable Hand-Held Label Maker (1815990),6,6,1.0,5.0 ,set(),"{'guess', ""'s"", 'great', '.', 'I', 'It'}",0.0
+DYMO LabelManager 280 Rechargeable Hand-Held Label Maker (1815990),4,4,1.0,5.0 ,set(),"{'Labeling', '!', 'The', 'Master'}",0.0
+DYMO LabelManager 280 Rechargeable Hand-Held Label Maker (1815990),11,11,0.5454545454545454,5.0 ,"{'can', 'than', 'you', 'a', 'be'}","{'More', '.', 'fun', ""'d"", 'think', 'labeler'}",0.45454545454545453
+DYMO LabelManager 280 Rechargeable Hand-Held Label Maker (1815990),4,4,1.0,4.0 ,set(),"{'separately', 'sold', 'supply', 'Power'}",0.0
+"Rolodex Deep Desk Drawer Organizer, Metal Mesh, Black (22131)",2,2,1.0,5.0 ,set(),"{'Make-up', 'Caddy'}",0.0
+"Rolodex Deep Desk Drawer Organizer, Metal Mesh, Black (22131)",5,5,1.0,5.0 ,set(),"{'FAST', 'Great', 'product', ',', 'Shipping'}",0.0
+"Rolodex Deep Desk Drawer Organizer, Metal Mesh, Black (22131)",3,3,1.0,5.0 ,set(),"{'multipurpose', 'item', 'Good'}",0.0
+"Rolodex Deep Desk Drawer Organizer, Metal Mesh, Black (22131)",7,7,0.7142857142857143,5.0 ,"{'for', 'this'}","{'design', 'many', 'like', 'reasons', 'I'}",0.2857142857142857
+"Rolodex Deep Desk Drawer Organizer, Metal Mesh, Black (22131)",11,11,0.7272727272727273,5.0 ,"{'with', 'in', 'my'}","{'!', 'Find', 'I', 'Drawer', 'Desk', 'Can', 'This', 'Everything'}",0.2727272727272727
+"Rolodex Deep Desk Drawer Organizer, Metal Mesh, Black (22131)",3,3,0.6666666666666666,5.0 ,{'and'},"{'Useful', 'Sturdy'}",0.3333333333333333
+"Rolodex Deep Desk Drawer Organizer, Metal Mesh, Black (22131)",20,21,0.65,5.0 ,"{'or', 'its', 'about', 'for', 'of', 'a', 'is'}","{'packs', 'center', 'lotlke', 'would', '5', 'big', 'odds', 'hold', '...', 'pretty', 'perfect', 'post', 'note'}",0.35
+Uvex Skyper Blue Light Blocking Computer Glasses with SCT-Orange Lens (S1933X),17,17,0.5294117647058824,5.0 ,"{'with', 'few', 'the', 'just', 'your', 'be', 'so', 'a'}","{'body', 'melatonin', 'careful', '-', 'blue', 'produces', 'naturally', 'Blocks', 'things'}",0.47058823529411764
+Uvex Skyper Blue Light Blocking Computer Glasses with SCT-Orange Lens (S1933X),4,4,1.0,5.0 ,set(),"{'Nature', 'Sleep', 'Like', 'Intended'}",0.0
+Uvex Skyper Blue Light Blocking Computer Glasses with SCT-Orange Lens (S1933X),13,14,0.7692307692307693,5.0 ,"{'and', 'been', 'have'}","{'!', 'sleep', 'waking', 'problems', 'resolved', 'chronic', 'My', 'happy', 'well', 'Sleeping'}",0.23076923076923078
+Uvex Skyper Blue Light Blocking Computer Glasses with SCT-Orange Lens (S1933X),12,12,0.5833333333333334,5.0 ,"{'to', 'it', 'am', 'when', 'this'}","{'skeptical', 'like', 'Well', 'comes', 'I', 'super', 'things'}",0.4166666666666667
+EveryDrop by Whirlpool Refrigerator Water Filter 1 (Pack of 1),2,2,1.0,5.0 ,set(),"{'product', 'Good'}",0.0
+EveryDrop by Whirlpool Refrigerator Water Filter 1 (Pack of 1),20,20,0.8,1.0 ,"{'doesn', 'so', 'than', 't'}","{'anymore', '!', 'last', 'requested', 'one', 'Update', '.', 'size', 'ordered', 'Refund', ':', 'slightly', '’', 'work', 'Latest', 'different'}",0.2
+EveryDrop by Whirlpool Refrigerator Water Filter 1 (Pack of 1),8,8,0.75,1.0 ,"{'a', 'for'}","{'NOT', '!', 'W10295370', 'replacement', 'good', 'Is'}",0.25
+EveryDrop by Whirlpool Refrigerator Water Filter 1 (Pack of 1),9,9,0.4444444444444444,5.0 ,"{'that', 'have', 'we', 'the', 'by'}","{'found', 'brand', 'best', 'far'}",0.5555555555555556
+EveryDrop by Whirlpool Refrigerator Water Filter 1 (Pack of 1),7,7,0.8571428571428571,5.0 ,{'for'},"{'1', 'replacement', 'Certified', 'Filter', 'W10295370A', ':'}",0.14285714285714285
+EveryDrop by Whirlpool Refrigerator Water Filter 1 (Pack of 1),6,6,0.8333333333333334,5.0 ,{'for'},"{'Great', 'replacement', 'Whirlpool', 'filter', 'fridge'}",0.16666666666666666
+EveryDrop by Whirlpool Refrigerator Water Filter 1 (Pack of 1),3,3,1.0,1.0 ,set(),"{'STAY', '!', 'CLEAR'}",0.0
+EveryDrop by Whirlpool Refrigerator Water Filter 1 (Pack of 1),8,8,0.75,4.0 ,"{'on', 'very'}","{'whirlpool', ',', 'item', 'Good', 'good', 'works'}",0.25
+Iron Gym Total Upper Body Workout Bar,6,7,0.8333333333333334,5.0 ,{'with'},"{'!', 'toilet', 'paper', 'Works', 'great'}",0.16666666666666666
+Iron Gym Total Upper Body Workout Bar,11,11,0.7272727272727273,3.0 ,"{'in', 'and', 'only'}","{'intermittently', '.', 'The', 'Bought', 'November', 'mine', '...', 'used'}",0.2727272727272727
+Iron Gym Total Upper Body Workout Bar,6,6,1.0,4.0 ,set(),"{'--', 'WILL', 'BEWARE', 'Plastic', 'break', 'eventually'}",0.0
+Iron Gym Total Upper Body Workout Bar,8,8,0.875,4.0 ,{'but'},"{'certain', 'necessary', ',', 'pull-up', 'precautions', 'bar', 'Good'}",0.125
+Iron Gym Total Upper Body Workout Bar,9,11,0.8888888888888888,1.0 ,{'do'},"{""n't"", 'attached', ',', '.', 'pull-ups', 'stay', 'ca', 'Grips'}",0.1111111111111111
+Iron Gym Total Upper Body Workout Bar,13,13,0.6153846153846154,4.0 ,"{'not', 'before', 'this', 'it', 'your'}","{'buying', 'Check', 'product', '--', 'fit', 'molding', 'may', 'door'}",0.38461538461538464
+Iron Gym Total Upper Body Workout Bar,3,5,1.0,5.0 ,set(),"{',', 'Pull-ups', 'pull-ups'}",0.0
+Iron Gym Total Upper Body Workout Bar,7,7,0.7142857142857143,1.0 ,"{'not', 'it'}","{'safe', 'Do', '!', 'feel', 'using'}",0.2857142857142857
+"Oster Cordless Electric Wine Bottle Opener with Foil Cutter, FFP",6,7,1.0,5.0 ,set(),"{'#', 'amazeballs', 'YEARS', '...', 'later', '3'}",0.0
+"Oster Cordless Electric Wine Bottle Opener with Foil Cutter, FFP",4,4,0.5,3.0 ,"{'while', 'it'}","{'Great', 'lasted'}",0.5
+"Oster Cordless Electric Wine Bottle Opener with Foil Cutter, FFP",9,11,1.0,1.0 ,set(),"{'Do', ""n't"", '.', 'bother', 'Customer', 'Poor', 'Product', 'Service', 'Horrible'}",0.0
+"Oster Cordless Electric Wine Bottle Opener with Foil Cutter, FFP",14,15,0.8571428571428571,5.0 ,"{'the', 've'}","{'!', '17', 'Best', '.after', 'I', '$', 'manual', '...', 'ever', 'read', '’', 'spent'}",0.14285714285714285
+"Oster Cordless Electric Wine Bottle Opener with Foil Cutter, FFP",20,21,1.0,1.0 ,set(),"{'NOT', 'AMAZON', 'HONOR', 'WILL', 'PURCHASED', ',', 'SINCE', 'CHRISTMAS', '.', 'FAITH', 'A', 'GIFT', 'ITEM', 'LOSING', 'THEY', 'IN', 'DEFECTIVE', 'ON', 'AS', 'RETURN'}",0.0
+Shake Weight Dumbell,2,2,1.0,5.0 ,set(),"{'product', 'Good'}",0.0
+Shake Weight Dumbell,2,2,1.0,5.0 ,set(),"{'Amazing', '!'}",0.0
+Shake Weight Dumbell,6,6,0.6666666666666666,2.0 ,"{'your', 'no'}","{',', '...', '..head', 'Shake'}",0.3333333333333333
+Shake Weight Dumbell,5,5,0.8,5.0 ,{'this'},"{'thing', 'personally', 'I', 'love'}",0.2
+Shake Weight Dumbell,12,12,0.5833333333333334,1.0 ,"{'me', 'these', 'for', 'to', 'are'}","{'believe', 'brand', ""'s"", '...', 'It', 'hard', 'new'}",0.4166666666666667
+Shake Weight Dumbell,8,8,0.75,5.0 ,"{'a', 'you'}","{'Out', 'Does', 'Work', 'Give', 'Shake', 'Weight'}",0.25
+Shake Weight Dumbell,6,6,0.8333333333333334,5.0 ,{'the'},"{'believe', ""n't"", 'results', 'Ca', '!'}",0.16666666666666666
+Shake Weight Dumbell,3,3,1.0,5.0 ,set(),"{'workout', '!', 'GREAT'}",0.0
+Set Of Ten Finger Hands Finger Puppets,2,2,1.0,5.0 ,set(),"{'regrets', 'No'}",0.0
+Set Of Ten Finger Hands Finger Puppets,2,2,1.0,2.0 ,set(),"{'proportions', 'Wrong'}",0.0
+Set Of Ten Finger Hands Finger Puppets,17,17,0.47058823529411764,3.0 ,"{'out', 'have', 'an', 'of', 'these', 'but', 'they', 'and', 'each'}","{'quickly', 'love', '.', 'I', 'quantity', 'wear', 'hands', 'inconsistent'}",0.5294117647058824
+Set Of Ten Finger Hands Finger Puppets,11,11,0.8181818181818182,5.0 ,"{'but', 'of'}","{'!', 'toy', ',', 'set', '10', 'awesome', 'A', 'hands', 'gag'}",0.18181818181818182
+Set Of Ten Finger Hands Finger Puppets,7,7,0.7142857142857143,5.0 ,"{'to', 'it'}","{'...', 'Hand', 'Got', 'ya', 'ta'}",0.2857142857142857
+Set Of Ten Finger Hands Finger Puppets,10,10,0.7,1.0 ,"{'do', 'a', 'not'}","{""''"", 'Dishonest', 'You', 'set', '.', 'receive', '``'}",0.3
+Set Of Ten Finger Hands Finger Puppets,10,12,0.5,5.0 ,"{'and', 'a', 'i', 'these', 'am'}","{'artist', ',', '...', 'so-called', 'LOVE'}",0.5
+Set Of Ten Finger Hands Finger Puppets,5,5,0.8,2.0 ,{'so'},"{'funny', 'creepy', 'So', ','}",0.2
+"Crosley CR8005A-TU Cruiser Portable 3-Speed Turntable, Turquoise",3,3,1.0,1.0 ,set(),"{'something', 'else', 'Buy'}",0.0
+"Crosley CR8005A-TU Cruiser Portable 3-Speed Turntable, Turquoise",10,11,1.0,1.0 ,set(),"{'THAT', 'SOUND', '.', 'JUNK', 'I', 'BLAST', 'FULL', 'HEARD', '...', 'NO'}",0.0
+"Crosley CR8005A-TU Cruiser Portable 3-Speed Turntable, Turquoise",8,8,0.75,1.0 ,"{'this', 'of'}","{'junk', 'Do', ""n't"", '!', 'buy', 'piece'}",0.25
+"Crosley CR8005A-TU Cruiser Portable 3-Speed Turntable, Turquoise",5,5,0.6,4.0 ,"{'for', 'the'}","{'price', 'Great', 'deal'}",0.4
+"Crosley CR8005A-TU Cruiser Portable 3-Speed Turntable, Turquoise",3,3,0.6666666666666666,3.0 ,{'and'},"{'Spin', 'Drop'}",0.3333333333333333
+"Crosley CR8005A-TU Cruiser Portable 3-Speed Turntable, Turquoise",3,3,0.6666666666666666,4.0 ,{'and'},"{'Cute', 'Simple'}",0.3333333333333333
+"Crosley CR8005A-TU Cruiser Portable 3-Speed Turntable, Turquoise",7,7,0.5714285714285714,2.0 ,"{'you', 'for', 'what'}","{'.', 'get', 'pay', 'You'}",0.42857142857142855
+"Crosley CR8005A-TU Cruiser Portable 3-Speed Turntable, Turquoise",13,13,0.6923076923076923,5.0 ,"{'is', 'a', 'this', 'of'}","{'lot', 'product', 'one', '.', 'I', 'reviews', 'see', 'fine', 'bad'}",0.3076923076923077
+JBL Clip 2 Waterproof Portable Bluetooth Speaker (Teal),6,6,0.6666666666666666,5.0 ,"{'in', 'a'}","{'Great', 'speaker', 'size', 'small'}",0.3333333333333333
+JBL Clip 2 Waterproof Portable Bluetooth Speaker (Teal),7,7,0.7142857142857143,5.0 ,"{'a', 'into'}","{'sound', 'Great', 'beast', 'packed', 'small'}",0.2857142857142857
+JBL Clip 2 Waterproof Portable Bluetooth Speaker (Teal),5,5,0.8,5.0 ,{'from'},"{'87', 'Surprised', 'feet', 'dropped'}",0.2
+JBL Clip 2 Waterproof Portable Bluetooth Speaker (Teal),11,11,0.7272727272727273,5.0 ,"{'and', 'a', 'had'}","{'Works', 'great', '.', 'sounds', 'I', 'link', 'sound', 'mini'}",0.2727272727272727
+JBL Clip 2 Waterproof Portable Bluetooth Speaker (Teal),11,12,0.7272727272727273,5.0 ,"{'in', 'and', 'a'}","{'Design', 'Quality', 'Best', 'Speaker', ',', 'Tiny', 'BT', 'Features'}",0.2727272727272727
+JBL Clip 2 Waterproof Portable Bluetooth Speaker (Teal),12,14,0.8333333333333334,5.0 ,"{'and', 'for'}","{'!', ',', '.', 'camping', 'backpacking', 'Sound', 'Great', 'Pound', 'hiking', 'per'}",0.16666666666666666
+JBL Clip 2 Waterproof Portable Bluetooth Speaker (Teal),5,5,0.8,5.0 ,{'for'},"{'adventures', 'Great', 'grab-and-go', 'speaker'}",0.2
+JBL Clip 2 Waterproof Portable Bluetooth Speaker (Teal),7,7,0.8571428571428571,5.0 ,{'ve'},"{'owned', '!', 'speaker', 'I', 'Best/smallest', '’'}",0.14285714285714285
+Ninja Professional Blender (BL610),6,6,1.0,5.0 ,set(),"{'service', 'excellent', 'blender', ',', 'customer', 'Great'}",0.0
+Ninja Professional Blender (BL610),5,5,1.0,5.0 ,set(),"{'HOUSING', '-', 'BLADE', 'OPERATOR', 'ERROR'}",0.0
+Ninja Professional Blender (BL610),2,2,1.0,5.0 ,set(),"{'Smoothie', 'magic'}",0.0
+Ninja Professional Blender (BL610),4,4,1.0,1.0 ,set(),"{'exploded', 'Blender', 'jar', '!'}",0.0
+Ninja Professional Blender (BL610),17,18,0.9411764705882353,1.0 ,{'with'},"{'NOT', '8', '!', 'months', 'broke', 'Costly', 'usage', ',', '.', 'warranty', 'within', 'Poor', 'Plastic', 'little', 'DO', 'RECOMMEND'}",0.058823529411764705

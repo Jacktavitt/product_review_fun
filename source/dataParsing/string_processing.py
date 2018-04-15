@@ -16,6 +16,8 @@ nltk.download('stopwords')
 nltk.download('punkt')
 # our set of stop words
 _stopWords_ = set(stopwords.words("english"))
+puncts={".",","," ","~","/","\\","^","@","'","'s","(",")"}
+_stopWords_ = _stopWords_ | puncts
 
 def buildProcessedPacket(initWC, postWC, goodWds, badWds, numGood, numBad):
     return {

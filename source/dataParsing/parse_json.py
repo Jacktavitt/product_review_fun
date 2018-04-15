@@ -7,6 +7,8 @@ nltk.download('stopwords')
 nltk.download('punkt')
 # our set of stop words
 _stopWords_ = set(stopwords.words("english"))
+puncts={".",","," ","~","/","\\","^","@","'","\"","'s","(",")","`"}
+_stopWords_ = _stopWords_ | puncts
 
 def fromJSONtoCSV():
     '''
@@ -29,8 +31,8 @@ def fromJSONtoCSV():
     awl=[]
     for product in data:
         for rev in product['reviews']:
-            awl.extend(list(set(word_tokenize(rev['review_header']))))
-            awl.extend(list(set(word_tokenize(rev['review_text']))))
+            awl.extend(list(set(word_tokenize(rev['review_header'].lower()))))
+            awl.extend(list(set(word_tokenize(rev['review_text'].lower()))))
     # these are words mentioned in more than three reviews      
     fl = { x:awl.count(x) for x in awl if awl.count(x) > 3 }
     # now, we will write the reviews to a csv file
@@ -38,7 +40,7 @@ def fromJSONtoCSV():
         csvWriter=csv.writer(file)
         isHeader = True
         for product in data:
-            product_name=product['name']
+            product_name=product['name'].lower()
             for review in product['reviews']:
                 if isHeader:
                     header = ['product_name'] + list(review.keys())

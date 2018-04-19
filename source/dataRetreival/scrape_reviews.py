@@ -121,10 +121,16 @@ def ParseReviews(asin):
 	# 		print("Retrying to get the correct response")
 
 	# return {"error":"failed to process the page","asin":asin}
-			
+
+def getBCodes():
+	with open('product_sites.dat', 'r') as file:
+		# TODO:parse list of URLS to get only the b-code
+		
+
 def ReadAsin():
 	#Add your own ASINs here 
-	AsinList = ['B01ETPUQ6E','B017HW9DEW','B01CT3K500','B009P4845K','1582972400','B009NVTE5E','B00006IAKF','B000USRG90','B00UXG4WR8','B07BWQ622V','B003YFI0O6','B073P2FRXS','B0035440R2','B00OACD9CU','B00990Z4W6','B01F24RGZK','B00NGV4506']
+	# AsinList = ['B01ETPUQ6E','B017HW9DEW','B01CT3K500','B009P4845K','1582972400','B009NVTE5E','B00006IAKF','B000USRG90','B00UXG4WR8','B07BWQ622V','B003YFI0O6','B073P2FRXS','B0035440R2','B00OACD9CU','B00990Z4W6','B01F24RGZK','B00NGV4506']
+	AsinList = getBCodes()
 	extracted_data = []
 	for asin in AsinList:
 		print("Downloading and processing page http://www.amazon.com/dp/"+asin)

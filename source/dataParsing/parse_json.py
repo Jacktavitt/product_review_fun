@@ -1,14 +1,12 @@
+'''
+this will open a JSON file returned by the data retreival script, and grab the relevant info,
+and write it to a CSV file
+'''
+
+
 import json
 import csv
-import nltk
-from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize, sent_tokenize
-nltk.download('stopwords')
-nltk.download('punkt')
-# our set of stop words
-_stopWords_ = set(stopwords.words("english"))
-puncts={".",","," ","~","/","\\","^","@","'","\"","'s","(",")","`"}
-_stopWords_ = _stopWords_ | puncts
+import random
 
 def fromJSONtoCSV():
     '''
@@ -23,31 +21,29 @@ def fromJSONtoCSV():
     with open('data.json','r') as json_file:
         data = json.loads(json_file.read())
 
-    # first, remove those items without reviews
-    for product in data:
-        if not product['reviews']:
-            data.remove(product)
-    # first, get a list of all words so we can use it for a header
-    awl=[]
-    for product in data:
-        for rev in product['reviews']:
-            awl.extend(list(set(word_tokenize(rev['review_header'].lower()))))
-            awl.extend(list(set(word_tokenize(rev['review_text'].lower()))))
-    # these are words mentioned in more than three reviews      
-    fl = { x:awl.count(x) for x in awl if awl.count(x) > 3 }
+    
+    # for product in data:
+    #     if not product['reviews']:
+    #         data.remove(product)
+    # lets create an id for each review
+    id = 42 # ;^)
     # now, we will write the reviews to a csv file
-    with open('review_data.csv','w') as file:
+    with open('parseResultFiles/review_data_raw.csv','w') as file:
         csvWriter=csv.writer(file)
         isHeader = True
         for product in data:
+            # first, remove those items without reviews
+            if not product['reviews']:
+                data.remove(product)
             product_name=product['name'].lower()
             for review in product['reviews']:
                 if isHeader:
-                    header = ['product_name'] + list(review.keys())
+                    header = ['review_id'] + ['product_name'] + list(review.keys())
                     # header = ['product_name'] + header
                     csvWriter.writerow(header)
                     isHeader = False
-                review_data = [product_name] + list(review.values())
+                review_data = [id] + [product_name] + list(review.values())
                 csvWriter.writerow(review_data)
-    return fl
+                id += 1
+    # return fl
     

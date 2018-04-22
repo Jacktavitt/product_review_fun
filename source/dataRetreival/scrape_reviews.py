@@ -2,6 +2,7 @@
 
 from lxml import html  
 import json
+import re
 import requests
 import json,re
 from dateutil import parser as dateparser
@@ -123,8 +124,27 @@ def ParseReviews(asin):
 	# return {"error":"failed to process the page","asin":asin}
 
 def getBCodes():
-	with open('product_sites.dat', 'r') as file:
-		# TODO:parse list of URLS to get only the b-code
+	'''
+	opens file with amazon urls, and sends the b-codes to the scraper function.
+	'''
+	with open('product_sites.dat', 'r') as f:
+		data = f.read()
+
+	# split into lines, and regex them. assuming all have no '/' at the end
+	lines=data.split('\n')
+	# bcode=re.compile(r'(B[a-zA-Z0-9_]+)$')
+	codeList=[]
+	for url in lines:
+		codeList.append(url[-10:])
+		# try:
+		# 	# codeList.append(bcode.match(url).group(0))
+		# 	codeList.append(re.search(r'(B[a-zA-Z0-9_]+)', url).group(0))
+		# except:
+		# 	print('{} not matched!'.format(url))
+
+	return codeList
+
+
 		
 
 def ReadAsin():

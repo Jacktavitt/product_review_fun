@@ -28,14 +28,16 @@ def ParseReviews(wholeUrl):
 	XPATH_REVIEW_SECTION_2 = '//div[@data-hook="review"]'
 
 	XPATH_AGGREGATE_RATING = '//table[@id="histogramTable"]//tr'
-	XPATH_PRODUCT_NAME = '//h1//span[@id="productTitle"]//text()'
-	XPATH_PRODUCT_PRICE  = '//span[@id="priceblock_ourprice"]/text()'
+	# XPATH_PRODUCT_NAME = '//h1//span[@id="productTitle"]//text()'
+	XPATH_PRODUCT_NAME = '//head//title//text()'
+	XPATH_PRODUCT_PRICE  = '//span[@class="a-color-price arp-price"]/text()'
+	# XPATH_PRODUCT_PRICE  = '//span[@id="priceblock_ourprice"]/text()'
 	
 	raw_product_price = parser.xpath(XPATH_PRODUCT_PRICE)
 	product_price = ''.join(raw_product_price).replace(',','')
 
 	raw_product_name = parser.xpath(XPATH_PRODUCT_NAME)
-	product_name = ''.join(raw_product_name).strip()
+	product_name = ''.join(raw_product_name).replace('Amazon.com: Customer reviews:','').strip()
 	total_ratings  = parser.xpath(XPATH_AGGREGATE_RATING)
 	# reviews = parser.xpath(XPATH_REVIEW_SECTION_1)
 	# if not reviews:
@@ -158,7 +160,7 @@ def gen500Pages():
 	urlList=[]
 	for url in lines:
 		newUrl = url[:-1]
-		for num in range(1,21):
+		for num in range(1,51):
 			urlList.append(newUrl+str(num))
 
 	return urlList

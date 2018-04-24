@@ -23,6 +23,7 @@ import os
 import random
 import csv
 import statistics as st
+import enchant
 import nltk
 from nltk.stem import PorterStemmer, WordNetLemmatizer
 from nltk.corpus import stopwords
@@ -129,26 +130,11 @@ def goThroughCSVDumb(numMostCommon):
             n[0]['__product_name__'] = n[2]
             writer.writerow(n[0])
 
-
-    # train_set = featureSet[:math.floor(len(featureSet)/2)]
-    # test_set = featureSet[math.floor(len(featureSet)/2):]
-    # classifier = nltk.NaiveBayesClassifier.train(train_set)
-    # print("Classifier accuracy percent:",(nltk.classify.accuracy(classifier, test_set))*100)
-    # classifier.show_most_informative_features(30)
-    # for cfr in _classList_:
-    #     New_classifier = SklearnClassifier(cfr())
-    #     New_classifier.train(train_set)
-    #     print('{} accuracy percent: {}'.format(str(cfr), (nltk.classify.accuracy(New_classifier, test_set))*100 ))
-        
-    # TODO: somehow remove words that are product specific, but keep a count somwhwere
-    # TODO: maybe also remove stop words to see what effect it has
-    # TODO: find a better classifier than nltk naive bayes
-    #       if the dataset is just a bunch of booleans, Should be able to use scikit learn tools
-
 def percentPOS(tagged):
     '''
-    return the percentages for NOUN, VERB, ADJ, ADV, WH-things
+    return the percentages for NOUN, VERB, ADJ, ADV, WH-things, and misspelled words
     '''
+    SC = enchant.Dict("en_US")
     totalLen = len(tagged)
     if totalLen == 0:
         return {
@@ -158,7 +144,8 @@ def percentPOS(tagged):
             'pronouns' : 0,
             'verbs' : 0,
             'adverbs' : 0,
-            'whs' : 0
+            'whs' : 0,
+            'bad_spelling':0
         }
     partsList = list(dict(tagged).values())
     percents = {
@@ -168,7 +155,8 @@ def percentPOS(tagged):
         'pronouns' : len([x for x in partsList if 'PR' in x])/totalLen,
         'verbs' : len([x for x in partsList if 'VB' in x])/totalLen,
         'adverbs' : len([x for x in partsList if 'RB' in x])/totalLen,
-        'whs' : len([x for x in partsList if 'W' in x])/totalLen
+        'whs' : len([x for x in partsList if 'W' in x])/totalLen,
+        'bad_spelling': len([x for x in partsList if not SC.check(x)])/totalLen
     }
     return percents
 
@@ -187,7 +175,7 @@ def goThroughCSVSmart():
     writer = csv.DictWriter(outputFile, fieldnames = [
         'id','product_name','type', 'rating', 'num_words',
         'stop_%', 'meaning_%', 
-        'proper_noun_%', 'noun_%', 'pronoun_%', 'verb_%', 'adverb_%', 'adjective_%', 'wh-word_%' 
+        'proper_noun_%', 'noun_%', 'pronoun_%', 'verb_%', 'adverb_%', 'adjective_%', 'wh-word_%', 'missspelled_%' 
     ] )
     writer.writeheader()
     # id, type (review or title), product_name, percent_stop, percent_meaning, %Proper noun, %noun, %pronoun, %verb, %adverb, %adj, %wh 
@@ -230,7 +218,8 @@ def goThroughCSVSmart():
                 'verb_%':revPOSpcnt['verbs'],
                 'adverb_%':revPOSpcnt['adverbs'],
                 'adjective_%':revPOSpcnt['adjectives'],
-                'wh-word_%':revPOSpcnt['whs']
+                'wh-word_%':revPOSpcnt['whs'],
+                'missspelled_%':revPOSpcnt['bad_spelling']
             }
             toWriteTit = {
                 'id':ident,
@@ -246,7 +235,8 @@ def goThroughCSVSmart():
                 'verb_%':titPOSpcnt['verbs'],
                 'adverb_%':titPOSpcnt['adverbs'],
                 'adjective_%':titPOSpcnt['adjectives'],
-                'wh-word_%':titPOSpcnt['whs']
+                'wh-word_%':titPOSpcnt['whs'],
+                'missspelled_%':titPOSpcnt['bad_spelling']
             }
             writer.writerow(toWriteRev)
             writer.writerow(toWriteTit)

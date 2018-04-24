@@ -37,9 +37,9 @@ def ParseReviews(wholeUrl):
 	raw_product_name = parser.xpath(XPATH_PRODUCT_NAME)
 	product_name = ''.join(raw_product_name).strip()
 	total_ratings  = parser.xpath(XPATH_AGGREGATE_RATING)
-	reviews = parser.xpath(XPATH_REVIEW_SECTION_1)
-	if not reviews:
-		reviews = parser.xpath(XPATH_REVIEW_SECTION_2)
+	# reviews = parser.xpath(XPATH_REVIEW_SECTION_1)
+	# if not reviews:
+	reviews = parser.xpath(XPATH_REVIEW_SECTION_2)
 	ratings_dict = {}
 	reviews_list = []
 	
@@ -61,8 +61,9 @@ def ParseReviews(wholeUrl):
 			XPATH_RATING  = './/i[@data-hook="review-star-rating"]//text()'
 			XPATH_REVIEW_HEADER = './/a[@data-hook="review-title"]//text()'
 			XPATH_REVIEW_POSTED_DATE = './/span[@data-hook="review-date"]//text()'
-			XPATH_REVIEW_TEXT_1 = './/div[@data-hook="review-collapsed"]//text()'
+			# XPATH_REVIEW_TEXT_1 = './/div[@data-hook="review-collapsed"]//text()'
 			XPATH_REVIEW_TEXT_2 = './/div//span[@data-action="columnbalancing-showfullreview"]/@data-columnbalancing-showfullreview'
+			XPATH_REVIEW_BODY = './/span[@data-hook="review-body"]//text()'
 			XPATH_REVIEW_COMMENTS = './/span[@data-hook="review-comment"]//text()'
 			XPATH_AUTHOR  = './/span[contains(@class,"profile-name")]//text()'
 			XPATH_REVIEW_TEXT_3  = './/div[contains(@id,"dpReviews")]/div/text()'
@@ -71,7 +72,7 @@ def ParseReviews(wholeUrl):
 			raw_review_rating = review.xpath(XPATH_RATING)
 			raw_review_header = review.xpath(XPATH_REVIEW_HEADER)
 			raw_review_posted_date = review.xpath(XPATH_REVIEW_POSTED_DATE)
-			raw_review_text1 = review.xpath(XPATH_REVIEW_TEXT_1)
+			raw_review_text1 = review.xpath(XPATH_REVIEW_BODY)
 			raw_review_text2 = review.xpath(XPATH_REVIEW_TEXT_2)
 			raw_review_text3 = review.xpath(XPATH_REVIEW_TEXT_3)
 

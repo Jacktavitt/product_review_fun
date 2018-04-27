@@ -92,13 +92,16 @@ def writeDumbARFF(featureSet, wordFeats):
             f.write("{},{}\n".format(vals, feat[1]))
 
 
-def goThroughCSVDumb(numMostCommon):
+def goThroughCSVDumb(numMostCommon, setIt, useTokens):
     '''
     open csv, go through to build a dataset, simply sorted by above 2 stars or not with words
     classify with nltk Naive Bayes
     '''
     reviews=[]
     allWords=[]
+    usingWhich = '_tokens.csv' if useTokens else '_lemmas.csv'
+    outFile = 'parseResultFiles/dumb_review_data_setstyle' if setIt else 'parseResultFiles/dumb_review_data'
+    outFile += usingWhich
     with open('parseResultFiles/review_data_big_raw.csv','r') as csvFile:
         csvReader=csv.DictReader(csvFile, delimiter=',')
         for row in csvReader: # row is an orderedDict type
@@ -108,7 +111,11 @@ def goThroughCSVDumb(numMostCommon):
             # allWords.extend(tok)
             # use lemma'd words instead of token
             reviews.append((lem, float(row['review_rating']), row['product_name'][:20]))
-            allWords.extend(lem)
+            data = tok if useTokens else lem
+            if setIt:
+                allWords.extend(set(data))
+            else:
+                allWords.extend(data)
 
     random.shuffle(reviews)
     # print(reviews[3])
@@ -121,14 +128,22 @@ def goThroughCSVDumb(numMostCommon):
     wf.extend(['__rating__','__product_name__'])
     # sortedWFT = sorted(wordFeats.extend(['__rating__','__product_name__']))
     # header = sortedWFT.extend(['__rating__','__product_name__'])
-    with open('parseResultFiles/dumb_review_data.csv', 'w', newline='') as outputFile:
+    # !!! This is hardcoded bullshit to try to even out the dataset !!! BAD SCIENCE!!!
+    numberFiveStars = 0
+    with open(outFile, 'w', newline='') as outputFile:
         writer = csv.DictWriter(outputFile, fieldnames = wf)
         writer.writeheader()
         for n in featureSet:
             # print("yo\n'")
             n[0]['__rating__'] = n[1]
             n[0]['__product_name__'] = n[2]
-            writer.writerow(n[0])
+            if n[1] == 5.0:
+                numberFiveStars += 1
+            if (n[1] == 5.0) and (numberFiveStars > 999):
+                # print(type(n[1]))
+                pass
+            else:
+                writer.writerow(n[0])
 
 def percentPOS(tagged):
     '''
@@ -179,6 +194,8 @@ def goThroughCSVSmart():
     ] )
     writer.writeheader()
     # id, type (review or title), product_name, percent_stop, percent_meaning, %Proper noun, %noun, %pronoun, %verb, %adverb, %adj, %wh 
+    # !!! This is hardcoded bullshit to try to even out the dataset !!! BAD SCIENCE!!!
+    numberFiveStars = 0
     with open('dataParsing/parseResultFiles/review_data_big_raw.csv','r') as csvFile:
         csvReader=csv.DictReader(csvFile, delimiter=',')
         for row in csvReader: # row is an orderedDict type
@@ -238,8 +255,13 @@ def goThroughCSVSmart():
                 'wh-word_%':titPOSpcnt['whs'],
                 'missspelled_%':titPOSpcnt['bad_spelling']
             }
-            writer.writerow(toWriteRev)
-            writer.writerow(toWriteTit)
+            if rating == 5.0:
+                numberFiveStars +=1
+            if rating == 5.0 and numberFiveStars > 1800:
+                pass
+            else:
+                writer.writerow(toWriteRev)
+                writer.writerow(toWriteTit)
     outputFile.close()
 
 
@@ -251,4 +273,8 @@ def main():
     goThroughCSVSmart()
     
 if __name__=='__main__':
-    goThroughCSVDumb(200)
+    # how many words (300 too many for weka) , use sets of words instead of lists, use token instead of lemma
+    goThroughCSVDumb(200, True, True)
+    goThroughCSVDumb(200, False, True)
+    goThroughCSVDumb(200, True, False)
+    goThroughCSVDumb(200, False, False)

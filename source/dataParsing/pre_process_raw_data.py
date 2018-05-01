@@ -19,6 +19,7 @@ List of things we want to know for each review:
 '''
 # import parse_json
 import math
+import sys
 import os
 import random
 import csv
@@ -27,10 +28,12 @@ import enchant
 import nltk
 from nltk.stem import PorterStemmer, WordNetLemmatizer
 from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize, sent_tokenize
+from nltk.tokenize import word_tokenize, sent_tokenize, RegexpTokenizer
+from nltk.util import ngrams
 from sklearn.naive_bayes import MultinomialNB, BernoulliNB
 from sklearn.linear_model import LinearRegression, LogisticRegression, SGDClassifier
 from sklearn.svm import SVC, LinearSVC, NuSVC
+from collections import Counter
 # nltk.download('stopwords')
 # nltk.download('punkt')
 # our set of stop words
@@ -41,9 +44,15 @@ def cleanAndStem(someString):
     # ps = PorterStemmer()
     lzr = WordNetLemmatizer()
     # tokenize it!
-    toked = word_tokenize(someString)
-    # lowercase it!
-    toked = [x.lower() for x in toked]
+    # trying regex tokenizer to remove annoying shit
+    tokener = RegexpTokenizer("[a-zA-Z'`]+")
+    toked = tokener.tokenize(someString)
+    # this will remove poorly-used apostophes and backtics from the mix
+    for n in range(len(toked)):
+        toked[n]=toked[n].lower().replace("'",'').replace("`",'')
+    # toked = word_tokenize(someString)
+    # # lowercase it!
+    # toked = [x.lower() for x in toked]
     # make stems!
     # stemmed = [ps.stem(x) for x in toked]
     # doing lemmas instead 
@@ -71,6 +80,7 @@ def getStopAndMeaningWordPercent(stringList):
 
 # def getPartsOfSpeech(stringList):
     
+# featureSet=[(dumbGetFeatures( review, wordFeats ), rating, ident) for (review, rating, ident) in reviews]
 def dumbGetFeatures(stringList,wordFeats):
     words = set(stringList)
     feats={}
@@ -91,6 +101,54 @@ def writeDumbARFF(featureSet, wordFeats):
             vals=[feat[0][x] for x in feat[0]]
             f.write("{},{}\n".format(vals, feat[1]))
 
+def goThroughCSVBigram(numMostCommon, setIt):
+    '''
+    open csv, go through to build a dataset, simply sorted by above 2 stars or not with words
+    classify with nltk Naive Bayes
+    '''
+    reviews=[]
+    allBigrams=[]
+    folder= 'parseResultFiles/'
+    outFile = '_bigram_review_data_setstyle.csv' if setIt else '_bigram_review_data.csv'
+    outFile = folder+str(numMostCommon)+outFile
+
+    with open('parseResultFiles/review_data_big_raw.csv','r') as csvFile:
+        csvReader=csv.DictReader(csvFile, delimiter=',')
+        for row in csvReader: # row is an orderedDict type
+            # this will remove numbers and other characters
+            tokener = RegexpTokenizer("[a-zA-Z'`]+")
+            toked=tokener.tokenize(row['review_text'])
+            # this will remove poorly-used apostophes and backtics from the mix
+            for n in range(len(toked)):
+                toked[n]=toked[n].lower().replace("'",'').replace("`",'')
+            # now lets do some bigram action
+            b_list = list(ngrams(toked,2, pad_right = True))
+            # add bigram list and other info to review data
+            reviews.append((b_list, float(row['review_rating']), row['product_name'][:20]))
+            # add bigram list to allData
+            if setIt:
+                allBigrams.extend(set(b_list))
+            else:
+                allBigrams.extend(b_list)
+
+    random.shuffle(reviews)
+    # now make frequency list of bigrams
+    biGramFD = Counter(allBigrams)
+    print(biGramFD.most_common(25))
+    # now create a header for the resulting csv file
+    biGramFeats = list(dict(biGramFD.most_common(numMostCommon)).keys())
+    # same as before, i think
+    featureSet = [(dumbGetFeatures(review,biGramFeats),rating, ident) for (review, rating, ident) in reviews]
+    bGf = list(biGramFeats)
+    bGf.extend(['__rating__','__product_name__'])
+    with open(outFile, 'w', newline='') as outputFile:
+        writer = csv.DictWriter(outputFile, fieldnames = bGf)
+        writer.writeheader()
+        for n in featureSet:
+            n[0]['__rating__'] = n[1]
+            n[0]['__product_name__'] = n[2]
+            writer.writerow(n[0])
+
 
 def goThroughCSVDumb(numMostCommon, setIt, useTokens):
     '''
@@ -99,9 +157,10 @@ def goThroughCSVDumb(numMostCommon, setIt, useTokens):
     '''
     reviews=[]
     allWords=[]
+    folder = 'parseResultFiles/'
     usingWhich = '_tokens.csv' if useTokens else '_lemmas.csv'
-    outFile = 'parseResultFiles/dumb_review_data_setstyle' if setIt else 'parseResultFiles/dumb_review_data'
-    outFile += usingWhich
+    outFile = '_dumb_review_data_setstyle' if setIt else '_dumb_review_data'
+    outFile = folder + str(numMostCommon)+outFile+ usingWhich
     with open('parseResultFiles/review_data_big_raw.csv','r') as csvFile:
         csvReader=csv.DictReader(csvFile, delimiter=',')
         for row in csvReader: # row is an orderedDict type
@@ -121,7 +180,7 @@ def goThroughCSVDumb(numMostCommon, setIt, useTokens):
     # print(reviews[3])
     allWordsFD=nltk.FreqDist(allWords)
     print(allWordsFD.most_common(25))
-    wordFeats = list(allWordsFD.keys())[:numMostCommon]
+    wordFeats = list(dict(allWordsFD.most_common(numMostCommon)).keys())
     featureSet=[(dumbGetFeatures( review, wordFeats ), rating, ident) for (review, rating, ident) in reviews]
 
     wf=list(wordFeats)
@@ -273,8 +332,12 @@ def main():
     goThroughCSVSmart()
     
 if __name__=='__main__':
+    if len(sys.argv) != 4:
+        print("usage:<NUMCOM> <USESET> <USETOK> how many common words, true to use set instead of list, yes to use token insteak of lemma")
+        exit()
+    numCom = int(sys.argv[1])
+    useSet = bool(sys.argv[2])
+    useTok = bool(sys.argv[3])
+    goThroughCSVBigram(numCom,useSet)
     # how many words (300 too many for weka) , use sets of words instead of lists, use token instead of lemma
-    goThroughCSVDumb(200, True, True)
-    goThroughCSVDumb(200, False, True)
-    goThroughCSVDumb(200, True, False)
-    goThroughCSVDumb(200, False, False)
+    goThroughCSVDumb(numCom, useSet, useTok)

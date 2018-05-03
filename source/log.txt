@@ -1,0 +1,82 @@
+4-30-18:
+Notes on failing the robot testfor web scraping amazon
+-wanted more neg reviews and more data
+
+
+5-2-18:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+results of select attributes for bigram data:
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 1390
+	Merit of best subset found:    0.02 
+
+Attribute Subset Evaluator (supervised, Class (nominal): 202 good_or_bad):
+	CFS Subset Evaluator
+	Including locally predictive attributes
+
+Selected attributes: 14,31,38,44,48,55,68,124,134,201 : 10
+                     ('broke', 'it')
+                     ('bits', 'of')
+                     ('it', 'daily')
+                     ('have', 'for')
+                     ('played', 'it')
+                     ('way', 'overpriced')
+                     ('and', 'stopped')
+                     ('customer', 'service')
+                     ('works', 'great')
+                     __product_name__
+
+removed all but these using WEKA filter -> unsupervised -> remove.
+saved as bigram_review_data_goodbad_selected.arff
+
+FULL DATA has 1760 bad reviews and 5575 good reviews. To even them up, I went to EDIT -> and ordered by the rating attribute, High on top.
+next, PreProcess -> Instance -> RemovePercentage.
+results for Select Attributes:
+
+    === Attribute Selection on all input data ===
+
+    Search Method:
+        Best first.
+        Start set: no attributes
+        Search direction: forward
+        Stale search after 5 node expansions
+        Total number of subsets evaluated: 1392
+        Merit of best subset found:    0.029
+
+    Attribute Subset Evaluator (supervised, Class (nominal): 202 good_or_bad):
+        CFS Subset Evaluator
+        Including locally predictive attributes
+
+    Selected attributes: 44,48,53,54,55,103,113,124,134,192,201 : 11
+                        ('have', 'for')
+                        ('played', 'it')
+                        ('glasses', 'the')
+                        ('smell', 'like')
+                        ('way', 'overpriced')
+                        ('normal', 'use')
+                        ('and', 'take')
+                        ('customer', 'service')
+                        ('works', 'great')
+                        ('im', 'ready')
+                        __product_name__
+
+    saved as bigram_review_data_goodbad_1760each_Selected.arff .
+
+    Worried that I now do not have enough data, I am tring to scrape reviews about 3 to 3.5 star average reviewd coffee makers. The similarity in the products may skew the results. 
+
+    I changed my 'User Agent' string in parse_reviews_big.py. This allowed me tro grab some data for the coffee makers,
+    picking the first 50 pages of good and bad reviews.
+    attempting to do this with the full product list is proving difficult.
+    At first, I ran into an exception from the lxml library at the second to last item (DAMNIT!) that caused the script to die.
+    I removed that item and tried running it from ipython to grab the exteracted data if it failed again.
+    HOWEVER, the exception i ran into this time cause python to QUIT (DOUBLE DAMN!)
+
+    so, i re-wrote my scrape_python_big to catch and print exceptions, to hopefully prevent this behavior.
+
+    In the mean time, working on the neural net thing with the coffee maker data.

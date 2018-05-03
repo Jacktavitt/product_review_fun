@@ -7,6 +7,7 @@ import requests
 import json,re
 from dateutil import parser as dateparser
 from time import sleep
+import sys
 
 # def ParseReviews(asin):
 def ParseReviews(wholeUrl):
@@ -18,7 +19,8 @@ def ParseReviews(wholeUrl):
 	amazon_url = wholeUrl
 	# Add some recent user agent to prevent amazon from blocking the request 
 	# Find some chrome user agent strings  here https://udger.com/resources/ua-list/browser-detail?browser=Chrome
-	headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'}
+	# headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'}
+	headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0'}
 	page = requests.get(amazon_url,headers = headers,verify=False)
 	page_response = page.text
 
@@ -150,8 +152,8 @@ def getBCodes():
 
 	return codeList
 
-def gen500Pages():
-	with open('product_review_all.dat', 'r') as f:
+def gen500Pages(filename, numPages):
+	with open(filename, 'r') as f:
 		data = f.read()
 
 	# split into lines, and regex them. assuming all have no '/' at the end
@@ -160,18 +162,18 @@ def gen500Pages():
 	urlList=[]
 	for url in lines:
 		newUrl = url[:-1]
-		for num in range(1,51):
+		for num in range(1,numPages+1):
 			urlList.append(newUrl+str(num))
 
 	return urlList
 
 		
 
-def ReadAsin():
+def ReadAsin(listfile, outputname, numPages):
 	#Add your own ASINs here 
 	# AsinList = ['B01ETPUQ6E','B017HW9DEW','B01CT3K500','B009P4845K','1582972400','B009NVTE5E','B00006IAKF','B000USRG90','B00UXG4WR8','B07BWQ622V','B003YFI0O6','B073P2FRXS','B0035440R2','B00OACD9CU','B00990Z4W6','B01F24RGZK','B00NGV4506']
 	# AsinList = getBCodes()
-	UrlList = gen500Pages()
+	UrlList = gen500Pages(listfile, numPages)
 	extracted_data = []
 	# for asin in AsinList:
 	# 	print("Downloading and processing page http://www.amazon.com/dp/"+asin)
@@ -179,10 +181,18 @@ def ReadAsin():
 	# 	sleep(1)
 	for url in UrlList:
 		print("Downloading and processing page "+url)
-		extracted_data.append(ParseReviews(url))
-		# sleep(1)
-	with open('data_huge.json','w') as f:
-		json.dump(extracted_data,f,indent=4)
+		try:
+			extracted_data.append(ParseReviews(url))
+		except Exception as e:
+			print(e)
+		with open(outputname,'w') as f:
+			json.dump(extracted_data,f,indent=4)
+		sleep(3)
+	# with open(outputname,'w') as f:
+	# 	json.dump(extracted_data,f,indent=4)
 
 if __name__ == '__main__':
-	ReadAsin()
+	if len(sys.argv) != 4:
+		print("usage:<listfile> <outputfile> <num pages to scrape through>")
+		exit()
+	ReadAsin(sys.argv[1],sys.argv[2], int(sys.argv[3]))

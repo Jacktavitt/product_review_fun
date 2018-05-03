@@ -6,9 +6,10 @@ and write it to a CSV file
 
 import json
 import csv
+import sys
 import random
 
-def fromJSONtoCSV():
+def fromJSONtoCSV(jsonFile, outputCSV):
     '''
     data is a list of dictionaries.
     each item in list is a product.
@@ -18,7 +19,7 @@ def fromJSONtoCSV():
             dict_keys(['review_author', 'review_comment_count', 'review_header', 'review_posted_date', 'review_rating', 'review_text'])
 
     '''
-    with open('dataRetreival/data_huge.json','r') as json_file:
+    with open(jsonFile,'r') as json_file:
         data = json.loads(json_file.read())
 
     
@@ -26,9 +27,9 @@ def fromJSONtoCSV():
     #     if not product['reviews']:
     #         data.remove(product)
     # lets create an id for each review
-    id = 42 # ;^)
+    iD = 42 # ;^)
     # now, we will write the reviews to a csv file
-    with open('dataParsing/parseResultFiles/review_data_big_raw.csv','w') as file:
+    with open(outputCSV,'w') as file:
         csvWriter=csv.writer(file)
         isHeader = True
         for product in data:
@@ -37,17 +38,25 @@ def fromJSONtoCSV():
                 data.remove(product)
             else:
                 product_name=product['name'].lower()
+                try :product_price = float(product['price'].replace('$',''))
+                except Exception as e:
+                    print(e)
                 for review in product['reviews']:
                     if isHeader:
-                        header = ['review_id'] + ['product_name'] + list(review.keys())
+                        header = ['review_id'] + ['product_name'] + ['product_price'] + list(review.keys())
                         # header = ['product_name'] + header
                         csvWriter.writerow(header)
                         isHeader = False
-                    review_data = [id] + [product_name] + list(review.values())
+                    review_data = [iD] + [product_name] + [product_price] + list(review.values())
                     try:
                         csvWriter.writerow(review_data)
                     except Exception as e:
                         print(e, product_name)
-                    id += 1
+                    iD += 1
     # return fl
     
+if __name__=="__main__":
+    if len(sys.argv) != 3:
+        print("usage:<jsonFile> <outputCSVfile>")
+        exit()
+    fromJSONtoCSV(sys.argv[1],sys.argv[2])

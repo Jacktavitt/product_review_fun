@@ -1,0 +1,4 @@
+# this does not run the initial data scraping part yet
+
+python pre_process_raw_data.py
+csv2arff "parseResultFiles\smart_review_data.csv" "parseResultFiles\smart_review_data.arff"

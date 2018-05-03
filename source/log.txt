@@ -80,3 +80,20 @@ results for Select Attributes:
     so, i re-wrote my scrape_python_big to catch and print exceptions, to hopefully prevent this behavior.
 
     In the mean time, working on the neural net thing with the coffee maker data.
+    thanks to https://github.com/ChunML/text-generator and https://machinelearningmastery.com/text-generation-lstm-recurrent-neural-networks-python-keras/
+    option to remove weird characters: 
+            re.sub('[^A-Za-z0-9.,]+', '', str(set(good)))    
+    
+5-3-18
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    trying to get 60 pages of goof and 60 bad reviews for 20 different products.
+    needed to make us of try: except: statements to prevent the program from exiting before writing the data.
+    also, as a fail-safe, the file is written each time a new request is made, so no matter if it blows up, there will still be some data there
+    (learned the ahrd way after 2 hour run died on the last item)
+
+    good thing i did, as i periodically run into error : line 3276: b'Element script embeds close tag' (line 3276)
+
+    which caused python to crash. a possible reason ( i think) is that there are not enough pages, so I am running into 404 errors.
+    possible fix:
+        instead of one huge list of urls, create a list of lists, each list being a specific product.
+        when I catch and error, break from that list and move on the the next one.

@@ -101,18 +101,19 @@ def writeDumbARFF(featureSet, wordFeats):
             vals=[feat[0][x] for x in feat[0]]
             f.write("{},{}\n".format(vals, feat[1]))
 
-def goThroughCSVBigram(numMostCommon, setIt):
+def goThroughCSVBigram(numMostCommon, setIt, initialCSVfile, outFile):
     '''
     open csv, go through to build a dataset, simply sorted by above 2 stars or not with words
     classify with nltk Naive Bayes
     '''
     reviews=[]
     allBigrams=[]
-    folder= 'parseResultFiles/'
-    outFile = '_bigram_review_data_setstyle.csv' if setIt else '_bigram_review_data.csv'
-    outFile = folder+str(numMostCommon)+outFile
+    # folder= 'parseResultFiles/'
+    # outFile = '_bigram_review_data_setstyle.csv' if setIt else '_bigram_review_data.csv'
+    # outFile = folder+str(numMostCommon)+outFile
+    outFile = outFile[:-4] + '_bigram' +outFile[-4:]
 
-    with open('parseResultFiles/review_data_big_raw.csv','r') as csvFile:
+    with open(initialCSVfile,'r') as csvFile:
         csvReader=csv.DictReader(csvFile, delimiter=',')
         for row in csvReader: # row is an orderedDict type
             # this will remove numbers and other characters
@@ -150,18 +151,19 @@ def goThroughCSVBigram(numMostCommon, setIt):
             writer.writerow(n[0])
 
 
-def goThroughCSVDumb(numMostCommon, setIt, useTokens):
+def goThroughCSVDumb(numMostCommon, setIt, useTokens, initialCSVfile, outFile):
     '''
     open csv, go through to build a dataset, simply sorted by above 2 stars or not with words
     classify with nltk Naive Bayes
     '''
     reviews=[]
     allWords=[]
-    folder = 'parseResultFiles/'
-    usingWhich = '_tokens.csv' if useTokens else '_lemmas.csv'
-    outFile = '_dumb_review_data_setstyle' if setIt else '_dumb_review_data'
-    outFile = folder + str(numMostCommon)+outFile+ usingWhich
-    with open('parseResultFiles/review_data_big_raw.csv','r') as csvFile:
+    outFile = outFile[:-4] + '_dumb' +outFile[-4:]
+    # folder = 'parseResultFiles/'
+    # usingWhich = '_tokens.csv' if useTokens else '_lemmas.csv'
+    # outFile = '_dumb_review_data_setstyle' if setIt else '_dumb_review_data'
+    # outFile = folder + str(numMostCommon)+outFile+ usingWhich
+    with open(initialCSVfile,'r') as csvFile:
         csvReader=csv.DictReader(csvFile, delimiter=',')
         for row in csvReader: # row is an orderedDict type
             lem, tok = cleanAndStem(row['review_text'])
@@ -332,12 +334,13 @@ def main():
     goThroughCSVSmart()
     
 if __name__=='__main__':
-    if len(sys.argv) != 4:
-        print("usage:<NUMCOM> <USESET> <USETOK> how many common words, true to use set instead of list, yes to use token insteak of lemma")
+    if len(sys.argv) != 6:
+        print("usage:<NUMCOM> <USESET> <USETOK> <INITIAL CSV FILE> <OUTPUT FILE>")
         exit()
     numCom = int(sys.argv[1])
     useSet = bool(sys.argv[2])
     useTok = bool(sys.argv[3])
-    goThroughCSVBigram(numCom,useSet)
+    # sample call: python pre_process_raw_data.py 200 False True big_data.csv big_data_parsed.csv
+    goThroughCSVBigram(numCom,useSet,sys.argv[4], sys.argv[5])
     # how many words (300 too many for weka) , use sets of words instead of lists, use token instead of lemma
-    goThroughCSVDumb(numCom, useSet, useTok)
+    goThroughCSVDumb(numCom, useSet, useTok,sys.argv[4], sys.argv[5])

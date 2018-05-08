@@ -1,0 +1,51 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.CfsSubsetEval -P 1 -E 1
+Search:       weka.attributeSelection.BestFirst -D 1 -N 10
+Relation:     big_attempt_parsed_bigram-weka.filters.unsupervised.attribute.AddExpression-Eifelse(a201 > 3.0,5.0,1.0)-Ngood_bad-weka.filters.unsupervised.attribute.Discretize-B2-M-1.0-Rlast-unset-class-temporarily-weka.filters.unsupervised.instance.RemovePercentage-P17.0-weka.filters.unsupervised.attribute.Remove-R201-weka.filters.unsupervised.attribute.Remove-R201
+Instances:    10197
+Attributes:   201
+              [list of attributes omitted]
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 10 node expansions
+	Total number of subsets evaluated: 5929
+	Merit of best subset found:    0.083
+
+Attribute Subset Evaluator (supervised, Class (nominal): 201 good_bad):
+	CFS Subset Evaluator
+	Including locally predictive attributes
+
+Selected attributes: 12,19,25,30,31,37,75,79,89,92,97,122,124,127,153,154,157,159,173,175,176,197,200 : 23
+                     ('i', 'love')
+                     ('love', 'this')
+                     ('in', 'the')
+                     ('at', 'all')
+                     ('did', 'not')
+                     ('does', 'not')
+                     ('love', 'it')
+                     ('would', 'not')
+                     ('the', 'box')
+                     ('great', None)
+                     ('do', 'not')
+                     ('the', 'product')
+                     ('the', 'first')
+                     ('for', 'my')
+                     ('great', 'product')
+                     ('will', 'not')
+                     ('to', 'return')
+                     ('easy', 'to')
+                     ('i', 'thought')
+                     ('works', 'great')
+                     ('of', 'the')
+                     ('the', 'same')
+                     ('not', 'work')
+

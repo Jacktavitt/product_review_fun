@@ -1,0 +1,744 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     huge_each_goodbad_smart-weka.filters.unsupervised.attribute.AddExpression-Eifelse(a4 >3.0, 5.0,1.0)-Ngood_or_bad-weka.filters.unsupervised.attribute.Discretize-Y-B2-M-1.0-Rlast-unset-class-temporarily-weka.filters.unsupervised.attribute.Remove-R4-weka.filters.unsupervised.instance.RemoveRange-R1-4187-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    20333
+Attributes:   13
+              type
+              num_words
+              stop_%
+              meaning_%
+              proper_noun_%
+              noun_%
+              pronoun_%
+              verb_%
+              adverb_%
+              adjective_%
+              wh-word_%
+              missspelled_%
+              good_or_bad
+Test mode:    10-fold cross-validation
+Time taken to build model: 18.48 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       12883               63.3601 %
+Incorrectly Classified Instances      7450               36.6399 %
+Kappa statistic                          0.2672
+Mean absolute error                      0.447 
+Root mean squared error                  0.4788
+Relative absolute error                 89.4028 %
+Root relative squared error             95.7689 %
+Total Number of Instances            20333     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.716    0.449    0.615      0.716    0.661      0.271    0.671     0.642     'B1of2'
+                 0.551    0.284    0.660      0.551    0.601      0.271    0.671     0.666     'B2of2'
+Weighted Avg.    0.634    0.366    0.637      0.634    0.631      0.271    0.671     0.654     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 7277 2889 |    a = 'B1of2'
+ 4561 5606 |    b = 'B2of2'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     huge_each_goodbad_smart-weka.filters.unsupervised.attribute.AddExpression-Eifelse(a4 >3.0, 5.0,1.0)-Ngood_or_bad-weka.filters.unsupervised.attribute.Discretize-Y-B2-M-1.0-Rlast-unset-class-temporarily-weka.filters.unsupervised.attribute.Remove-R4-weka.filters.unsupervised.instance.RemoveRange-R1-4187-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    20333
+Attributes:   13
+              type
+              num_words
+              stop_%
+              meaning_%
+              proper_noun_%
+              noun_%
+              pronoun_%
+              verb_%
+              adverb_%
+              adjective_%
+              wh-word_%
+              missspelled_%
+              good_or_bad
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+Number of Leaves  : 	137
+
+Size of the tree : 	273
+
+
+Time taken to build model: 0.23 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       12935               63.6158 %
+Incorrectly Classified Instances      7398               36.3842 %
+Kappa statistic                          0.2723
+Mean absolute error                      0.4427
+Root mean squared error                  0.4794
+Relative absolute error                 88.5477 %
+Root relative squared error             95.8851 %
+Total Number of Instances            20333     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.672    0.400    0.627      0.672    0.649      0.273    0.671     0.641     'B1of2'
+                 0.600    0.328    0.647      0.600    0.623      0.273    0.671     0.653     'B2of2'
+Weighted Avg.    0.636    0.364    0.637      0.636    0.636      0.273    0.671     0.647     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 6834 3332 |    a = 'B1of2'
+ 4066 6101 |    b = 'B2of2'
+
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     huge_each_goodbad_smart-weka.filters.unsupervised.attribute.AddExpression-Eifelse(a4 >3.0, 5.0,1.0)-Ngood_or_bad-weka.filters.unsupervised.attribute.Discretize-Y-B2-M-1.0-Rlast-unset-class-temporarily-weka.filters.unsupervised.attribute.Remove-R4-weka.filters.unsupervised.instance.RemoveRange-R1-4187-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    20333
+Attributes:   13
+              type
+              num_words
+              stop_%
+              meaning_%
+              proper_noun_%
+              noun_%
+              pronoun_%
+              verb_%
+              adverb_%
+              adjective_%
+              wh-word_%
+              missspelled_%
+              good_or_bad
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+Size of the tree : 9843
+
+Time taken to build model: 0.08 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       12234               60.1682 %
+Incorrectly Classified Instances      8099               39.8318 %
+Kappa statistic                          0.2034
+Mean absolute error                      0.431 
+Root mean squared error                  0.5915
+Relative absolute error                 86.2072 %
+Root relative squared error            118.3074 %
+Total Number of Instances            20333     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.550    0.347    0.613      0.550    0.580      0.204    0.584     0.576     'B1of2'
+                 0.653    0.450    0.592      0.653    0.621      0.204    0.584     0.536     'B2of2'
+Weighted Avg.    0.602    0.398    0.603      0.602    0.601      0.204    0.584     0.556     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 5591 4575 |    a = 'B1of2'
+ 3524 6643 |    b = 'B2of2'
+
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.DecisionTable -X 1 -S "weka.attributeSelection.BestFirst -D 1 -N 5"
+Relation:     huge_each_goodbad_smart-weka.filters.unsupervised.attribute.AddExpression-Eifelse(a4 >3.0, 5.0,1.0)-Ngood_or_bad-weka.filters.unsupervised.attribute.Discretize-Y-B2-M-1.0-Rlast-unset-class-temporarily-weka.filters.unsupervised.attribute.Remove-R4-weka.filters.unsupervised.instance.RemoveRange-R1-4187-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    20333
+Attributes:   13
+              type
+              num_words
+              stop_%
+              meaning_%
+              proper_noun_%
+              noun_%
+              pronoun_%
+              verb_%
+              adverb_%
+              adjective_%
+              wh-word_%
+              missspelled_%
+              good_or_bad
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Table:
+
+Number of training instances: 20333
+Number of Rules : 489
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 95
+	Merit of best subset found:   63.178
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 1,2,6,7,8,9,13
+
+Time taken to build model: 1.25 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       12718               62.5486 %
+Incorrectly Classified Instances      7615               37.4514 %
+Kappa statistic                          0.251 
+Mean absolute error                      0.4515
+Root mean squared error                  0.4771
+Relative absolute error                 90.2968 %
+Root relative squared error             95.4258 %
+Total Number of Instances            20333     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.664    0.413    0.616      0.664    0.639      0.252    0.670     0.644     'B1of2'
+                 0.587    0.336    0.636      0.587    0.610      0.252    0.670     0.667     'B2of2'
+Weighted Avg.    0.625    0.375    0.626      0.625    0.625      0.252    0.670     0.655     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 6754 3412 |    a = 'B1of2'
+ 4203 5964 |    b = 'B2of2'
+
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.OneR -B 6
+Relation:     huge_each_goodbad_smart-weka.filters.unsupervised.attribute.AddExpression-Eifelse(a4 >3.0, 5.0,1.0)-Ngood_or_bad-weka.filters.unsupervised.attribute.Discretize-Y-B2-M-1.0-Rlast-unset-class-temporarily-weka.filters.unsupervised.attribute.Remove-R4-weka.filters.unsupervised.instance.RemoveRange-R1-4187-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    20333
+Attributes:   13
+              type
+              num_words
+              stop_%
+              meaning_%
+              proper_noun_%
+              noun_%
+              pronoun_%
+              verb_%
+              adverb_%
+              adjective_%
+              wh-word_%
+              missspelled_%
+              good_or_bad
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+adverb_%:
+	< 0.0038461538461538464	-> 'B2of2'
+	< 0.017392619479733817	-> 'B1of2'
+	< 0.0186932215234102	-> 'B2of2'
+	< 0.019803921568627453	-> 'B1of2'
+	< 0.020620748299319726	-> 'B2of2'
+	< 0.02259959141981614	-> 'B1of2'
+	< 0.023392612859097127	-> 'B2of2'
+	< 0.025807525807525808	-> 'B1of2'
+	< 0.02649122807017544	-> 'B2of2'
+	< 0.02850372376438727	-> 'B1of2'
+	< 0.02952069716775599	-> 'B2of2'
+	< 0.031957446808510634	-> 'B1of2'
+	< 0.03231608261777674	-> 'B2of2'
+	< 0.03525269262634631	-> 'B1of2'
+	< 0.035805860805860804	-> 'B2of2'
+	< 0.039841269841269844	-> 'B1of2'
+	< 0.040061728395061724	-> 'B2of2'
+	< 0.041217807637360514	-> 'B1of2'
+	< 0.04179141716566866	-> 'B2of2'
+	< 0.04393748143748144	-> 'B1of2'
+	< 0.0441827173347215	-> 'B2of2'
+	< 0.04711431742508324	-> 'B1of2'
+	< 0.047782126549249834	-> 'B2of2'
+	< 0.048234316576651434	-> 'B1of2'
+	< 0.0485178727114211	-> 'B2of2'
+	< 0.05310544912314824	-> 'B1of2'
+	< 0.05340794871098313	-> 'B2of2'
+	< 0.054176929392446636	-> 'B1of2'
+	< 0.05448361162646877	-> 'B2of2'
+	< 0.0549291748713714	-> 'B1of2'
+	< 0.05537518037518037	-> 'B2of2'
+	< 0.05801776531089294	-> 'B1of2'
+	< 0.05831464872944694	-> 'B2of2'
+	< 0.060646038218597584	-> 'B1of2'
+	< 0.06102215602308694	-> 'B2of2'
+	< 0.06726729153199741	-> 'B1of2'
+	< 0.0676183702499492	-> 'B2of2'
+	< 0.09499734573674765	-> 'B1of2'
+	< 0.0953897482559903	-> 'B2of2'
+	< 0.15590277777777778	-> 'B1of2'
+	< 0.1565563725490196	-> 'B2of2'
+	< 0.18065268065268064	-> 'B1of2'
+	< 0.18301435406698563	-> 'B2of2'
+	< 0.2132034632034632	-> 'B1of2'
+	< 0.21583850931677018	-> 'B2of2'
+	< 0.27525252525252525	-> 'B1of2'
+	< 0.2899159663865546	-> 'B2of2'
+	< 0.4226190476190476	-> 'B1of2'
+	< 0.5357142857142857	-> 'B2of2'
+	>= 0.5357142857142857	-> 'B1of2'
+(12212/20333 instances correct)
+
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       12021               59.1206 %
+Incorrectly Classified Instances      8312               40.8794 %
+Kappa statistic                          0.1824
+Mean absolute error                      0.4088
+Root mean squared error                  0.6394
+Relative absolute error                 81.7587 %
+Root relative squared error            127.8739 %
+Total Number of Instances            20333     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.533    0.351    0.603      0.533    0.566      0.184    0.591     0.555     'B1of2'
+                 0.649    0.467    0.582      0.649    0.614      0.184    0.591     0.553     'B2of2'
+Weighted Avg.    0.591    0.409    0.592      0.591    0.590      0.184    0.591     0.554     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 5423 4743 |    a = 'B1of2'
+ 3569 6598 |    b = 'B2of2'
+
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayesMultinomialText -P 0 -M 3.0 -norm 1.0 -lnorm 2.0 -stopwords-handler weka.core.stopwords.Null -tokenizer "weka.core.tokenizers.WordTokenizer -delimiters \" \\r\\n\\t.,;:\\\'\\\"()?!\"" -stemmer weka.core.stemmers.NullStemmer
+Relation:     huge_each_goodbad_smart-weka.filters.unsupervised.attribute.AddExpression-Eifelse(a4 >3.0, 5.0,1.0)-Ngood_or_bad-weka.filters.unsupervised.attribute.Discretize-Y-B2-M-1.0-Rlast-unset-class-temporarily-weka.filters.unsupervised.attribute.Remove-R4-weka.filters.unsupervised.instance.RemoveRange-R1-4187-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    20333
+Attributes:   13
+              type
+              num_words
+              stop_%
+              meaning_%
+              proper_noun_%
+              noun_%
+              pronoun_%
+              verb_%
+              adverb_%
+              adjective_%
+              wh-word_%
+              missspelled_%
+              good_or_bad
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Dictionary size: 0
+
+The independent frequency of a class
+--------------------------------------
+'B1of2'	10167.0
+'B2of2'	10168.0
+
+The frequency of a word given the class
+-----------------------------------------
+    'B1of2'	    'B2of2'	
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       10163               49.9828 %
+Incorrectly Classified Instances     10170               50.0172 %
+Kappa statistic                         -0.0004
+Mean absolute error                      0.5   
+Root mean squared error                  0.5   
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances            20333     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.400    0.400    0.500      0.400    0.444      -0.000   0.500     0.500     'B1of2'
+                 0.600    0.600    0.500      0.600    0.545      -0.000   0.500     0.500     'B2of2'
+Weighted Avg.    0.500    0.500    0.500      0.500    0.495      -0.000   0.500     0.500     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4064 6102 |    a = 'B1of2'
+ 4068 6099 |    b = 'B2of2'
+
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.TAN -- -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     huge_each_goodbad_smart-weka.filters.unsupervised.attribute.AddExpression-Eifelse(a4 >3.0, 5.0,1.0)-Ngood_or_bad-weka.filters.unsupervised.attribute.Discretize-Y-B2-M-1.0-Rlast-unset-class-temporarily-weka.filters.unsupervised.attribute.Remove-R4-weka.filters.unsupervised.instance.RemoveRange-R1-4187-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    20333
+Attributes:   13
+              type
+              num_words
+              stop_%
+              meaning_%
+              proper_noun_%
+              noun_%
+              pronoun_%
+              verb_%
+              adverb_%
+              adjective_%
+              wh-word_%
+              missspelled_%
+              good_or_bad
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=13 #classindex=12
+Network structure (nodes followed by parents)
+type(2): good_or_bad num_words 
+num_words(4): good_or_bad noun_% 
+stop_%(5): good_or_bad meaning_% 
+meaning_%(5): good_or_bad 
+proper_noun_%(1): good_or_bad type 
+noun_%(6): good_or_bad meaning_% 
+pronoun_%(6): good_or_bad num_words 
+verb_%(2): good_or_bad noun_% 
+adverb_%(2): good_or_bad noun_% 
+adjective_%(4): good_or_bad num_words 
+wh-word_%(3): good_or_bad num_words 
+missspelled_%(7): good_or_bad noun_% 
+good_or_bad(2): 
+LogScore Bayes: -177219.8152944661
+LogScore BDeu: -178366.88474203774
+LogScore MDL: -178427.2717738165
+LogScore ENTROPY: -176845.03170030128
+LogScore AIC: -177164.03170030128
+
+
+Time taken to build model: 0.08 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       12670               62.3125 %
+Incorrectly Classified Instances      7663               37.6875 %
+Kappa statistic                          0.2462
+Mean absolute error                      0.4469
+Root mean squared error                  0.4799
+Relative absolute error                 89.3705 %
+Root relative squared error             95.9707 %
+Total Number of Instances            20333     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.611    0.364    0.626      0.611    0.618      0.246    0.666     0.646     'B1of2'
+                 0.636    0.389    0.620      0.636    0.628      0.246    0.666     0.660     'B2of2'
+Weighted Avg.    0.623    0.377    0.623      0.623    0.623      0.246    0.666     0.653     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 6207 3959 |    a = 'B1of2'
+ 3704 6463 |    b = 'B2of2'
+
+
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     huge_each_goodbad_smart-weka.filters.unsupervised.attribute.AddExpression-Eifelse(a4 >3.0, 5.0,1.0)-Ngood_or_bad-weka.filters.unsupervised.attribute.Discretize-Y-B2-M-1.0-Rlast-unset-class-temporarily-weka.filters.unsupervised.attribute.Remove-R4-weka.filters.unsupervised.instance.RemoveRange-R1-4187-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    20333
+Attributes:   13
+              type
+              num_words
+              stop_%
+              meaning_%
+              proper_noun_%
+              noun_%
+              pronoun_%
+              verb_%
+              adverb_%
+              adjective_%
+              wh-word_%
+              missspelled_%
+              good_or_bad
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                  Class
+Attribute       'B1of2' 'B2of2'
+                  (0.5)   (0.5)
+================================
+type
+  review          5084.0  5084.0
+  title           5084.0  5085.0
+  [total]        10168.0 10169.0
+
+num_words
+  mean           26.3854  15.361
+  std. dev.      46.4275 34.0149
+  weight sum       10166   10167
+  precision       3.5325  3.5325
+
+stop_%
+  mean            0.3628  0.2854
+  std. dev.       0.2147  0.2339
+  weight sum       10166   10167
+  precision       0.0009  0.0009
+
+meaning_%
+  mean            0.6365  0.7138
+  std. dev.       0.2151  0.2346
+  weight sum       10166   10167
+  precision       0.0009  0.0009
+
+proper_noun_%
+  mean            0.0001       0
+  std. dev.       0.0018  0.0021
+  weight sum       10166   10167
+  precision       0.0054  0.0054
+
+noun_%
+  mean            0.2912  0.3316
+  std. dev.       0.2044  0.2113
+  weight sum       10166   10167
+  precision        0.001   0.001
+
+pronoun_%
+  mean            0.0391  0.0469
+  std. dev.       0.0636  0.0909
+  weight sum       10166   10167
+  precision        0.001   0.001
+
+verb_%
+  mean            0.1602  0.1245
+  std. dev.       0.1393  0.1398
+  weight sum       10166   10167
+  precision       0.0011  0.0011
+
+adverb_%
+  mean            0.0809  0.0585
+  std. dev.       0.1092  0.1034
+  weight sum       10166   10167
+  precision       0.0012  0.0012
+
+adjective_%
+  mean            0.1106  0.1392
+  std. dev.       0.1459   0.189
+  weight sum       10166   10167
+  precision       0.0012  0.0012
+
+wh-word_%
+  mean            0.0073  0.0064
+  std. dev.       0.0251  0.0262
+  weight sum       10166   10167
+  precision       0.0011  0.0011
+
+missspelled_%
+  mean            0.6263  0.6605
+  std. dev.       0.1861  0.1977
+  weight sum       10166   10167
+  precision       0.0008  0.0008
+
+
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       12198               59.9911 %
+Incorrectly Classified Instances      8135               40.0089 %
+Kappa statistic                          0.1998
+Mean absolute error                      0.4279
+Root mean squared error                  0.5217
+Relative absolute error                 85.5724 %
+Root relative squared error            104.3399 %
+Total Number of Instances            20333     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.672    0.472    0.587      0.672    0.627      0.202    0.638     0.626     'B1of2'
+                 0.528    0.328    0.617      0.528    0.569      0.202    0.638     0.618     'B2of2'
+Weighted Avg.    0.600    0.400    0.602      0.600    0.598      0.202    0.638     0.622     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 6827 3339 |    a = 'B1of2'
+ 4796 5371 |    b = 'B2of2'
+
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     huge_each_goodbad_smart-weka.filters.unsupervised.attribute.AddExpression-Eifelse(a4 >3.0, 5.0,1.0)-Ngood_or_bad-weka.filters.unsupervised.attribute.Discretize-Y-B2-M-1.0-Rlast-unset-class-temporarily-weka.filters.unsupervised.attribute.Remove-R4-weka.filters.unsupervised.instance.RemoveRange-R1-4187-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    20333
+Attributes:   13
+              type
+              num_words
+              stop_%
+              meaning_%
+              proper_noun_%
+              noun_%
+              pronoun_%
+              verb_%
+              adverb_%
+              adjective_%
+              wh-word_%
+              missspelled_%
+              good_or_bad
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                   Class
+Variable         'B1of2'
+========================
+type=title         0.661
+num_words         0.0093
+stop_%            0.6974
+meaning_%        -1.3798
+proper_noun_%     1.6952
+noun_%            0.8025
+pronoun_%        -3.6533
+verb_%            1.8825
+adverb_%          1.7233
+adjective_%      -0.4381
+wh-word_%        -3.5633
+missspelled_%     0.2265
+Intercept        -0.3553
+
+
+Odds Ratios...
+                   Class
+Variable         'B1of2'
+========================
+type=title        1.9368
+num_words         1.0093
+stop_%            2.0085
+meaning_%         0.2516
+proper_noun_%     5.4478
+noun_%            2.2311
+pronoun_%         0.0259
+verb_%            6.5696
+adverb_%           5.603
+adjective_%       0.6452
+wh-word_%         0.0283
+missspelled_%     1.2542
+
+
+Time taken to build model: 0.36 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       12754               62.7256 %
+Incorrectly Classified Instances      7579               37.2744 %
+Kappa statistic                          0.2545
+Mean absolute error                      0.4581
+Root mean squared error                  0.4781
+Relative absolute error                 91.6162 %
+Root relative squared error             95.6161 %
+Total Number of Instances            20333     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.622    0.367    0.629      0.622    0.625      0.255    0.672     0.643     'B1of2'
+                 0.633    0.378    0.626      0.633    0.629      0.255    0.672     0.663     'B2of2'
+Weighted Avg.    0.627    0.373    0.627      0.627    0.627      0.255    0.672     0.653     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 6323 3843 |    a = 'B1of2'
+ 3736 6431 |    b = 'B2of2'
+
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     huge_each_goodbad_smart-weka.filters.unsupervised.attribute.AddExpression-Eifelse(a4 >3.0, 5.0,1.0)-Ngood_or_bad-weka.filters.unsupervised.attribute.Discretize-Y-B2-M-1.0-Rlast-unset-class-temporarily-weka.filters.unsupervised.attribute.Remove-R4-weka.filters.unsupervised.instance.RemoveRange-R1-4187-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    20333
+Attributes:   13
+              type
+              num_words
+              stop_%
+              meaning_%
+              proper_noun_%
+              noun_%
+              pronoun_%
+              verb_%
+              adverb_%
+              adjective_%
+              wh-word_%
+              missspelled_%
+              good_or_bad
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       12162               59.8141 %
+Incorrectly Classified Instances      8171               40.1859 %
+Kappa statistic                          0.1963
+Mean absolute error                      0.4351
+Root mean squared error                  0.5942
+Relative absolute error                 87.0189 %
+Root relative squared error            118.8462 %
+Total Number of Instances            20333     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.548    0.352    0.609      0.548    0.577      0.197    0.584     0.579     'B1of2'
+                 0.648    0.452    0.589      0.648    0.617      0.197    0.584     0.552     'B2of2'
+Weighted Avg.    0.598    0.402    0.599      0.598    0.597      0.197    0.584     0.565     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 5575 4591 |    a = 'B1of2'
+ 3580 6587 |    b = 'B2of2'
+
+
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -1,0 +1,635 @@
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "gamer":
+
+Gamer so i have a great for a great for a great for a great 
+for a great for a great for a great for a great for a great 
+for a great for a great for a great for a great for a great 
+for a great for a great for a great for a great for a great 
+for a great product and the best price i have a great for a 
+great for a great for a great for a great for a great for a 
+great for a great for a great for a great for 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "sam":
+
+Sam smith's in the price it is great product i love this is 
+great product i love this is great for my wife loves the price 
+this is great product i love this is great product i love this 
+is great product i love this is great product i love this is 
+great product i love this is great product i love this is great 
+for my wife loves chickens and it is great product i love this 
+is great product i love this is great product i love this is 
+great product i love this is great for my 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "french":
+
+French made and the best blender that it works well i love it 
+works well i love it works well and the best blender that it 
+works well i love it works well i love it works well i love 
+it works well i love it works well i love it works well i love 
+it works well i love it works well i love it works well i love 
+it works well i love it works well i love it works well i love 
+it works well i love it works well i love it works well i love 
+
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "touches":
+
+Touches the only thing is a little thing is a little thing is 
+a little more expensive but i love it was the only thing is 
+a little thing is a little more expensive but i love it was 
+the only thing is a little thing is a little thing is a little 
+thing is a little more expensive but i love it was the only 
+thing is a little more expensive but i love it was the only 
+thing is a little thing is a little thing is a little more expensive 
+but i love it was the only 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "shopping":
+
+Shopping that it works as a bit of the only thing i've been 
+a bit of the only thing it works as a bit of the only thing 
+i've been a bit of the only thing it works as a bit of the only 
+thing i've been a bit of the only thing i've been a bit of the 
+only thing i've been a bit of the only thing i've been a bit 
+of the only thing i've been a bit of the only thing it works 
+as a bit of the only thing i've been a bit of the 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "toons":
+
+Toons in the best for the best for the best for the best for 
+the best for the best price is very easy and i am not the best 
+for the best price is that i am not the best for the best price 
+is that i am not the best for the best price is that i am not 
+the best for the best for the best price is that i am not the 
+best for the best price is that i am not the best price is that 
+i am not the best for the best i am 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "smooths":
+
+Smooths and my hair loss i bought a few months of these pans 
+i bought a few months now and my hair loss i bought a few months 
+now and my hair loss i bought a few months now and my hair loss 
+i bought a few months now and my hair loss i bought a few months 
+now and my hair loss i bought one of these pans i bought a few 
+months now and my hair loss i bought a few months now and my 
+hair loss i bought a few times but it was a few months 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "drinker":
+
+Drinker just as expected and i am not the price and i am so 
+far it was the price and i am not sure it was the price and 
+i am not sure it was the price and i am so far the price and 
+i am not sure it was the price and i am not sure it was the 
+price and i am not sure it was the price and i am not sure it 
+was the price and i am not sure it was the price and i am not 
+sure to be a lot more expensive 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "pros":
+
+Pros reasonable price i have to use it works well made a lot 
+and i have to use it works well made a lot i have to use it 
+works well made a lot i have to use it works well made a lot 
+and i have to use it works well made a lot i have to use it 
+works well made a lot i have to use it works well made a lot 
+i have to use it works well made a lot i have to use it works 
+well made a lot i have to use it 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "proactive":
+
+Proactive and it i love it i love it i love it i love it i love 
+it i love it i love it i love it i love it i love it i love 
+it i love it i love it i love it i love it i love it i love 
+it i love it i love it i love it i love it i love it i love 
+it i love it i love it i love it i love it i love it i love 
+it i love it i love it i love it i 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "shipping":
+
+Shipping and the only thing i bought this is the only thing 
+i bought this is the only thing i bought this is the only thing 
+i bought this is the only thing i bought this is the only thing 
+i bought this is the only thing i bought this is the only thing 
+i bought this is the only thing i bought this is the only thing 
+i bought this is the only thing i bought this is the only thing 
+i bought this is the only thing i bought this is the only thing 
+i bought this is 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "nice":
+
+Nice and it is the first time i love this is the first time 
+i love this is the first time i love this is the first time 
+i love this is the first time i love this is the first time 
+i love this is the first time i love this is the first time 
+i love this is the first time i love this is the first time 
+i love this is the first time i love this is the first time 
+i love this is the first time i love this is the first time 
+i love 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "loses":
+
+Loses charge well i love this is a great product i love this 
+is a great product i love this is a great product i love this 
+is a great product i love this is a great product i love this 
+is a great product i love this is a great product i love this 
+is a great product i love this is a great product i love this 
+is a great product i love this is a great product i love this 
+is a great product i love this is a great product i love this 
+is a great 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "bullsh":
+
+Bullsh t v consistency mixture one and i was the best price 
+i was the best for my daughter who wants a great for my daughter 
+who wants her birthday gift and i was the best purchase i was 
+the best for my daughter who wants a great for my daughter who 
+loves them on my daughter who wants something to the best for 
+my daughter for my daughter who wants a great product and i 
+was the best price i was the best for my daughter who wants 
+a great for my daughter who wants a great for my 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "kale":
+
+Kale carrots pear honey banana and the price is a little bit 
+small and the price is a little bit small and the price is a 
+little bit small and the price is a little bit small and the 
+price is a little bit small but i have been a little thing to 
+the price is a little bit small and the price is a little bit 
+small and the price is a little bit small and the price is a 
+little bit more expensive i have been a little bit small and 
+the price is a little bit small 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "between":
+
+Between two years i have to use and i have to use and i have 
+to use and i have to use and i have to use and i have to use 
+and i have to use and i have to use and i have to use and i 
+have to use and i have to use and i have to use and i have to 
+use and i have to use and i have to use and i have to use and 
+i have to use and i have to use and i have to use and i have 
+
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "soynds":
+
+Soynds awesome product and the only thing i have been a little 
+speaker i have been a little speaker i have been a little speaker 
+i have been a little speaker for the only thing i have been 
+a little speaker i have been a little speaker i have been a 
+little speaker i have been a little speaker i have been a little 
+speaker for the only thing i have been a little speaker i have 
+been a little speaker i have been a little speaker i have been 
+a little speaker i have been a little speaker i 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "child":
+
+Child funny gift for me and i love it is the price and i love 
+it is the price and i love it is the price and i love it is 
+the price and i love it is the price and i love it is the price 
+and i love it is the price and i love it is the price and i 
+love it is the price and i love it is the price and i love it 
+is the price and i love it is the price and i love it is the 
+price and i love it 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "fraidy":
+
+Fraidy cat has a great product and it is the only complaint 
+i am a great for my wife and it is the only complaint i am a 
+great product and it is the only complaint i am a great product 
+and it is the only complaint i am a great product and it is 
+the only complaint i am a great product and it is the only complaint 
+i am a great product and it is the only complaint i am a great 
+product and it is the only complaint i am a great product and 
+it is the 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "multiples":
+
+Multiples then i have had it is that i have had it is that i 
+have had it is that i have had it is that i have had it is that 
+i have had it is that i have had it is that i have had it is 
+that i have had it is that i have had it is that i have had 
+it is that i have had it is that i have had it is that i have 
+had it is that i have had it is that i have had it is that i 
+have 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "code":
+
+Code or not the best blender is a lot more than that it works 
+great for a lot more than that it works great product and a 
+lot more than that it works great for a lot more than that it 
+works great for a lot i am not the best blender is a lot more 
+than that it works great for a lot more than that it works great 
+for a lot more than that it works great for a lot more than 
+that it works great for a little bit more than that it works 
+great for a 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "shortened":
+
+Shortened don't get the best friend who is a bit small and it 
+is a bit small and it is a bit more expensive i love my hair 
+is a bit small and it is a bit more expensive i love my hair 
+is a bit small and it is a bit small and it is a bit small and 
+it is a bit small and it is a bit more expensive i love my hair 
+is a bit small and it is a bit small and it is a bit small but 
+it is a bit small but it 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "iike":
+
+Iike me i was the only complaint i was the only complaint i 
+was the only complaint i was the only complaint i was the only 
+complaint i was the only complaint i was the only complaint 
+clean and i was the only problem with the only complaint i was 
+the only complaint i was the only complaint i was the only complaint 
+there is the only complaint i was the only complaint i was the 
+only complaint i was the only complaint i was the only complaint 
+i was the only complaint i was looking at all the only 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "liquidating":
+
+Liquidating stock up to use a great for the best for the best 
+friend and the best for the best friend and the best price it 
+is the best price it is the best purchase again i am not the 
+best price was the best price it is the best friend and the 
+best the best for the best i am not the best friend and the 
+best for the best price was the best for the best friend and 
+the best for the best price it is the best for the best for 
+the best price it is the 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "basket":
+
+Basket halloween humor seriously makes a little bit small opening 
+is great product is great product is great product is great 
+product is great product is great product is great product is 
+great product is great product is great product is great product 
+is great product is great product is great product is great 
+product is great product is great product is great product is 
+great product is great product is great product is great product 
+is great product is great product is great product is great 
+product is great product is great product is great product is 
+great product 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "ultraspec":
+
+Ultraspec s so far as well i love the price and i love the price 
+and i love the price and i love the price and i love the price 
+and i love the price and i love the price and i love the price 
+and i love the price and i love the price and i love the price 
+and i love the price and i love the price and i love the price 
+and i love the price and i love the price and i love the price 
+and i love the price and i love the price 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "definately":
+
+Definately loud and it was a great for a great for a great for 
+a great for a great for a great for a great product is a great 
+product is a great for a great for a great for a great for a 
+great for a great for a great for a great for a great for a 
+great for a great product is a great for a great for a great 
+product is a great for a great for a great for a great for a 
+great for a great for a great for a great for a 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "bookbag":
+
+Bookbag and i love it is great product and i love it is great 
+product and i love it is great product and i love it is great 
+product and i love it is great product and i love it is great 
+product and i love it is great product and i love it is great 
+product and i love it is great product and i love it is great 
+product and i love it is great product and i love it is great 
+product and i love it is great product is great product and 
+i love it is 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "george":
+
+George from my hair loss of the best blender i am a great product 
+and the best blender i am a great for the best blender i am 
+a great product and the best blender i am a great product and 
+the best blender i am a great product and the best blender i 
+am a great product and the best blender i am a great product 
+and the best blender for the best blender i am a great product 
+and the best blender i am a great product and the best blender 
+i am a great for the best 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "ios":
+
+Ios iphone s x ultra much i have a lot of my daughter loves 
+them on the best blender i have a lot of my daughter loves them 
+on the best blender i have a lot of my daughter loves them on 
+the best blender i have a lot of my daughter loves them on the 
+best blender i have a lot of my daughter loves them on the best 
+blender i have a lot of my daughter loves them on the best blender 
+i have a lot of my daughter loves them on the best blender i 
+have a 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "packed":
+
+Packed nicely on the best purchase this product and i love this 
+product and i love this product and i love this product is a 
+great for the best price is a great for the best i love this 
+product and i love this product and i love this product and 
+i love this product and i love this product and i love this 
+product and i love this product and i love this product is a 
+great for the best price is a great for the best price is a 
+great for the best price is a great for 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "baby":
+
+Baby hairs that the best thing i love this is a lot more expensive 
+i love this is a lot more expensive i love this is a lot more 
+expensive but it was a lot more expensive i love this is a lot 
+more expensive but it was a lot more expensive i love this is 
+a lot more expensive i love this is a lot more expensive but 
+it was a lot and i love this is a lot more expensive i love 
+this is a lot i love this is a lot i love this is a lot 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "stove":
+
+Stove top is a bit small and it is a bit small and it is a bit 
+small and it is a bit small and it is a bit small and it is 
+a bit small and it is a bit more expensive but i love this product 
+is a bit small and it is a bit small and it is a bit more expensive 
+but i love this product and it is a bit small and it is a bit 
+small and it is a bit small and it is a bit small and it is 
+a bit small 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "gf":
+
+Gf it i love it i love it i love it i love it i love it i love 
+it i love it i love it i love it i love it i love it i love 
+it i love it i love it i love it i love it i love it i love 
+it i love it i love it i love it i love it i love it i love 
+it i love it i love it i love it i love it i love it i love 
+it i love it i love it i love 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "cartilege":
+
+Cartilege in my daughter loves it was looking forward as i was 
+looking to be able all of these are not sure if you have been 
+using it was looking to be able all of these are not sure if 
+you have been using it was looking to be able all of these are 
+not sure if you have been using it was looking forward as i 
+was so much i was looking to be able all of these are not sure 
+if you have been using it was looking forward as i was looking 
+to be able all of 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "loudest":
+
+Loudest setting it is great product and it is great product 
+and it is great product and it is great product is great product 
+and it is great product and it is great product and it is great 
+product and it is great product and it is great product is great 
+product and it is great product is great product and it is great 
+product and it is great product and it is great product and 
+it is great product and it is great product and it is great 
+product and it is great product is great product and it 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "complained":
+
+Complained constantly pick it is the only problem with it is 
+the only problem with it is the only problem with it is the 
+only problem with it is the only problem with it is the only 
+problem with it is the only problem with it is the only problem 
+with it is the only one for my wife and i love it is the only 
+problem with it is the only problem with it is the only problem 
+with it is the only problem with it is the only problem is the 
+only problem with it is the only 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "imitation":
+
+Imitation cork is a few months and the best thing i have a few 
+months and the best thing i have a few months and the best thing 
+i have a few months and the best thing i have a few months and 
+the best thing i have a few months and the best thing i have 
+a few months and the best thing i have a few months and the 
+best thing i have a few times a few months and the best thing 
+i have a few months and the best thing i have a few months and 
+
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "cleanup":
+
+Cleanup easier to the best blender that you are great product 
+i was a great product i was a great product i was a great product 
+i was a great product i was a great product i was a great product 
+i was a great product i was a great product i was a great product 
+i was a great product i was a great product i was a great product 
+i was a great product i was a great product i was a great product 
+i was a great product i was a great product i was a great 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "truck":
+
+Truck shows in a great product i have a great product i have 
+a great for a great product i have a great product i have a 
+great product for a great product i have a great product i have 
+a great product i have a great product i have a great for a 
+great product i have a great product i have a great product 
+i have a great product i have a great product i have a great 
+product i have a great for a great product i have a great product 
+i have a great product i 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "wesson":
+
+Wesson magnum g this for the only complaint if you have to use 
+this for the only complaint blocks the only complaint clean 
+and i love it is a great product for the only complaint there 
+was the only complaint so much better than the only complaint 
+blocks the only complaint clean and i love it is a great product 
+for the only complaint there was the only complaint was the 
+only complaint if you have to use this for the only complaint 
+blocks the only complaint so much better than the only complaint 
+if you have to use this 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "discribed":
+
+Discribed wish i have to be a great for my daughter and it is 
+the price and it is the price and it is the price and it is 
+the price and it is the price and it is the price and it is 
+the price and it is the price and it is the price and it is 
+the price and it is the price and it is the price and it is 
+the price and it is the price and it is the price and it is 
+the price and it is the price and it is the 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "approximately":
+
+Approximately months i was looking to the price i was looking 
+to the price i was looking and it is great product is great 
+product is great product is great product is great product is 
+great product is great product is great product is great product 
+is great product is great product is great product is great 
+product is great product is great product is great product is 
+great product is great product is great product is great product 
+is great product is great product is great product is great 
+product is great product is great product is great product 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "dish":
+
+Dish soap color is great product i love it was the best blender 
+is great product i love it was the best blender is great product 
+i love it was the best blender is great product i love it was 
+the best blender is great product i love it was the best blender 
+is great product i love it was the best blender is great for 
+the best blender is great product i love it was the best blender 
+is great product i love it was the best blender is great product 
+i love it was the best blender is 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "warranty":
+
+Warranty was a little speaker is the best thing i love this 
+product i love this product i love this product i love this 
+product for my daughter who has a little speaker is the best 
+thing i love this product i love this product i love this product 
+i love this product i love this product i love this product 
+i love this product i love this product i love this product 
+i love this product i love this product i love this product 
+i love this product i love this product i love this product 
+i love this 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "thanx":
+
+Thanx i love love love love love love love love love love love 
+love love love love love love love love love love love love 
+love love love love love love love love love love love them 
+on the best thing is the best thing is the best thing is the 
+best thing is the best thing i love love love love love love 
+love love love love love love love love love love love love 
+love love love love love love love love love love love love 
+them i love love love love love love love them on the 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "insides":
+
+Insides and i love the best for a lot more than the best for 
+a lot more than the best friend who has been using this purse 
+is a lot more than the best friend of these pots and i love 
+the best for a lot more than the best for a lot and i love the 
+best for a lot more than the best friend who has been using 
+this purse is a lot more than the best friend who has been using 
+this purse is a lot more than the best for a lot more than the 
+best 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "slot":
+
+Slot so easy clean and it was the best for the best price it 
+was the best for the best for the best friend who has been using 
+this product for the best for the best for the best friend who 
+has been using this product for the best for the best for the 
+best for the best for the best for the best for the best for 
+the best price it was the best friend for the best price it 
+was the best price it was the best price it was the best price 
+this product for the best 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "sticker":
+
+Sticker so far the best i love it was so far it was looking 
+at the best friend who loves this product i love it was so far 
+the best friend who wants one for the best friend who wants 
+one for the best purchase love it was so far the best i love 
+it was looking at the best price and it was looking at the best 
+friend who wants one for the best for the best price and it 
+was so far it was looking at the best friend of these glasses 
+and it was so far the 
+Training complete.
+Beginning training with 3 algorithms.
+[--------------] - 0.00%[=-------------] - 7.15%[==------------] - 14.30%[===-----------] - 21.45%[====----------] - 28.60%[=====---------] - 35.75%[======--------] - 42.90%[=======-------] - 50.05%[========------] - 57.20%[=========-----] - 64.35%[==========----] - 71.50%[===========---] - 78.65%[============--] - 85.80%[=============-] - 92.95%[==============] - 100.00%
+Generating a sentence of max. 100 words, starting with "buena":
+
+Buena i bought it is a great product for the best friend and 
+the best friend and the best price it is a great product for 
+the best for the best friend and the best friend and the best 
+for the best for the best for the best for the best for the 
+best for the best friend and the best for the best friend and 
+the best friend and the best price it is a great product for 
+the best for the best price it is a great product for the best 
+friend and the best price it is 

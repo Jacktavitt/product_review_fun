@@ -1,0 +1,1274 @@
+NaiveBayes:
+    === Run information ===
+
+    Scheme:       weka.classifiers.bayes.NaiveBayes 
+    Relation:     big_attempt_parsed_bigram-weka.filters.unsupervised.attribute.AddExpression-Eifelse(a201 > 3.0,5.0,1.0)-Ngood_bad-weka.filters.unsupervised.attribute.Discretize-B2-M-1.0-Rlast-unset-class-temporarily-weka.filters.unsupervised.instance.RemovePercentage-P17.0-weka.filters.unsupervised.attribute.Remove-R201-weka.filters.unsupervised.attribute.Remove-R201-weka.filters.unsupervised.attribute.Remove-V-R12,19,25,30,31,37,75,79,89,92,97,122,124,127,153,154,157,159,173,175,176,197,200,201
+    Instances:    10197
+    Attributes:   24
+                ('i', 'love')
+                ('love', 'this')
+                ('in', 'the')
+                ('at', 'all')
+                ('did', 'not')
+                ('does', 'not')
+                ('love', 'it')
+                ('would', 'not')
+                ('the', 'box')
+                ('great', None)
+                ('do', 'not')
+                ('the', 'product')
+                ('the', 'first')
+                ('for', 'my')
+                ('great', 'product')
+                ('will', 'not')
+                ('to', 'return')
+                ('easy', 'to')
+                ('i', 'thought')
+                ('works', 'great')
+                ('of', 'the')
+                ('the', 'same')
+                ('not', 'work')
+                good_bad
+    Test mode:    10-fold cross-validation
+
+    === Classifier model (full training set) ===
+
+    Naive Bayes Classifier
+
+                                Class
+    Attribute              '(-inf-3]'  '(3-inf)'
+                                (0.5)      (0.5)
+    =============================================
+    ('i', 'love')
+    mean                      0.0137     0.0612
+    std. dev.                 0.1667     0.2485
+    weight sum                  5096       5101
+    precision                      1          1
+
+    ('love', 'this')
+    mean                      0.0041     0.0425
+    std. dev.                 0.1667     0.2038
+    weight sum                  5096       5101
+    precision                      1          1
+
+    ('in', 'the')
+    mean                      0.1432     0.0555
+    std. dev.                 0.4516     0.2632
+    weight sum                  5096       5101
+    precision                      1          1
+
+    ('at', 'all')
+    mean                      0.0463     0.0086
+    std. dev.                 0.2193     0.1667
+    weight sum                  5096       5101
+    precision                      1          1
+
+    ('did', 'not')
+    mean                      0.0608     0.0082
+    std. dev.                 0.2684     0.1667
+    weight sum                  5096       5101
+    precision                      1          1
+
+    ('does', 'not')
+    mean                      0.0573     0.0084
+    std. dev.                 0.2557     0.1667
+    weight sum                  5096       5101
+    precision                      1          1
+
+    ('love', 'it')
+    mean                      0.0053     0.0653
+    std. dev.                 0.1667     0.2556
+    weight sum                  5096       5101
+    precision                      1          1
+
+    ('would', 'not')
+    mean                       0.031     0.0025
+    std. dev.                 0.1767     0.1667
+    weight sum                  5096       5101
+    precision                      1          1
+
+    ('the', 'box')
+    mean                      0.0302     0.0043
+    std. dev.                 0.1938     0.1667
+    weight sum                  5096       5101
+    precision                      1          1
+
+    ('great', None)
+    mean                      0.0024     0.0337
+    std. dev.                 0.1667     0.1805
+    weight sum                  5096       5101
+    precision                      1          1
+
+    ('do', 'not')
+    mean                      0.0457     0.0076
+    std. dev.                 0.2286     0.1667
+    weight sum                  5096       5101
+    precision                      1          1
+
+    ('the', 'product')
+    mean                      0.0438     0.0102
+    std. dev.                 0.2382     0.1667
+    weight sum                  5096       5101
+    precision                      1          1
+
+    ('the', 'first')
+    mean                      0.0459     0.0133
+    std. dev.                 0.2256     0.1667
+    weight sum                  5096       5101
+    precision                      1          1
+
+    ('for', 'my')
+    mean                      0.0365     0.0594
+    std. dev.                 0.1967     0.2421
+    weight sum                  5096       5101
+    precision                      1          1
+
+    ('great', 'product')
+    mean                      0.0035     0.0204
+    std. dev.                 0.1667     0.1667
+    weight sum                  5096       5101
+    precision                      1          1
+
+    ('will', 'not')
+    mean                      0.0279     0.0041
+    std. dev.                  0.175     0.1667
+    weight sum                  5096       5101
+    precision                      1          1
+
+    ('to', 'return')
+    mean                       0.032      0.001
+    std. dev.                 0.1847     0.1667
+    weight sum                  5096       5101
+    precision                      1          1
+
+    ('easy', 'to')
+    mean                      0.0149     0.0808
+    std. dev.                 0.1667     0.2973
+    weight sum                  5096       5101
+    precision                      1          1
+
+    ('i', 'thought')
+    mean                      0.0326     0.0059
+    std. dev.                  0.184     0.1667
+    weight sum                  5096       5101
+    precision                      1          1
+
+    ('works', 'great')
+    mean                      0.0051     0.0445
+    std. dev.                 0.1667     0.2062
+    weight sum                  5096       5101
+    precision                      1          1
+
+    ('of', 'the')
+    mean                      0.1866      0.061
+    std. dev.                 0.5602     0.2957
+    weight sum                  5096       5101
+    precision                      1          1
+
+    ('the', 'same')
+    mean                      0.0455     0.0088
+    std. dev.                 0.2265     0.1667
+    weight sum                  5096       5101
+    precision                      1          1
+
+    ('not', 'work')
+    mean                      0.0437     0.0017
+    std. dev.                 0.2463     0.2083
+    weight sum                  5096       5101
+    precision                   1.25       1.25
+
+
+
+    Time taken to build model: 0.01 seconds
+
+    === Stratified cross-validation ===
+    === Summary ===
+
+    Correctly Classified Instances        6729               65.99   %
+    Incorrectly Classified Instances      3468               34.01   %
+    Kappa statistic                          0.3196
+    Mean absolute error                      0.377 
+    Root mean squared error                  0.4661
+    Relative absolute error                 75.4018 %
+    Root relative squared error             93.2202 %
+    Total Number of Instances            10197     
+
+    === Detailed Accuracy By Class ===
+
+                    TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                    0.424    0.105    0.802      0.424    0.555      0.362    0.725     0.715     '(-inf-3]'
+                    0.895    0.576    0.609      0.895    0.725      0.362    0.725     0.721     '(3-inf)'
+    Weighted Avg.    0.660    0.340    0.705      0.660    0.640      0.362    0.725     0.718     
+
+    === Confusion Matrix ===
+
+        a    b   <-- classified as
+    2163 2933 |    a = '(-inf-3]'
+    535 4566 |    b = '(3-inf)'
+
+BayesNet:
+    === Run information ===
+
+    Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+    Relation:     big_attempt_parsed_bigram-weka.filters.unsupervised.attribute.AddExpression-Eifelse(a201 > 3.0,5.0,1.0)-Ngood_bad-weka.filters.unsupervised.attribute.Discretize-B2-M-1.0-Rlast-unset-class-temporarily-weka.filters.unsupervised.instance.RemovePercentage-P17.0-weka.filters.unsupervised.attribute.Remove-R201-weka.filters.unsupervised.attribute.Remove-R201-weka.filters.unsupervised.attribute.Remove-V-R12,19,25,30,31,37,75,79,89,92,97,122,124,127,153,154,157,159,173,175,176,197,200,201
+    Instances:    10197
+    Attributes:   24
+                ('i', 'love')
+                ('love', 'this')
+                ('in', 'the')
+                ('at', 'all')
+                ('did', 'not')
+                ('does', 'not')
+                ('love', 'it')
+                ('would', 'not')
+                ('the', 'box')
+                ('great', None)
+                ('do', 'not')
+                ('the', 'product')
+                ('the', 'first')
+                ('for', 'my')
+                ('great', 'product')
+                ('will', 'not')
+                ('to', 'return')
+                ('easy', 'to')
+                ('i', 'thought')
+                ('works', 'great')
+                ('of', 'the')
+                ('the', 'same')
+                ('not', 'work')
+                good_bad
+    Test mode:    10-fold cross-validation
+
+    === Classifier model (full training set) ===
+
+    Bayes Network Classifier
+    not using ADTree
+    #attributes=24 #classindex=23
+    Network structure (nodes followed by parents)
+    ('i', 'love')(2): good_bad 
+    ('love', 'this')(2): good_bad 
+    ('in', 'the')(2): good_bad 
+    ('at', 'all')(2): good_bad 
+    ('did', 'not')(2): good_bad 
+    ('does', 'not')(2): good_bad 
+    ('love', 'it')(2): good_bad 
+    ('would', 'not')(2): good_bad 
+    ('the', 'box')(2): good_bad 
+    ('great', None)(2): good_bad 
+    ('do', 'not')(2): good_bad 
+    ('the', 'product')(2): good_bad 
+    ('the', 'first')(2): good_bad 
+    ('for', 'my')(2): good_bad 
+    ('great', 'product')(2): good_bad 
+    ('will', 'not')(2): good_bad 
+    ('to', 'return')(2): good_bad 
+    ('easy', 'to')(2): good_bad 
+    ('i', 'thought')(2): good_bad 
+    ('works', 'great')(2): good_bad 
+    ('of', 'the')(2): good_bad 
+    ('the', 'same')(2): good_bad 
+    ('not', 'work')(2): good_bad 
+    good_bad(2): 
+    LogScore Bayes: -36242.89016065293
+    LogScore BDeu: -36282.4018708015
+    LogScore MDL: -36342.71681673085
+    LogScore ENTROPY: -36125.8153690293
+    LogScore AIC: -36172.8153690293
+
+
+    Time taken to build model: 0.03 seconds
+
+    === Stratified cross-validation ===
+    === Summary ===
+
+    Correctly Classified Instances        6757               66.2646 %
+    Incorrectly Classified Instances      3440               33.7354 %
+    Kappa statistic                          0.3251
+    Mean absolute error                      0.3877
+    Root mean squared error                  0.4463
+    Relative absolute error                 77.5359 %
+    Root relative squared error             89.2578 %
+    Total Number of Instances            10197     
+
+    === Detailed Accuracy By Class ===
+
+                    TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                    0.433    0.108    0.800      0.433    0.562      0.366    0.732     0.740     '(-inf-3]'
+                    0.892    0.567    0.612      0.892    0.726      0.366    0.732     0.734     '(3-inf)'
+    Weighted Avg.    0.663    0.338    0.706      0.663    0.644      0.366    0.732     0.737     
+
+    === Confusion Matrix ===
+
+        a    b   <-- classified as
+    2207 2889 |    a = '(-inf-3]'
+    551 4550 |    b = '(3-inf)'
+
+
+NaiveBayesMultinomial:
+    === Run information ===
+
+    Scheme:       weka.classifiers.bayes.NaiveBayesMultinomial 
+    Relation:     big_attempt_parsed_bigram-weka.filters.unsupervised.attribute.AddExpression-Eifelse(a201 > 3.0,5.0,1.0)-Ngood_bad-weka.filters.unsupervised.attribute.Discretize-B2-M-1.0-Rlast-unset-class-temporarily-weka.filters.unsupervised.instance.RemovePercentage-P17.0-weka.filters.unsupervised.attribute.Remove-R201-weka.filters.unsupervised.attribute.Remove-R201-weka.filters.unsupervised.attribute.Remove-V-R12,19,25,30,31,37,75,79,89,92,97,122,124,127,153,154,157,159,173,175,176,197,200,201
+    Instances:    10197
+    Attributes:   24
+                ('i', 'love')
+                ('love', 'this')
+                ('in', 'the')
+                ('at', 'all')
+                ('did', 'not')
+                ('does', 'not')
+                ('love', 'it')
+                ('would', 'not')
+                ('the', 'box')
+                ('great', None)
+                ('do', 'not')
+                ('the', 'product')
+                ('the', 'first')
+                ('for', 'my')
+                ('great', 'product')
+                ('will', 'not')
+                ('to', 'return')
+                ('easy', 'to')
+                ('i', 'thought')
+                ('works', 'great')
+                ('of', 'the')
+                ('the', 'same')
+                ('not', 'work')
+                good_bad
+    Test mode:    10-fold cross-validation
+
+    === Classifier model (full training set) ===
+
+    The independent probability of a class
+    --------------------------------------
+    '(-inf-3]'	0.49975487792920875
+    '(3-inf)'	0.5002451220707913
+
+    The probability of a word given the class
+    -----------------------------------------
+        '(-inf-3]'	'(3-inf)'	
+    ('i', 'love')	0.014600041126876408	0.10006393861892582	
+    ('love', 'this')	0.004523956405511001	0.069693094629156	
+    ('in', 'the')	0.15031873329220646	0.0907928388746803	
+    ('at', 'all')	0.0487353485502776	0.014386189258312013	
+    ('did', 'not')	0.06395229282336005	0.013746803069053709	
+    ('does', 'not')	0.06025087394612379	0.014066496163682864	
+    ('love', 'it')	0.005757762697923092	0.10677749360613811	
+    ('would', 'not')	0.03269586674892042	0.004475703324808184	
+    ('the', 'box')	0.031873329220645695	0.0073529411764705855	
+    ('great', None)	0.0026732469668928646	0.05530690537084399	
+    ('do', 'not')	0.04811844540407156	0.012787723785166242	
+    ('the', 'product')	0.04606210158338475	0.016943734015345272	
+    ('the', 'first')	0.04832407978614024	0.022058823529411763	
+    ('for', 'my')	0.0384536294468435	0.0971867007672634	
+    ('great', 'product')	0.003907053259304957	0.03356777493606139	
+    ('will', 'not')	0.029405716635821515	0.007033248081841431	
+    ('to', 'return')	0.03372403865926383	0.0019181585677749361	
+    ('easy', 'to')	0.0158338474192885	0.13203324808184144	
+    ('i', 'thought')	0.03434094180546987	0.009910485933503833	
+    ('works', 'great')	0.0055521283158544085	0.07289002557544756	
+    ('of', 'the')	0.19576393172938517	0.09974424552429666	
+    ('the', 'same')	0.047912811022002885	0.014705882352941173	
+    ('not', 'work')	0.03721982315443142	0.002557544757033248	
+
+
+    Time taken to build model: 0 seconds
+
+    === Stratified cross-validation ===
+    === Summary ===
+
+    Correctly Classified Instances        6747               66.1665 %
+    Incorrectly Classified Instances      3450               33.8335 %
+    Kappa statistic                          0.3232
+    Mean absolute error                      0.3923
+    Root mean squared error                  0.4469
+    Relative absolute error                 78.4576 %
+    Root relative squared error             89.3732 %
+    Total Number of Instances            10197     
+
+    === Detailed Accuracy By Class ===
+
+                    TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                    0.424    0.101    0.807      0.424    0.556      0.367    0.732     0.728     '(-inf-3]'
+                    0.899    0.576    0.610      0.899    0.727      0.367    0.732     0.714     '(3-inf)'
+    Weighted Avg.    0.662    0.339    0.709      0.662    0.641      0.367    0.732     0.721     
+
+    === Confusion Matrix ===
+
+        a    b   <-- classified as
+    2162 2934 |    a = '(-inf-3]'
+    516 4585 |    b = '(3-inf)'
+
+
+
+
+Logistic:
+    === Run information ===
+
+    Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+    Relation:     big_attempt_parsed_bigram-weka.filters.unsupervised.attribute.AddExpression-Eifelse(a201 > 3.0,5.0,1.0)-Ngood_bad-weka.filters.unsupervised.attribute.Discretize-B2-M-1.0-Rlast-unset-class-temporarily-weka.filters.unsupervised.instance.RemovePercentage-P17.0-weka.filters.unsupervised.attribute.Remove-R201-weka.filters.unsupervised.attribute.Remove-R201-weka.filters.unsupervised.attribute.Remove-V-R12,19,25,30,31,37,75,79,89,92,97,122,124,127,153,154,157,159,173,175,176,197,200,201
+    Instances:    10197
+    Attributes:   24
+                ('i', 'love')
+                ('love', 'this')
+                ('in', 'the')
+                ('at', 'all')
+                ('did', 'not')
+                ('does', 'not')
+                ('love', 'it')
+                ('would', 'not')
+                ('the', 'box')
+                ('great', None)
+                ('do', 'not')
+                ('the', 'product')
+                ('the', 'first')
+                ('for', 'my')
+                ('great', 'product')
+                ('will', 'not')
+                ('to', 'return')
+                ('easy', 'to')
+                ('i', 'thought')
+                ('works', 'great')
+                ('of', 'the')
+                ('the', 'same')
+                ('not', 'work')
+                good_bad
+    Test mode:    10-fold cross-validation
+
+    === Classifier model (full training set) ===
+
+    Logistic Regression with ridge parameter of 1.0E-8
+    Coefficients...
+                                Class
+    Variable                '(-inf-3]'
+    ==================================
+    ('i', 'love')              -1.0263
+    ('love', 'this')           -1.9719
+    ('in', 'the')               0.4457
+    ('at', 'all')               1.3922
+    ('did', 'not')              1.3774
+    ('does', 'not')             1.5606
+    ('love', 'it')             -2.3278
+    ('would', 'not')            2.3292
+    ('the', 'box')              1.1544
+    ('great', None)            -2.0268
+    ('do', 'not')               1.2902
+    ('the', 'product')          0.8316
+    ('the', 'first')            0.7723
+    ('for', 'my')               -0.645
+    ('great', 'product')       -1.6983
+    ('will', 'not')             1.4316
+    ('to', 'return')            3.2361
+    ('easy', 'to')             -1.8439
+    ('i', 'thought')            1.3664
+    ('works', 'great')         -1.9001
+    ('of', 'the')               0.4927
+    ('the', 'same')             1.1498
+    ('not', 'work')             1.2873
+    Intercept                  -0.1077
+
+
+    Odds Ratios...
+                                Class
+    Variable                '(-inf-3]'
+    ==================================
+    ('i', 'love')               0.3583
+    ('love', 'this')            0.1392
+    ('in', 'the')               1.5616
+    ('at', 'all')               4.0235
+    ('did', 'not')              3.9644
+    ('does', 'not')             4.7615
+    ('love', 'it')              0.0975
+    ('would', 'not')           10.2701
+    ('the', 'box')              3.1722
+    ('great', None)             0.1318
+    ('do', 'not')               3.6336
+    ('the', 'product')          2.2971
+    ('the', 'first')            2.1647
+    ('for', 'my')               0.5247
+    ('great', 'product')         0.183
+    ('will', 'not')             4.1854
+    ('to', 'return')           25.4339
+    ('easy', 'to')              0.1582
+    ('i', 'thought')            3.9212
+    ('works', 'great')          0.1496
+    ('of', 'the')               1.6367
+    ('the', 'same')             3.1575
+    ('not', 'work')             3.6229
+
+
+    Time taken to build model: 0.38 seconds
+
+    === Stratified cross-validation ===
+    === Summary ===
+
+    Correctly Classified Instances        6766               66.3528 %
+    Incorrectly Classified Instances      3431               33.6472 %
+    Kappa statistic                          0.3269
+    Mean absolute error                      0.3986
+    Root mean squared error                  0.4458
+    Relative absolute error                 79.7166 %
+    Root relative squared error             89.1505 %
+    Total Number of Instances            10197     
+
+    === Detailed Accuracy By Class ===
+
+                    TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                    0.429    0.102    0.807      0.429    0.560      0.370    0.731     0.739     '(-inf-3]'
+                    0.898    0.571    0.612      0.898    0.727      0.370    0.731     0.733     '(3-inf)'
+    Weighted Avg.    0.664    0.337    0.709      0.664    0.644      0.370    0.731     0.736     
+
+    === Confusion Matrix ===
+
+        a    b   <-- classified as
+    2187 2909 |    a = '(-inf-3]'
+    522 4579 |    b = '(3-inf)'
+
+
+
+
+DecisionTable:
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.DecisionTable -X 1 -S "weka.attributeSelection.BestFirst -D 1 -N 5"
+Relation:     big_attempt_parsed_bigram-weka.filters.unsupervised.attribute.AddExpression-Eifelse(a201 > 3.0,5.0,1.0)-Ngood_bad-weka.filters.unsupervised.attribute.Discretize-B2-M-1.0-Rlast-unset-class-temporarily-weka.filters.unsupervised.instance.RemovePercentage-P17.0-weka.filters.unsupervised.attribute.Remove-R201-weka.filters.unsupervised.attribute.Remove-R201-weka.filters.unsupervised.attribute.Remove-V-R12,19,25,30,31,37,75,79,89,92,97,122,124,127,153,154,157,159,173,175,176,197,200,201
+Instances:    10197
+Attributes:   24
+              ('i', 'love')
+              ('love', 'this')
+              ('in', 'the')
+              ('at', 'all')
+              ('did', 'not')
+              ('does', 'not')
+              ('love', 'it')
+              ('would', 'not')
+              ('the', 'box')
+              ('great', None)
+              ('do', 'not')
+              ('the', 'product')
+              ('the', 'first')
+              ('for', 'my')
+              ('great', 'product')
+              ('will', 'not')
+              ('to', 'return')
+              ('easy', 'to')
+              ('i', 'thought')
+              ('works', 'great')
+              ('of', 'the')
+              ('the', 'same')
+              ('not', 'work')
+              good_bad
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Table:
+    Number of training instances: 10197
+    Number of Rules : 351
+    Non matches covered by Majority class.
+        Best first.
+        Start set: no attributes
+        Search direction: forward
+        Stale search after 5 node expansions
+        Total number of subsets evaluated: 278
+        Merit of best subset found:   64.058
+    Evaluation (for feature selection): CV (leave one out) 
+    Feature set: 2,3,4,5,6,7,8,11,12,15,16,17,18,19,20,21,22,24
+
+    Time taken to build model: 1.39 seconds
+
+    === Stratified cross-validation ===
+    === Summary ===
+
+    Correctly Classified Instances        6578               64.5092 %
+    Incorrectly Classified Instances      3619               35.4908 %
+    Kappa statistic                          0.29  
+    Mean absolute error                      0.4212
+    Root mean squared error                  0.4578
+    Relative absolute error                 84.2464 %
+    Root relative squared error             91.5511 %
+    Total Number of Instances            10197     
+
+    === Detailed Accuracy By Class ===
+
+                    TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                    0.392    0.102    0.793      0.392    0.525      0.336    0.704     0.707     '(-inf-3]'
+                    0.898    0.608    0.597      0.898    0.717      0.336    0.704     0.695     '(3-inf)'
+    Weighted Avg.    0.645    0.355    0.695      0.645    0.621      0.336    0.704     0.701     
+
+    === Confusion Matrix ===
+
+        a    b   <-- classified as
+    1999 3097 |    a = '(-inf-3]'
+    522 4579 |    b = '(3-inf)'
+
+
+
+J48:
+    === Run information ===
+
+    Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+    Relation:     big_attempt_parsed_bigram-weka.filters.unsupervised.attribute.AddExpression-Eifelse(a201 > 3.0,5.0,1.0)-Ngood_bad-weka.filters.unsupervised.attribute.Discretize-B2-M-1.0-Rlast-unset-class-temporarily-weka.filters.unsupervised.instance.RemovePercentage-P17.0-weka.filters.unsupervised.attribute.Remove-R201-weka.filters.unsupervised.attribute.Remove-R201-weka.filters.unsupervised.attribute.Remove-V-R12,19,25,30,31,37,75,79,89,92,97,122,124,127,153,154,157,159,173,175,176,197,200,201
+    Instances:    10197
+    Attributes:   24
+                ('i', 'love')
+                ('love', 'this')
+                ('in', 'the')
+                ('at', 'all')
+                ('did', 'not')
+                ('does', 'not')
+                ('love', 'it')
+                ('would', 'not')
+                ('the', 'box')
+                ('great', None)
+                ('do', 'not')
+                ('the', 'product')
+                ('the', 'first')
+                ('for', 'my')
+                ('great', 'product')
+                ('will', 'not')
+                ('to', 'return')
+                ('easy', 'to')
+                ('i', 'thought')
+                ('works', 'great')
+                ('of', 'the')
+                ('the', 'same')
+                ('not', 'work')
+                good_bad
+    Test mode:    10-fold cross-validation
+
+    === Classifier model (full training set) ===
+
+    J48 pruned tree
+    ------------------
+
+    ('to', 'return') <= 0
+    |   ('not', 'work') <= 0
+    |   |   ('love', 'it') <= 0
+    |   |   |   ('great', None) <= 0
+    |   |   |   |   ('love', 'this') <= 0
+    |   |   |   |   |   ('would', 'not') <= 0
+    |   |   |   |   |   |   ('does', 'not') <= 0
+    |   |   |   |   |   |   |   ('do', 'not') <= 0
+    |   |   |   |   |   |   |   |   ('easy', 'to') <= 0
+    |   |   |   |   |   |   |   |   |   ('at', 'all') <= 0
+    |   |   |   |   |   |   |   |   |   |   ('works', 'great') <= 0
+    |   |   |   |   |   |   |   |   |   |   |   ('i', 'thought') <= 0
+    |   |   |   |   |   |   |   |   |   |   |   |   ('the', 'same') <= 0
+    |   |   |   |   |   |   |   |   |   |   |   |   |   ('did', 'not') <= 0
+    |   |   |   |   |   |   |   |   |   |   |   |   |   |   ('the', 'product') <= 0
+    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ('of', 'the') <= 0
+    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ('will', 'not') <= 0
+    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ('the', 'first') <= 0
+    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ('for', 'my') <= 0
+    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ('in', 'the') <= 0
+    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ('the', 'box') <= 0: '(3-inf)' (5923.0/2682.0)
+    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ('the', 'box') > 0: '(-inf-3]' (25.0/8.0)
+    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ('in', 'the') > 0: '(-inf-3]' (311.0/113.0)
+    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ('for', 'my') > 0: '(3-inf)' (277.0/81.0)
+    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ('the', 'first') > 0: '(-inf-3]' (115.0/32.0)
+    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ('will', 'not') > 0: '(-inf-3]' (61.0/9.0)
+    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ('of', 'the') > 0: '(-inf-3]' (565.0/167.0)
+    |   |   |   |   |   |   |   |   |   |   |   |   |   |   ('the', 'product') > 0: '(-inf-3]' (143.0/35.0)
+    |   |   |   |   |   |   |   |   |   |   |   |   |   ('did', 'not') > 0: '(-inf-3]' (160.0/31.0)
+    |   |   |   |   |   |   |   |   |   |   |   |   ('the', 'same') > 0: '(-inf-3]' (162.0/27.0)
+    |   |   |   |   |   |   |   |   |   |   |   ('i', 'thought') > 0: '(-inf-3]' (130.0/20.0)
+    |   |   |   |   |   |   |   |   |   |   ('works', 'great') > 0: '(3-inf)' (129.0/19.0)
+    |   |   |   |   |   |   |   |   |   ('at', 'all') > 0: '(-inf-3]' (190.0/27.0)
+    |   |   |   |   |   |   |   |   ('easy', 'to') > 0
+    |   |   |   |   |   |   |   |   |   ('of', 'the') <= 0: '(3-inf)' (334.0/48.0)
+    |   |   |   |   |   |   |   |   |   ('of', 'the') > 0
+    |   |   |   |   |   |   |   |   |   |   ('the', 'product') <= 0
+    |   |   |   |   |   |   |   |   |   |   |   ('of', 'the') <= 1: '(3-inf)' (26.0/5.0)
+    |   |   |   |   |   |   |   |   |   |   |   ('of', 'the') > 1: '(-inf-3]' (6.0/1.0)
+    |   |   |   |   |   |   |   |   |   |   ('the', 'product') > 0: '(-inf-3]' (2.0)
+    |   |   |   |   |   |   |   ('do', 'not') > 0: '(-inf-3]' (200.0/27.0)
+    |   |   |   |   |   |   ('does', 'not') > 0: '(-inf-3]' (225.0/30.0)
+    |   |   |   |   |   ('would', 'not') > 0: '(-inf-3]' (139.0/11.0)
+    |   |   |   |   ('love', 'this') > 0: '(3-inf)' (225.0/18.0)
+    |   |   |   ('great', None) > 0: '(3-inf)' (181.0/12.0)
+    |   |   ('love', 'it') > 0: '(3-inf)' (348.0/25.0)
+    |   ('not', 'work') > 0: '(-inf-3]' (159.0/5.0)
+    ('to', 'return') > 0: '(-inf-3]' (161.0/5.0)
+
+    Number of Leaves  : 	25
+
+    Size of the tree : 	49
+
+
+    Time taken to build model: 0.37 seconds
+
+    === Stratified cross-validation ===
+    === Summary ===
+
+    Correctly Classified Instances        6715               65.8527 %
+    Incorrectly Classified Instances      3482               34.1473 %
+    Kappa statistic                          0.3169
+    Mean absolute error                      0.4047
+    Root mean squared error                  0.4512
+    Relative absolute error                 80.9428 %
+    Root relative squared error             90.2474 %
+    Total Number of Instances            10197     
+
+    === Detailed Accuracy By Class ===
+
+                    TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                    0.426    0.109    0.796      0.426    0.555      0.358    0.717     0.726     '(-inf-3]'
+                    0.891    0.574    0.608      0.891    0.723      0.358    0.717     0.706     '(3-inf)'
+    Weighted Avg.    0.659    0.342    0.702      0.659    0.639      0.358    0.717     0.716     
+
+    === Confusion Matrix ===
+
+        a    b   <-- classified as
+    2171 2925 |    a = '(-inf-3]'
+    557 4544 |    b = '(3-inf)'
+
+
+
+
+OneR:
+    === Run information ===
+
+    Scheme:       weka.classifiers.rules.OneR -B 6
+    Relation:     big_attempt_parsed_bigram-weka.filters.unsupervised.attribute.AddExpression-Eifelse(a201 > 3.0,5.0,1.0)-Ngood_bad-weka.filters.unsupervised.attribute.Discretize-B2-M-1.0-Rlast-unset-class-temporarily-weka.filters.unsupervised.instance.RemovePercentage-P17.0-weka.filters.unsupervised.attribute.Remove-R201-weka.filters.unsupervised.attribute.Remove-R201-weka.filters.unsupervised.attribute.Remove-V-R12,19,25,30,31,37,75,79,89,92,97,122,124,127,153,154,157,159,173,175,176,197,200,201
+    Instances:    10197
+    Attributes:   24
+                ('i', 'love')
+                ('love', 'this')
+                ('in', 'the')
+                ('at', 'all')
+                ('did', 'not')
+                ('does', 'not')
+                ('love', 'it')
+                ('would', 'not')
+                ('the', 'box')
+                ('great', None)
+                ('do', 'not')
+                ('the', 'product')
+                ('the', 'first')
+                ('for', 'my')
+                ('great', 'product')
+                ('will', 'not')
+                ('to', 'return')
+                ('easy', 'to')
+                ('i', 'thought')
+                ('works', 'great')
+                ('of', 'the')
+                ('the', 'same')
+                ('not', 'work')
+                good_bad
+    Test mode:    10-fold cross-validation
+
+    === Classifier model (full training set) ===
+
+    ('of', 'the'):
+        < 0.5	-> '(3-inf)'
+        >= 0.5	-> '(-inf-3]'
+    (5537/10197 instances correct)
+
+
+    Time taken to build model: 0.02 seconds
+
+    === Stratified cross-validation ===
+    === Summary ===
+
+    Correctly Classified Instances        5537               54.3003 %
+    Incorrectly Classified Instances      4660               45.6997 %
+    Kappa statistic                          0.0856
+    Mean absolute error                      0.457 
+    Root mean squared error                  0.676 
+    Relative absolute error                 91.3994 %
+    Root relative squared error            135.2031 %
+    Total Number of Instances            10197     
+
+    === Detailed Accuracy By Class ===
+
+                    TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                    0.136    0.050    0.730      0.136    0.229      0.148    0.543     0.531     '(-inf-3]'
+                    0.950    0.864    0.524      0.950    0.675      0.148    0.543     0.523     '(3-inf)'
+    Weighted Avg.    0.543    0.457    0.627      0.543    0.452      0.148    0.543     0.527     
+
+    === Confusion Matrix ===
+
+        a    b   <-- classified as
+    691 4405 |    a = '(-inf-3]'
+    255 4846 |    b = '(3-inf)'
+
+
+RandomTree:
+    === Run information ===
+
+    Scheme:       weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1
+    Relation:     big_attempt_parsed_bigram-weka.filters.unsupervised.attribute.AddExpression-Eifelse(a201 > 3.0,5.0,1.0)-Ngood_bad-weka.filters.unsupervised.attribute.Discretize-B2-M-1.0-Rlast-unset-class-temporarily-weka.filters.unsupervised.instance.RemovePercentage-P17.0-weka.filters.unsupervised.attribute.Remove-R201-weka.filters.unsupervised.attribute.Remove-R201-weka.filters.unsupervised.attribute.Remove-V-R12,19,25,30,31,37,75,79,89,92,97,122,124,127,153,154,157,159,173,175,176,197,200,201
+    Instances:    10197
+    Attributes:   24
+            ('i', 'love')
+            ('love', 'this')
+            ('in', 'the')
+            ('at', 'all')
+            ('did', 'not')
+            ('does', 'not')
+            ('love', 'it')
+            ('would', 'not')
+            ('the', 'box')
+            ('great', None)
+            ('do', 'not')
+            ('the', 'product')
+            ('the', 'first')
+            ('for', 'my')
+            ('great', 'product')
+            ('will', 'not')
+            ('to', 'return')
+            ('easy', 'to')
+            ('i', 'thought')
+            ('works', 'great')
+            ('of', 'the')
+            ('the', 'same')
+            ('not', 'work')
+                good_bad
+    Test mode:    10-fold cross-validation
+
+    was WAY TOO HUGE!
+    Size of the tree : 1035
+
+    Time taken to build model: 0.06 seconds
+
+    === Stratified cross-validation ===
+    === Summary ===
+
+    Correctly Classified Instances        6710               65.8037 %
+    Incorrectly Classified Instances      3487               34.1963 %
+    Kappa statistic                          0.3159
+    Mean absolute error                      0.3943
+    Root mean squared error                  0.4545
+    Relative absolute error                 78.868  %
+    Root relative squared error             90.8981 %
+    Total Number of Instances            10197     
+
+    === Detailed Accuracy By Class ===
+
+                    TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                    0.423    0.108    0.797      0.423    0.553      0.358    0.717     0.718     '(-inf-3]'
+                    0.892    0.577    0.608      0.892    0.723      0.358    0.717     0.695     '(3-inf)'
+    Weighted Avg.    0.658    0.342    0.702      0.658    0.638      0.358    0.717     0.707     
+
+    === Confusion Matrix ===
+
+        a    b   <-- classified as
+    2158 2938 |    a = '(-inf-3]'
+    549 4552 |    b = '(3-inf)'
+
+
+MultilayerPerceptron
+
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     big_attempt_parsed_bigram-weka.filters.unsupervised.attribute.AddExpression-Eifelse(a201 > 3.0,5.0,1.0)-Ngood_bad-weka.filters.unsupervised.attribute.Discretize-B2-M-1.0-Rlast-unset-class-temporarily-weka.filters.unsupervised.instance.RemovePercentage-P17.0-weka.filters.unsupervised.attribute.Remove-R201-weka.filters.unsupervised.attribute.Remove-R201-weka.filters.unsupervised.attribute.Remove-V-R12,19,25,30,31,37,75,79,89,92,97,122,124,127,153,154,157,159,173,175,176,197,200,201
+Instances:    10197
+Attributes:   24
+              ('i', 'love')
+              ('love', 'this')
+              ('in', 'the')
+              ('at', 'all')
+              ('did', 'not')
+              ('does', 'not')
+              ('love', 'it')
+              ('would', 'not')
+              ('the', 'box')
+              ('great', None)
+              ('do', 'not')
+              ('the', 'product')
+              ('the', 'first')
+              ('for', 'my')
+              ('great', 'product')
+              ('will', 'not')
+              ('to', 'return')
+              ('easy', 'to')
+              ('i', 'thought')
+              ('works', 'great')
+              ('of', 'the')
+              ('the', 'same')
+              ('not', 'work')
+              good_bad
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -1.5203341828445502
+    Node 2    0.9458894548739961
+    Node 3    2.03626214311566
+    Node 4    2.963291812419044
+    Node 5    -2.3106502907653663
+    Node 6    1.989301187370748
+    Node 7    2.276869934229268
+    Node 8    2.1366344255421215
+    Node 9    4.275061540942727
+    Node 10    6.766636011757736
+    Node 11    2.1282500015821264
+    Node 12    3.7636039859529435
+    Node 13    1.2532140820010966
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    1.5203464330389305
+    Node 2    -0.9458968561843376
+    Node 3    -2.0362542955489507
+    Node 4    -2.970124347881112
+    Node 5    2.310592818018308
+    Node 6    -1.98268214169689
+    Node 7    -2.276874799145763
+    Node 8    -2.136598411318834
+    Node 9    -4.275065347016954
+    Node 10    -6.7664398345506775
+    Node 11    -2.128265049547169
+    Node 12    -3.7656503440962763
+    Node 13    -1.2532298894353626
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    6.111699796053879
+    Attrib ('i', 'love')    -11.79251402376171
+    Attrib ('love', 'this')    -5.783508470919096
+    Attrib ('in', 'the')    14.084726009529078
+    Attrib ('at', 'all')    -13.716493023987491
+    Attrib ('did', 'not')    -5.435055665483908
+    Attrib ('does', 'not')    7.123869983426207
+    Attrib ('love', 'it')    -7.940006637478428
+    Attrib ('would', 'not')    8.574631515683704
+    Attrib ('the', 'box')    4.515731546814346
+    Attrib ('great', None)    -5.239204420062074
+    Attrib ('do', 'not')    1.9062968187691958
+    Attrib ('the', 'product')    15.138061644712566
+    Attrib ('the', 'first')    12.386922554978678
+    Attrib ('for', 'my')    -4.040804090513128
+    Attrib ('great', 'product')    -5.839755037543109
+    Attrib ('will', 'not')    -0.9938039388049362
+    Attrib ('to', 'return')    2.527218816408456
+    Attrib ('easy', 'to')    -13.581857373969171
+    Attrib ('i', 'thought')    4.977940439462451
+    Attrib ('works', 'great')    -14.478071597977166
+    Attrib ('of', 'the')    33.93532587333653
+    Attrib ('the', 'same')    -3.486724089438928
+    Attrib ('not', 'work')    0.45896586331690153
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    6.767833102885801
+    Attrib ('i', 'love')    -9.793052217816609
+    Attrib ('love', 'this')    -9.050548943709233
+    Attrib ('in', 'the')    4.995422795117568
+    Attrib ('at', 'all')    -9.003447623862622
+    Attrib ('did', 'not')    16.646562263580293
+    Attrib ('does', 'not')    5.9568950548329465
+    Attrib ('love', 'it')    1.2246798951076885
+    Attrib ('would', 'not')    13.506002143570397
+    Attrib ('the', 'box')    -10.173132952846482
+    Attrib ('great', None)    -7.29945560887145
+    Attrib ('do', 'not')    15.386589366946849
+    Attrib ('the', 'product')    -4.164029574736493
+    Attrib ('the', 'first')    -5.258650704001137
+    Attrib ('for', 'my')    -11.993804301235864
+    Attrib ('great', 'product')    -3.7639304381534497
+    Attrib ('will', 'not')    5.309640751754243
+    Attrib ('to', 'return')    7.392216610685214
+    Attrib ('easy', 'to')    -7.453640305580696
+    Attrib ('i', 'thought')    -0.1221335524314908
+    Attrib ('works', 'great')    -6.93598017504016
+    Attrib ('of', 'the')    4.324026326743232
+    Attrib ('the', 'same')    12.798497552041882
+    Attrib ('not', 'work')    9.714128884768112
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    1.240462073270034
+    Attrib ('i', 'love')    -1.7022900766990319
+    Attrib ('love', 'this')    1.3582473118004814
+    Attrib ('in', 'the')    2.160911285125611
+    Attrib ('at', 'all')    -4.269948170689448
+    Attrib ('did', 'not')    0.5616381948253922
+    Attrib ('does', 'not')    1.8856991005483201
+    Attrib ('love', 'it')    -1.3076136265416223
+    Attrib ('would', 'not')    0.926948417991479
+    Attrib ('the', 'box')    2.076268278581346
+    Attrib ('great', None)    1.538900209838903
+    Attrib ('do', 'not')    1.1401381651864768
+    Attrib ('the', 'product')    0.07662162181105091
+    Attrib ('the', 'first')    4.096356714128624
+    Attrib ('for', 'my')    -2.581316345683269
+    Attrib ('great', 'product')    -0.8031865877213222
+    Attrib ('will', 'not')    0.6685496622716275
+    Attrib ('to', 'return')    0.8634043506252039
+    Attrib ('easy', 'to')    -0.904731951361456
+    Attrib ('i', 'thought')    -0.35630268921179903
+    Attrib ('works', 'great')    -1.2777483008117765
+    Attrib ('of', 'the')    2.0192880630276706
+    Attrib ('the', 'same')    4.3594361560411
+    Attrib ('not', 'work')    -0.12053893834821666
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -3.9810790573759633
+    Attrib ('i', 'love')    3.5675171491776463
+    Attrib ('love', 'this')    10.10674144257544
+    Attrib ('in', 'the')    -13.528485065168159
+    Attrib ('at', 'all')    0.7685874170332048
+    Attrib ('did', 'not')    -8.059406903349917
+    Attrib ('does', 'not')    -14.222367698162873
+    Attrib ('love', 'it')    14.096770407023776
+    Attrib ('would', 'not')    -2.331533606213134
+    Attrib ('the', 'box')    0.38966847935087745
+    Attrib ('great', None)    7.499887147488286
+    Attrib ('do', 'not')    -1.7587576064954198
+    Attrib ('the', 'product')    2.3990719153109823
+    Attrib ('the', 'first')    2.4614195954806433
+    Attrib ('for', 'my')    -2.1953724797708256
+    Attrib ('great', 'product')    7.06821338572663
+    Attrib ('will', 'not')    -5.716255519553459
+    Attrib ('to', 'return')    -7.336612478048986
+    Attrib ('easy', 'to')    8.242143832296211
+    Attrib ('i', 'thought')    -0.18102269944740265
+    Attrib ('works', 'great')    6.542303767489459
+    Attrib ('of', 'the')    -4.126799846636523
+    Attrib ('the', 'same')    -3.2540035543046515
+    Attrib ('not', 'work')    1.1031013712201205
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    1.1932849452693466
+    Attrib ('i', 'love')    -1.1952023198465902
+    Attrib ('love', 'this')    1.2836868744467091
+    Attrib ('in', 'the')    1.581432419375764
+    Attrib ('at', 'all')    -2.651575914088993
+    Attrib ('did', 'not')    1.0271896618272276
+    Attrib ('does', 'not')    3.0389962788085656
+    Attrib ('love', 'it')    -0.9869304133220594
+    Attrib ('would', 'not')    0.5197311980430556
+    Attrib ('the', 'box')    2.225200532589904
+    Attrib ('great', None)    1.979794199342634
+    Attrib ('do', 'not')    1.0109208904494977
+    Attrib ('the', 'product')    0.9774272370661584
+    Attrib ('the', 'first')    2.911334786398041
+    Attrib ('for', 'my')    -2.3997742674667695
+    Attrib ('great', 'product')    -0.9951838593403349
+    Attrib ('will', 'not')    1.1755620071055013
+    Attrib ('to', 'return')    0.8152963461274582
+    Attrib ('easy', 'to')    -1.6233045625857168
+    Attrib ('i', 'thought')    -0.45991611842691776
+    Attrib ('works', 'great')    -1.191989298651417
+    Attrib ('of', 'the')    0.8992563582948737
+    Attrib ('the', 'same')    0.6597074595802961
+    Attrib ('not', 'work')    -0.08191910924967986
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    8.17627828249296
+    Attrib ('i', 'love')    -1.5550497030076693
+    Attrib ('love', 'this')    -6.54839155348993
+    Attrib ('in', 'the')    -13.784749464245225
+    Attrib ('at', 'all')    13.821241866093702
+    Attrib ('did', 'not')    9.556670035943185
+    Attrib ('does', 'not')    1.4607840718501492
+    Attrib ('love', 'it')    -10.322580824236779
+    Attrib ('would', 'not')    -3.2889573200678157
+    Attrib ('the', 'box')    -1.6580033689202311
+    Attrib ('great', None)    -8.854689108094265
+    Attrib ('do', 'not')    8.719773832230317
+    Attrib ('the', 'product')    -2.489778422776593
+    Attrib ('the', 'first')    1.102578631606768
+    Attrib ('for', 'my')    3.760384622974255
+    Attrib ('great', 'product')    -8.9760535530897
+    Attrib ('will', 'not')    17.390394161730224
+    Attrib ('to', 'return')    24.242972578049944
+    Attrib ('easy', 'to')    -4.293318340589993
+    Attrib ('i', 'thought')    -2.263286705742977
+    Attrib ('works', 'great')    -7.746496335479854
+    Attrib ('of', 'the')    -7.9491008722007095
+    Attrib ('the', 'same')    2.1492559913400044
+    Attrib ('not', 'work')    12.562349525066011
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    3.9908743858642297
+    Attrib ('i', 'love')    5.756112535114718
+    Attrib ('love', 'this')    -6.619178859044669
+    Attrib ('in', 'the')    0.3014044637061704
+    Attrib ('at', 'all')    -3.585886856302188
+    Attrib ('did', 'not')    -5.42451225302081
+    Attrib ('does', 'not')    -1.9442249076204112
+    Attrib ('love', 'it')    1.765086403013521
+    Attrib ('would', 'not')    0.64682316476456
+    Attrib ('the', 'box')    17.434247367336717
+    Attrib ('great', None)    -3.9672505907683036
+    Attrib ('do', 'not')    2.3219130224943108
+    Attrib ('the', 'product')    9.251241035537284
+    Attrib ('the', 'first')    2.0229645130527243
+    Attrib ('for', 'my')    -9.747293544235042
+    Attrib ('great', 'product')    -4.200243270506463
+    Attrib ('will', 'not')    1.347271311319795
+    Attrib ('to', 'return')    0.9915637542043079
+    Attrib ('easy', 'to')    -4.875907343586201
+    Attrib ('i', 'thought')    12.129711809645237
+    Attrib ('works', 'great')    -4.266030354594557
+    Attrib ('of', 'the')    2.786311339882558
+    Attrib ('the', 'same')    6.173346388172213
+    Attrib ('not', 'work')    -1.6202658831256205
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    2.77718799280572
+    Attrib ('i', 'love')    -4.784279302958091
+    Attrib ('love', 'this')    -3.2267524229276425
+    Attrib ('in', 'the')    -6.209602007883288
+    Attrib ('at', 'all')    1.7182195190714913
+    Attrib ('did', 'not')    9.229271632012969
+    Attrib ('does', 'not')    2.739593249697217
+    Attrib ('love', 'it')    3.549064907026911
+    Attrib ('would', 'not')    1.413969572700536
+    Attrib ('the', 'box')    5.146593173642766
+    Attrib ('great', None)    -2.8927388094387703
+    Attrib ('do', 'not')    2.542922391735339
+    Attrib ('the', 'product')    15.868793539138812
+    Attrib ('the', 'first')    -6.077288924609307
+    Attrib ('for', 'my')    5.754657560383905
+    Attrib ('great', 'product')    -3.5843731803919368
+    Attrib ('will', 'not')    1.3560607699420308
+    Attrib ('to', 'return')    2.516805951929291
+    Attrib ('easy', 'to')    -8.30246926867822
+    Attrib ('i', 'thought')    2.7519728008390687
+    Attrib ('works', 'great')    -2.541551542324825
+    Attrib ('of', 'the')    3.505604696299889
+    Attrib ('the', 'same')    -6.895566945311502
+    Attrib ('not', 'work')    0.9597136819150764
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    2.4781699680734217
+    Attrib ('i', 'love')    -1.9047343333931916
+    Attrib ('love', 'this')    -2.0894231113565747
+    Attrib ('in', 'the')    10.41419432681775
+    Attrib ('at', 'all')    0.5735908894590372
+    Attrib ('did', 'not')    0.5727633812564836
+    Attrib ('does', 'not')    1.5921192888477795
+    Attrib ('love', 'it')    -3.692818510675717
+    Attrib ('would', 'not')    -2.4949884042729313
+    Attrib ('the', 'box')    3.268802997396482
+    Attrib ('great', None)    0.7183517206732408
+    Attrib ('do', 'not')    0.35250076470338576
+    Attrib ('the', 'product')    -0.2860464728136107
+    Attrib ('the', 'first')    0.8674826320553366
+    Attrib ('for', 'my')    2.9624062243279012
+    Attrib ('great', 'product')    -2.5924495880052847
+    Attrib ('will', 'not')    7.488843090797389
+    Attrib ('to', 'return')    -1.2394584523242045
+    Attrib ('easy', 'to')    -4.379909718943109
+    Attrib ('i', 'thought')    -0.1604001278128812
+    Attrib ('works', 'great')    6.361015678410017
+    Attrib ('of', 'the')    -4.672541469565056
+    Attrib ('the', 'same')    9.102263734155722
+    Attrib ('not', 'work')    -1.773421224068351
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    4.999623174919571
+    Attrib ('i', 'love')    1.2592819243214923
+    Attrib ('love', 'this')    1.0487568156382792
+    Attrib ('in', 'the')    2.127937023245327
+    Attrib ('at', 'all')    2.178892867976844
+    Attrib ('did', 'not')    3.1942686972352994
+    Attrib ('does', 'not')    16.141676366562535
+    Attrib ('love', 'it')    -6.0854776402383886
+    Attrib ('would', 'not')    4.176207383337456
+    Attrib ('the', 'box')    2.0176130258374596
+    Attrib ('great', None)    -5.436189068865671
+    Attrib ('do', 'not')    -0.6429831172129387
+    Attrib ('the', 'product')    0.02363737296358887
+    Attrib ('the', 'first')    -0.7821240246541094
+    Attrib ('for', 'my')    -1.1153615312023701
+    Attrib ('great', 'product')    -0.1978927117733684
+    Attrib ('will', 'not')    0.778131175719089
+    Attrib ('to', 'return')    7.880225819646904
+    Attrib ('easy', 'to')    -12.538404450932081
+    Attrib ('i', 'thought')    -3.3317743433853693
+    Attrib ('works', 'great')    -5.089141991128989
+    Attrib ('of', 'the')    -3.6411640149941644
+    Attrib ('the', 'same')    -1.6489267703660866
+    Attrib ('not', 'work')    10.732340670734134
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    1.0325171672824984
+    Attrib ('i', 'love')    -1.3578716571371083
+    Attrib ('love', 'this')    1.9905564882757638
+    Attrib ('in', 'the')    1.0652108716791209
+    Attrib ('at', 'all')    -1.4388907617055244
+    Attrib ('did', 'not')    0.7454999966626217
+    Attrib ('does', 'not')    5.93305339656013
+    Attrib ('love', 'it')    -0.8976689710876895
+    Attrib ('would', 'not')    0.5296226599084352
+    Attrib ('the', 'box')    1.4580851785165843
+    Attrib ('great', None)    3.101938682328371
+    Attrib ('do', 'not')    1.585964732735505
+    Attrib ('the', 'product')    1.5620779074221953
+    Attrib ('the', 'first')    0.9006608621088268
+    Attrib ('for', 'my')    -1.5166334811466333
+    Attrib ('great', 'product')    -0.9571791626669196
+    Attrib ('will', 'not')    1.9768697101431572
+    Attrib ('to', 'return')    0.6722210089670669
+    Attrib ('easy', 'to')    -2.0132012659623295
+    Attrib ('i', 'thought')    -0.3830526345179086
+    Attrib ('works', 'great')    -2.3270257841579283
+    Attrib ('of', 'the')    -0.4579098362131659
+    Attrib ('the', 'same')    -0.27361115071898634
+    Attrib ('not', 'work')    -0.02542073010488924
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    6.814844580338796
+    Attrib ('i', 'love')    -16.444347013118662
+    Attrib ('love', 'this')    -3.284205278523671
+    Attrib ('in', 'the')    14.124413817762179
+    Attrib ('at', 'all')    -1.74948940394895
+    Attrib ('did', 'not')    5.687810641862617
+    Attrib ('does', 'not')    13.493212705786597
+    Attrib ('love', 'it')    -12.421262884483943
+    Attrib ('would', 'not')    9.221304984892335
+    Attrib ('the', 'box')    -4.489693234058564
+    Attrib ('great', None)    -4.391249110637403
+    Attrib ('do', 'not')    5.658461398917786
+    Attrib ('the', 'product')    4.372189828272255
+    Attrib ('the', 'first')    -2.327902369770748
+    Attrib ('for', 'my')    -7.145365923858364
+    Attrib ('great', 'product')    -10.524442487494927
+    Attrib ('will', 'not')    12.656374977041903
+    Attrib ('to', 'return')    9.17452138299566
+    Attrib ('easy', 'to')    -19.167940652661567
+    Attrib ('i', 'thought')    4.595706113338408
+    Attrib ('works', 'great')    -0.22755693913037175
+    Attrib ('of', 'the')    13.73313064689608
+    Attrib ('the', 'same')    -3.2722758344562606
+    Attrib ('not', 'work')    -3.627964858504271
+Class '(-inf-3]'
+    Input
+    Node 0
+Class '(3-inf)'
+    Input
+    Node 1
+
+
+Time taken to build model: 24.27 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        6552               64.2542 %
+Incorrectly Classified Instances      3645               35.7458 %
+Kappa statistic                          0.2851
+Mean absolute error                      0.3941
+Root mean squared error                  0.4509
+Relative absolute error                 78.8105 %
+Root relative squared error             90.1773 %
+Total Number of Instances            10197     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.630    0.345    0.646      0.630    0.638      0.285    0.727     0.733     '(-inf-3]'
+                 0.655    0.370    0.639      0.655    0.647      0.285    0.727     0.728     '(3-inf)'
+Weighted Avg.    0.643    0.357    0.643      0.643    0.642      0.285    0.727     0.730     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 3212 1884 |    a = '(-inf-3]'
+ 1761 3340 |    b = '(3-inf)'
+

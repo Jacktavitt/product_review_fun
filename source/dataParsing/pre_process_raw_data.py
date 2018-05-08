@@ -50,15 +50,7 @@ def cleanAndStem(someString):
     # this will remove poorly-used apostophes and backtics from the mix
     for n in range(len(toked)):
         toked[n]=toked[n].lower().replace("'",'').replace("`",'')
-    # toked = word_tokenize(someString)
-    # # lowercase it!
-    # toked = [x.lower() for x in toked]
-    # make stems!
-    # stemmed = [ps.stem(x) for x in toked]
-    # doing lemmas instead 
     lemmad = [lzr.lemmatize(x) for x in toked]
-    # remove doubles! (?)
-    # trimmed = list(set(stemmed))
     return lemmad, toked
 
 def getStopAndMeaningWordPercent(stringList):
@@ -101,7 +93,7 @@ def writeDumbARFF(featureSet, wordFeats):
             vals=[feat[0][x] for x in feat[0]]
             f.write("{},{}\n".format(vals, feat[1]))
 
-def goThroughCSVBigram(numMostCommon, setIt, initialCSVfile, outFile):
+def goThroughCSVBigram(numMostCommon, setIt, initialCSVfile, outFile, ngramNum=2):
     '''
     open csv, go through to build a dataset, simply sorted by above 2 stars or not with words
     classify with nltk Naive Bayes
@@ -111,7 +103,7 @@ def goThroughCSVBigram(numMostCommon, setIt, initialCSVfile, outFile):
     # folder= 'parseResultFiles/'
     # outFile = '_bigram_review_data_setstyle.csv' if setIt else '_bigram_review_data.csv'
     # outFile = folder+str(numMostCommon)+outFile
-    outFile = outFile[:-4] + '_bigram' +outFile[-4:]
+    outFile = outFile[:-4] + '_' + str(ngramNum)'-gram' +outFile[-4:]
 
     with open(initialCSVfile,'r') as csvFile:
         csvReader=csv.DictReader(csvFile, delimiter=',')
@@ -243,11 +235,11 @@ def cleanProductName(productName):
     productName = productName[:20]
     return productName
 
-def goThroughCSVSmart():
+def goThroughCSVSmart(sourcedata,outFile):
     '''
     go through csv file, line by line, and generate new csv files we can use
     '''
-    outputFile = open('dataParsing/parseResultFiles/smart_review_data.csv', 'w', newline='')
+    outputFile = open(outFile, 'w', newline='')
     writer = csv.DictWriter(outputFile, fieldnames = [
         'id','product_name','type', 'rating', 'num_words',
         'stop_%', 'meaning_%', 
@@ -257,90 +249,114 @@ def goThroughCSVSmart():
     # id, type (review or title), product_name, percent_stop, percent_meaning, %Proper noun, %noun, %pronoun, %verb, %adverb, %adj, %wh 
     # !!! This is hardcoded bullshit to try to even out the dataset !!! BAD SCIENCE!!!
     numberFiveStars = 0
-    with open('dataParsing/parseResultFiles/review_data_big_raw.csv','r') as csvFile:
+    with open(sourcedata,'r') as csvFile:
         csvReader=csv.DictReader(csvFile, delimiter=',')
         for row in csvReader: # row is an orderedDict type
-            # productName = ' '.join(word_tokenize(row['product_name'])[:3]).replace('(','').replace(')','')
-            # productName = str(row['product_name'].replace('(','').replace(')','')[:20])
-            productName = cleanProductName(row['product_name'])
-            # review_id,product_name,review_author,review_header,review_rating,review_comment_count,review_text,review_posted_date
-            reviewLem, reviewTok = cleanAndStem(row['review_text'])
-            titleLem, titleTok = cleanAndStem(row['review_header'])
-            # overall word count
-            numRevWords = len(reviewTok)
-            numTitWords = len(titleTok)
-            # get percentages of meaning and stop words
-            revStop,revMean = getStopAndMeaningWordPercent(reviewLem)
-            titStop, titMean = getStopAndMeaningWordPercent(titleLem)
-            # get tagged for title and review
-            revTag = nltk.pos_tag(reviewTok)
-            titTag = nltk.pos_tag(titleTok)
-            # get percent of each part of speech
-            revPOSpcnt = percentPOS(revTag)
-            titPOSpcnt = percentPOS(titTag)
-            # other things we want in the file
-            ident = row['review_id']
-            rating = float(row['review_rating'].strip())
-            # now to put it all in a file
-            toWriteRev = {
-                'id':ident,
-                'product_name':productName,
-                'type': 'review',
-                'rating': rating,
-                'num_words': numRevWords,
-                'stop_%':revStop,
-                'meaning_%':revMean, 
-                'proper_noun_%':revPOSpcnt['propNouns'],
-                'noun_%':revPOSpcnt['nouns'],
-                'pronoun_%':revPOSpcnt['pronouns'],
-                'verb_%':revPOSpcnt['verbs'],
-                'adverb_%':revPOSpcnt['adverbs'],
-                'adjective_%':revPOSpcnt['adjectives'],
-                'wh-word_%':revPOSpcnt['whs'],
-                'missspelled_%':revPOSpcnt['bad_spelling']
-            }
-            toWriteTit = {
-                'id':ident,
-                'product_name':productName,
-                'type': 'title',
-                'rating': rating,
-                'num_words': numTitWords,
-                'stop_%':titStop,
-                'meaning_%':titMean, 
-                'proper_noun_%':titPOSpcnt['propNouns'],
-                'noun_%':titPOSpcnt['nouns'],
-                'pronoun_%':titPOSpcnt['pronouns'],
-                'verb_%':titPOSpcnt['verbs'],
-                'adverb_%':titPOSpcnt['adverbs'],
-                'adjective_%':titPOSpcnt['adjectives'],
-                'wh-word_%':titPOSpcnt['whs'],
-                'missspelled_%':titPOSpcnt['bad_spelling']
-            }
-            if rating == 5.0:
-                numberFiveStars +=1
-            if rating == 5.0 and numberFiveStars > 1800:
-                pass
-            else:
+            if len(row) > 0:
+                # productName = ' '.join(word_tokenize(row['product_name'])[:3]).replace('(','').replace(')','')
+                # productName = str(row['product_name'].replace('(','').replace(')','')[:20])
+                productName = cleanProductName(row['product_name'])
+                # review_id,product_name,review_author,review_header,review_rating,review_comment_count,review_text,review_posted_date
+                reviewLem, reviewTok = cleanAndStem(row['review_text'])
+                titleLem, titleTok = cleanAndStem(row['review_header'])
+                # overall word count
+                numRevWords = len(reviewTok)
+                numTitWords = len(titleTok)
+                # get percentages of meaning and stop words
+                revStop,revMean = getStopAndMeaningWordPercent(reviewLem)
+                titStop, titMean = getStopAndMeaningWordPercent(titleLem)
+                # get tagged for title and review
+                # if len(reviewTok) >1:
+                try:
+                    revTag = nltk.pos_tag(reviewTok)
+                except Exception as e:
+                    print(str(reviewTok)+'\n'e)
+                    continue
+                # else:
+                #     revTag = {'None': 'None'}
+                # if len(titleTok) > 1:
+                try:
+                    titTag = nltk.pos_tag(titleTok)
+                except Exception as e:
+                    print(str(titTok)+'\n'e)
+                    continue
+                # else:
+                #     titTag = {'None': 'None'}
+                # get percent of each part of speech
+                revPOSpcnt = percentPOS(revTag)
+                titPOSpcnt = percentPOS(titTag)
+                # other things we want in the file
+                ident = row['review_id']
+                rating = float(row['review_rating'].strip())
+                # now to put it all in a file
+                toWriteRev = {
+                    'id':ident,
+                    'product_name':productName,
+                    'type': 'review',
+                    'rating': rating,
+                    'num_words': numRevWords,
+                    'stop_%':revStop,
+                    'meaning_%':revMean, 
+                    'proper_noun_%':revPOSpcnt['propNouns'],
+                    'noun_%':revPOSpcnt['nouns'],
+                    'pronoun_%':revPOSpcnt['pronouns'],
+                    'verb_%':revPOSpcnt['verbs'],
+                    'adverb_%':revPOSpcnt['adverbs'],
+                    'adjective_%':revPOSpcnt['adjectives'],
+                    'wh-word_%':revPOSpcnt['whs'],
+                    'missspelled_%':revPOSpcnt['bad_spelling']
+                }
+                toWriteTit = {
+                    'id':ident,
+                    'product_name':productName,
+                    'type': 'title',
+                    'rating': rating,
+                    'num_words': numTitWords,
+                    'stop_%':titStop,
+                    'meaning_%':titMean, 
+                    'proper_noun_%':titPOSpcnt['propNouns'],
+                    'noun_%':titPOSpcnt['nouns'],
+                    'pronoun_%':titPOSpcnt['pronouns'],
+                    'verb_%':titPOSpcnt['verbs'],
+                    'adverb_%':titPOSpcnt['adverbs'],
+                    'adjective_%':titPOSpcnt['adjectives'],
+                    'wh-word_%':titPOSpcnt['whs'],
+                    'missspelled_%':titPOSpcnt['bad_spelling']
+                }  
                 writer.writerow(toWriteRev)
                 writer.writerow(toWriteTit)
     outputFile.close()
 
 
-def main():
+def main(sourcefile, outfile):
     # generate initial csv file
     # parse_json.fromJSONtoCSV()
     # go through initial csv file and create two files: one for processed title / review ,
     # and one for a frequency list of some of the more popular words
-    goThroughCSVSmart()
+    goThroughCSVSmart(sourcefile, outfile)
     
 if __name__=='__main__':
-    if len(sys.argv) != 6:
+    if len(sys.argv) > 3 and len(sys.argv) != 6:
+        print("usage:<NUMCOM> <USESET> <USETOK> <INITIAL CSV FILE> <OUTPUT FILE>")
+    elif len(sys.argv) == 3:
+        main(sys.argv[1], sys.argv[2])
+        exit()
+    elif len(sys.argv) == 6:
+        numCom = int(sys.argv[1])
+        useSet = bool(sys.argv[2])
+        useTok = bool(sys.argv[3])
+        # sample call: python pre_process_raw_data.py 200 False True big_data.csv big_data_parsed.csv
+        goThroughCSVBigram(numCom,useSet,sys.argv[4], sys.argv[5])
+        # goThroughCSVSmart(sys.argv[4], sys.argv[5])
+        # how many words (300 too many for weka) , use sets of words instead of lists, use token instead of lemma
+        goThroughCSVDumb(numCom, useSet, useTok,sys.argv[4], sys.argv[5])
+    elif len(sys.argv) == 7:
+        numCom = int(sys.argv[1])
+        useSet = bool(sys.argv[2])
+        useTok = bool(sys.argv[3])
+        ngramNum= int(sys.argv[6])
+        # sample call: python pre_process_raw_data.py 200 False True big_data.csv big_data_parsed.csv
+        goThroughCSVBigram(numCom,useSet,sys.argv[4], sys.argv[5],ngramNum)
+    else:
         print("usage:<NUMCOM> <USESET> <USETOK> <INITIAL CSV FILE> <OUTPUT FILE>")
         exit()
-    numCom = int(sys.argv[1])
-    useSet = bool(sys.argv[2])
-    useTok = bool(sys.argv[3])
-    # sample call: python pre_process_raw_data.py 200 False True big_data.csv big_data_parsed.csv
-    goThroughCSVBigram(numCom,useSet,sys.argv[4], sys.argv[5])
-    # how many words (300 too many for weka) , use sets of words instead of lists, use token instead of lemma
-    goThroughCSVDumb(numCom, useSet, useTok,sys.argv[4], sys.argv[5])

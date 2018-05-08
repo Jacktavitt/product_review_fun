@@ -97,3 +97,11 @@ results for Select Attributes:
     possible fix:
         instead of one huge list of urls, create a list of lists, each list being a specific product.
         when I catch and error, break from that list and move on the the next one.
+
+5-7-18
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    investigating markov chains to generate reviews instead of neural nets, way faster and output seems ok.
+    will also try neural net again with full training text for good and bad.
+    a treated the sources text so there are only a-zA-Z0-9'` in there (28 characters) to decreate training time.
+    there are over 1.2 million chracters in the full corpus of bad reviews, which would take a few weeks(!) to complete, So I am training on the first 200,000 characters.
+    at this speed, each of the 50 epochs should take less than 8 minutes to complete.

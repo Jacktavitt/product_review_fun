@@ -103,7 +103,7 @@ def goThroughCSVBigram(numMostCommon, setIt, initialCSVfile, outFile, ngramNum=2
     # folder= 'parseResultFiles/'
     # outFile = '_bigram_review_data_setstyle.csv' if setIt else '_bigram_review_data.csv'
     # outFile = folder+str(numMostCommon)+outFile
-    outFile = outFile[:-4] + '_' + str(ngramNum)'-gram' +outFile[-4:]
+    outFile = outFile[:-4] + '_' + str(ngramNum)+'-gram' +outFile[-4:]
 
     with open(initialCSVfile,'r') as csvFile:
         csvReader=csv.DictReader(csvFile, delimiter=',')
@@ -115,7 +115,7 @@ def goThroughCSVBigram(numMostCommon, setIt, initialCSVfile, outFile, ngramNum=2
             for n in range(len(toked)):
                 toked[n]=toked[n].lower().replace("'",'').replace("`",'')
             # now lets do some bigram action
-            b_list = list(ngrams(toked,2, pad_right = True))
+            b_list = list(ngrams(toked,ngramNum, pad_right = True))
             # add bigram list and other info to review data
             reviews.append((b_list, float(row['review_rating']), row['product_name'][:20]))
             # add bigram list to allData
@@ -127,7 +127,7 @@ def goThroughCSVBigram(numMostCommon, setIt, initialCSVfile, outFile, ngramNum=2
     random.shuffle(reviews)
     # now make frequency list of bigrams
     biGramFD = Counter(allBigrams)
-    print(biGramFD.most_common(25))
+    print(biGramFD.most_common(30))
     # now create a header for the resulting csv file
     biGramFeats = list(dict(biGramFD.most_common(numMostCommon)).keys())
     # same as before, i think
@@ -247,8 +247,6 @@ def goThroughCSVSmart(sourcedata,outFile):
     ] )
     writer.writeheader()
     # id, type (review or title), product_name, percent_stop, percent_meaning, %Proper noun, %noun, %pronoun, %verb, %adverb, %adj, %wh 
-    # !!! This is hardcoded bullshit to try to even out the dataset !!! BAD SCIENCE!!!
-    numberFiveStars = 0
     with open(sourcedata,'r') as csvFile:
         csvReader=csv.DictReader(csvFile, delimiter=',')
         for row in csvReader: # row is an orderedDict type
@@ -270,7 +268,7 @@ def goThroughCSVSmart(sourcedata,outFile):
                 try:
                     revTag = nltk.pos_tag(reviewTok)
                 except Exception as e:
-                    print(str(reviewTok)+'\n'e)
+                    print(str(reviewTok)+'\n'+str(e))
                     continue
                 # else:
                 #     revTag = {'None': 'None'}
@@ -278,7 +276,7 @@ def goThroughCSVSmart(sourcedata,outFile):
                 try:
                     titTag = nltk.pos_tag(titleTok)
                 except Exception as e:
-                    print(str(titTok)+'\n'e)
+                    print(str(titTok)+'\n'+str(e))
                     continue
                 # else:
                 #     titTag = {'None': 'None'}

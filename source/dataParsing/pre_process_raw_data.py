@@ -1,23 +1,3 @@
-'''
-this is the driver to process the JSON file.
-the file 'review_data_raw.csv' is the jumping-off point.
-List of things we want to know for each review:
- > Review ID
- > Product
- > NLP for title and review text:
-    > Initial word count
-    > % stop words
-    > % meaningful words
-    > % adjective
-    > % noun
-    > % pronoun
-    > % adverb
-    > % verb
-    > % 'wh' things
- > Rating
- > 
-'''
-# import parse_json
 import math
 import sys
 import os
@@ -41,6 +21,9 @@ _stopWords_ = set(stopwords.words("english")) | {".",","," ","~","/","\\","^","@
 _classList_=[MultinomialNB, BernoulliNB,LinearRegression, LogisticRegression, SGDClassifier,SVC, LinearSVC, NuSVC]
 
 def cleanAndStem(someString):
+    '''
+    Kale joke! splits text into both words and lemmas. Allows choice later about which is a better choice for prediction.
+    '''
     # ps = PorterStemmer()
     lzr = WordNetLemmatizer()
     # tokenize it!
@@ -55,7 +38,8 @@ def cleanAndStem(someString):
 
 def getStopAndMeaningWordPercent(stringList):
     '''
-    takes a list of strings (from cleanandstem)
+    takes a list of words, check to see if that word is in the set of 'stop words'.
+    If it is not, we assume it has meaning.
     '''
     if len(stringList) < 1:
         return 0,0
@@ -69,11 +53,12 @@ def getStopAndMeaningWordPercent(stringList):
     stopPerc = stop/total
     meanPerc = meaning/total
     return stopPerc, meanPerc
-
-# def getPartsOfSpeech(stringList):
     
 # featureSet=[(dumbGetFeatures( review, wordFeats ), rating, ident) for (review, rating, ident) in reviews]
 def dumbGetFeatures(stringList,wordFeats):
+    '''
+    simple helper function to count how many times a word shows up in a corpus
+    '''
     words = set(stringList)
     feats={}
     for word in wordFeats:
@@ -82,6 +67,9 @@ def dumbGetFeatures(stringList,wordFeats):
     return feats
 
 def writeDumbARFF(featureSet, wordFeats):
+    '''
+    attempt to prevent WEKA errors with large dataset. Not effective.
+    '''
     with open('dataParsing/parseResultFiles/fd.arff', 'w') as f:
         f.write("@RELATION frequency_distribution\n")
         wordFeats.sort()
@@ -95,8 +83,7 @@ def writeDumbARFF(featureSet, wordFeats):
 
 def goThroughCSVBigram(numMostCommon, setIt, initialCSVfile, outFile, ngramNum=2):
     '''
-    open csv, go through to build a dataset, simply sorted by above 2 stars or not with words
-    classify with nltk Naive Bayes
+    same as the 'Dumb' version, but can use word n-grams (default 2) instead of individual words.
     '''
     reviews=[]
     allBigrams=[]
@@ -145,8 +132,10 @@ def goThroughCSVBigram(numMostCommon, setIt, initialCSVfile, outFile, ngramNum=2
 
 def goThroughCSVDumb(numMostCommon, setIt, useTokens, initialCSVfile, outFile):
     '''
-    open csv, go through to build a dataset, simply sorted by above 2 stars or not with words
-    classify with nltk Naive Bayes
+    This takes each entry that was gathered from the reviews page, splits the review text into both
+    lemma and token versions (to see which version is more effective).
+    It then adds this processed text, along with rating and review name, to a list which is then randomized.
+    A frequency distribution is generated, and the 'numMostCommon' words are used as the features of the resulting CSV. 
     '''
     reviews=[]
     allWords=[]
@@ -179,28 +168,25 @@ def goThroughCSVDumb(numMostCommon, setIt, useTokens, initialCSVfile, outFile):
 
     wf=list(wordFeats)
     wf.extend(['__rating__','__product_name__'])
-    # sortedWFT = sorted(wordFeats.extend(['__rating__','__product_name__']))
-    # header = sortedWFT.extend(['__rating__','__product_name__'])
-    # !!! This is hardcoded bullshit to try to even out the dataset !!! BAD SCIENCE!!!
+
     numberFiveStars = 0
     with open(outFile, 'w', newline='') as outputFile:
         writer = csv.DictWriter(outputFile, fieldnames = wf)
         writer.writeheader()
         for n in featureSet:
-            # print("yo\n'")
             n[0]['__rating__'] = n[1]
             n[0]['__product_name__'] = n[2]
             if n[1] == 5.0:
                 numberFiveStars += 1
-            if (n[1] == 5.0) and (numberFiveStars > 999):
-                # print(type(n[1]))
-                pass
+            # if (n[1] == 5.0) and (numberFiveStars > 999):
+            #     pass
             else:
                 writer.writerow(n[0])
 
 def percentPOS(tagged):
     '''
-    return the percentages for NOUN, VERB, ADJ, ADV, WH-things, and misspelled words
+    return the percentages for NOUN, VERB, ADJ, ADV, WH-things, and misspelled words.
+    Spelling accuracy does not proovide meaningful results at this time (7-2018)
     '''
     SC = enchant.Dict("en_US")
     totalLen = len(tagged)
@@ -229,6 +215,9 @@ def percentPOS(tagged):
     return percents
 
 def cleanProductName(productName):
+    '''
+    removing strange characters from product names to prevent errors loading into WEKA
+    '''
     punks = {".",",","[","]","~","/","\\","^","@","'","'s","(",")","-","`"}
     for p in punks:
         productName.replace(p,'')
@@ -237,7 +226,9 @@ def cleanProductName(productName):
 
 def goThroughCSVSmart(sourcedata,outFile):
     '''
-    go through csv file, line by line, and generate new csv files we can use
+    go through csv file, line by line, and generate new csv files we can use.
+    This 'smart' version of the data provides statistics about the review text, instead of the text itself.
+    Looking for stylistic trends that may occur in good or bad reviews.
     '''
     outputFile = open(outFile, 'w', newline='')
     writer = csv.DictWriter(outputFile, fieldnames = [

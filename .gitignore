@@ -39,8 +39,14 @@ Thumbs.db
 # Too many images in these directories
 ######################################
 presentation/
+source/parseResultCSVFiles
+source/wekaREsults
+source/stupid*
 
 # dont need to clog with pictures i dont think
 #############################################
 *.jpg
 
+# old / obsolete files
+###########################
+source/dataParsing/string_processing.py

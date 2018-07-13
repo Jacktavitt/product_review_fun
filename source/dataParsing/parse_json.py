@@ -53,7 +53,7 @@ def fromJSONtoCSV(jsonFile, outputCSV):
                     except Exception as e:
                         print(e, product_name)
                     iD += 1
-    # return fl
+
     
 if __name__=="__main__":
     if len(sys.argv) != 3:

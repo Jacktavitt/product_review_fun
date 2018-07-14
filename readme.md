@@ -7,12 +7,12 @@ These results are then used to experiment with generating a positive or negative
 One technique is using Keras and Tensorflow to build an LSTM trained on the input text.
 The other technique is generating a Markov chain based on review text.
 
-## Getting Started
+## Getting Started (still writing this)
 
 You'll want Python 3.x 
 (more things coming)
 
-### Prerequisites
+### Prerequisites (still writing this)
 
 NLTK library 
 
@@ -21,7 +21,7 @@ nltk.download('stopwords')
 nltk.download('punkt')
 ```
 
-### Installing
+### Installing (still writing this)
 
 A step by step series of examples that tell you how to get a development env running
 
